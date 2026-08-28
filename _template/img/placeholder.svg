@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Image to come">
+  <rect width="1600" height="900" fill="#223B66"/>
+  <g fill="none" stroke="#E4EDF0" stroke-opacity=".22" stroke-width="3">
+    <rect x="24" y="24" width="1552" height="852" rx="10"/>
+    <path d="M24 24 1576 876M1576 24 24 876"/>
+  </g>
+  <text x="800" y="470" text-anchor="middle" fill="#E4EDF0" fill-opacity=".62"
+        font-family="Alcyone, Helvetica, Arial, sans-serif" font-size="42" font-weight="600"
+        letter-spacing="6" style="text-transform:uppercase">IMAGE TO COME</text>
+</svg>

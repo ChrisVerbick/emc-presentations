@@ -39,6 +39,11 @@
          Alternate the bands: page, band, page, band. Accents are punctuation —
          coral and amber together should never cover more than a tenth of a
          slide. One <mark> phrase per slide, maximum.
+
+         Every example image points at img/placeholder.svg so the template opens
+         clean before any asset has arrived. Replace each one as it lands:
+         portraits and company logos go in img/speakers/, product screenshots in
+         img/site/, video in media/. Then run stamp.py.
          ══════════════════════════════════════════════════════════════════════ -->
 
     <!-- ─── 01 · COVER ─────────────────────────────────────────────────────
@@ -165,25 +170,32 @@
     </section>
 
     <!-- ─── 09 · SPEAKER BIO ───────────────────────────────────────────────
-         Portrait left at 3:4, identity right. object-position is per-photo:
-         tune the second value until the face sits well in the frame.
-         No company logo yet? Swap the <img> for:
-           <div class="speaker__logo">Company</div>
-         No portrait yet? Wrap a <span class="placeholder">Photo to come</span>
-         in a <div class="speaker__photo"> instead of the image block. -->
+         Portrait left at 3:4, identity right.
+
+         Shown here in its assets-haven't-arrived state, which is where every
+         deck starts: .speaker__photo and .speaker__logo are styled holding
+         frames, so a half-built deck reads as deliberate rather than broken.
+         Swap each one for the real thing as it lands:
+
+           <div data-anim="left">
+             <div style="aspect-ratio:3/4; border-radius:14px; overflow:hidden; box-shadow:var(--photo-frame);">
+               <img src="img/speakers/name-bio.jpg" alt="Speaker Name"
+                    style="width:100%; height:100%; object-fit:cover; object-position:center 32%; display:block;">
+             </div>
+           </div>
+
+           <img src="img/speakers/company-logo.png" alt="Company" style="height:46px; width:auto; display:block;">
+
+         object-position is per-photo — tune the second value until the face
+         sits well in the frame. -->
     <section class="slide is-page" data-label="Bio · Name" data-mode="fun" style="padding:80px;">
       <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
       <div class="slide__head"><span>Entrepreneurs Meet · Event name</span></div>
       <div class="slide__foot"><span>20:00 · Presentations</span><span></span></div>
       <div class="speaker">
-        <div data-anim="left">
-          <div style="aspect-ratio:3/4; border-radius:14px; overflow:hidden; box-shadow:var(--photo-frame);">
-            <img src="img/speakers/name-bio.jpg" alt="Speaker Name"
-                 style="width:100%; height:100%; object-fit:cover; object-position:center 32%; display:block;">
-          </div>
-        </div>
+        <div class="speaker__photo" data-anim="left"><span class="placeholder">Portrait to come</span></div>
         <div class="speaker__body" data-anim="right">
-          <img src="img/speakers/company-logo.png" alt="Company" style="height:46px; width:auto; display:block;">
+          <div class="speaker__logo">Company</div>
           <p class="speaker__does">One line on what the company does.</p>
           <span class="eyebrow">Speaker Name · Founder of Company</span>
           <p class="speaker__bio">Two to four sentences. Written prose, not bullets — this is read aloud as an introduction.</p>
@@ -200,11 +212,11 @@
     <section class="slide" data-label="Name · 01" data-mode="fun" style="padding:0;">
       <div class="showcase">
         <div class="showcase__strip">
-          <img class="co" src="img/speakers/company-white.png" alt="Company">
+          <img class="co" src="img/placeholder.svg" alt="Company">
           <span class="who">Speaker Name</span>
           <img class="em" src="img/wordmark-fun-dark.svg" alt="Entrepreneurs Meet">
         </div>
-        <div class="showcase__img"><img src="img/speakers/name-1.jpg" alt="Caption"></div>
+        <div class="showcase__img"><img src="img/placeholder.svg" alt="Caption"></div>
       </div>
     </section>
 
@@ -215,7 +227,7 @@
     <section class="slide" data-label="Name · Film" data-mode="fun" data-autoplay style="padding:0;">
       <div class="showcase">
         <div class="showcase__strip">
-          <img class="co" src="img/speakers/company-white.png" alt="Company">
+          <img class="co" src="img/placeholder.svg" alt="Company">
           <span class="who">Speaker Name</span>
           <img class="em" src="img/wordmark-fun-dark.svg" alt="Entrepreneurs Meet">
         </div>
@@ -237,7 +249,7 @@
     <!-- ─── 12 · FULL-BLEED IMAGE, no strip ────────────────────────────────
          For artwork a speaker supplied already composed to 16:9. -->
     <section class="slide" data-label="Name · The problem" data-mode="fun" style="padding:0;">
-      <img src="img/speakers/name-slide.svg" alt="The problem"
+      <img src="img/placeholder.svg" alt="The problem"
            style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
     </section>
 
@@ -247,11 +259,11 @@
       <h2 style="font-size:var(--fs-h3); line-height:1.15;" data-anim="fade">Same location. Two voices.</h2>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:start;">
         <div data-anim="left">
-          <div class="browser"><div class="browser__bar"><i></i><i></i><i></i></div><img src="img/site/home-fun.png" alt="Home page, Fun"></div>
+          <div class="browser"><div class="browser__bar"><i></i><i></i><i></i></div><img src="img/placeholder.svg" alt="Home page, Fun"></div>
           <p class="browser__cap">emcagliari.com — Fun</p>
         </div>
         <div data-anim="right">
-          <div class="browser"><div class="browser__bar"><i></i><i></i><i></i></div><img src="img/site/home-pro.png" alt="Home page, Pro"></div>
+          <div class="browser"><div class="browser__bar"><i></i><i></i><i></i></div><img src="img/placeholder.svg" alt="Home page, Pro"></div>
           <p class="browser__cap">emcagliari.com/pro — Pro</p>
         </div>
       </div>
@@ -264,11 +276,11 @@
       <h2 style="font-size:var(--fs-h3); line-height:1.1;" data-anim="fade">We built the whole platform.</h2>
       <div class="shots">
         <div class="shot" data-anim="lift" data-delay="1">
-          <div class="shot__frame"><img src="img/site/events.png" alt="Events screen"></div>
+          <div class="shot__frame"><img src="img/placeholder.svg" alt="Events screen"></div>
           <b>Events</b><span>Every gathering, past and upcoming.</span>
         </div>
         <div class="shot" data-anim="lift" data-delay="2">
-          <div class="shot__frame"><img src="img/site/tickets.png" alt="Tickets screen"></div>
+          <div class="shot__frame"><img src="img/placeholder.svg" alt="Tickets screen"></div>
           <b>Tickets</b><span>Capacity and paid ticketing.</span>
         </div>
       </div>
