@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+<defs>
+  <radialGradient id="bg" cx="22%" cy="8%" r="95%">
+    <stop offset="0%" stop-color="#1D3268"/><stop offset="100%" stop-color="#14264F"/>
+  </radialGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#EDEAE3"/>
+  </linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+
+<text x="100" y="110" fill="#E8442E" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="4.5">THE PROBLEM</text>
+<text x="100" y="176" fill="#FFFFFF" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="50" font-weight="700">Four sets of books. One apartment.</text>
+<rect x="100" y="290" width="320" height="3" fill="#FFFFFF" fill-opacity="0.85"/>
+<text x="100" y="336" fill="#FFFFFF" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="21" font-weight="700">Booking channels</text>
+<line x1="100" y1="404" x2="420" y2="404" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="100" y="392" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">BK-4471</text>
+<text x="420" y="392" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">412,00</text>
+<line x1="100" y1="454" x2="420" y2="454" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="100" y="442" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">ABB-9032</text>
+<text x="420" y="442" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">268,00</text>
+<line x1="100" y1="504" x2="420" y2="504" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="100" y="492" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">DIR-1180</text>
+<text x="420" y="492" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">355,00</text>
+<line x1="100" y1="554" x2="420" y2="554" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="100" y="542" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">BK-4488</text>
+<text x="420" y="542" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">190,00</text>
+<rect x="460" y="290" width="320" height="3" fill="#FFFFFF" fill-opacity="0.85"/>
+<text x="460" y="336" fill="#FFFFFF" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="21" font-weight="700">Management software</text>
+<line x1="460" y1="404" x2="780" y2="404" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="460" y="392" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">12</text>
+<text x="780" y="392" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">stays</text>
+<line x1="460" y1="454" x2="780" y2="454" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="460" y="442" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">31</text>
+<text x="780" y="442" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">nights</text>
+<line x1="460" y1="504" x2="780" y2="504" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="460" y="492" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">74%</text>
+<text x="780" y="492" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">occupancy</text>
+<line x1="460" y1="554" x2="780" y2="554" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="460" y="542" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">—</text>
+<text x="780" y="542" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">no money</text>
+<rect x="820" y="290" width="320" height="3" fill="#FFFFFF" fill-opacity="0.85"/>
+<text x="820" y="336" fill="#FFFFFF" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="21" font-weight="700">Payment providers</text>
+<line x1="820" y1="404" x2="1140" y2="404" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="820" y="392" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">payout</text>
+<text x="1140" y="392" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">1.043,17</text>
+<line x1="820" y1="454" x2="1140" y2="454" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="820" y="442" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">payout</text>
+<text x="1140" y="442" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">612,50</text>
+<line x1="820" y1="504" x2="1140" y2="504" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="820" y="492" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">fees</text>
+<text x="1140" y="492" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">-38,90</text>
+<line x1="820" y1="554" x2="1140" y2="554" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="820" y="542" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">held</text>
+<text x="1140" y="542" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">204,00</text>
+<rect x="1180" y="290" width="320" height="3" fill="#FFFFFF" fill-opacity="0.85"/>
+<text x="1180" y="336" fill="#FFFFFF" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="21" font-weight="700">The accountant</text>
+<line x1="1180" y1="404" x2="1500" y2="404" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="1180" y="392" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">cleaning</text>
+<text x="1500" y="392" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">180,00</text>
+<line x1="1180" y1="454" x2="1500" y2="454" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="1180" y="442" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">utilities</text>
+<text x="1500" y="442" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">96,40</text>
+<line x1="1180" y1="504" x2="1500" y2="504" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="1180" y="492" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">commissions</text>
+<text x="1500" y="492" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">211,00</text>
+<line x1="1180" y1="554" x2="1500" y2="554" stroke="#FFFFFF" stroke-opacity="0.12"/>
+<text x="1180" y="542" fill="#FFFFFF" fill-opacity="0.55" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19">arrives</text>
+<text x="1500" y="542" fill="#FFFFFF" fill-opacity="0.92" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">in March</text>
+<line x1="440.0" y1="290" x2="440.0" y2="566" stroke="#E8442E" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="2 12"/>
+<line x1="800.0" y1="290" x2="800.0" y2="566" stroke="#E8442E" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="2 12"/>
+<line x1="1160.0" y1="290" x2="1160.0" y2="566" stroke="#E8442E" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="2 12"/>
+<line x1="100" y1="660" x2="1500" y2="660" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2"/>
+<text x="100" y="742" fill="#FFFFFF" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="30" font-weight="700">Profit, Via Roma 14, last year</text>
+<text x="100" y="784" fill="#FFFFFF" fill-opacity="0.5" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="20">four systems, four formats, nothing that adds up</text>
+<text x="1500" y="778" fill="#E8442E" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="132" font-weight="700" text-anchor="end">?</text>
+</svg>

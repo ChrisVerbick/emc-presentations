@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+<defs>
+  <radialGradient id="bg" cx="22%" cy="8%" r="95%">
+    <stop offset="0%" stop-color="#1D3268"/><stop offset="100%" stop-color="#14264F"/>
+  </radialGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#EDEAE3"/>
+  </linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+
+<text x="100" y="110" fill="#E8442E" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="4.5">IN PRACTICE</text>
+<text x="100" y="176" fill="#FFFFFF" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="50" font-weight="700">One cleaner. Six apartments. One invoice.</text>
+<polygon points="600,236 1000,236 1000,430 975,444 950,430 925,444 900,430 875,444 850,430 825,444 800,430 775,444 750,430 725,444 700,430 675,444 650,430 625,444 600,430 600,236" fill="url(#paper)"/>
+<text x="800.0" y="288" fill="#8A8578" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="3" text-anchor="middle">SAB 14 GIU</text>
+<line x1="634" y1="308" x2="966" y2="308" stroke="#C9C4B8" stroke-dasharray="3 5"/>
+<text x="800.0" y="354" fill="#14264F" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="25" letter-spacing="2" text-anchor="middle">PULIZIE</text>
+<text x="800.0" y="410" fill="#14264F" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="52" font-weight="700" text-anchor="middle">€ 180,00</text>
+<line x1="800" y1="450" x2="800" y2="494" stroke="#FFFFFF" stroke-opacity="0.3" stroke-dasharray="4 7"/>
+<line x1="205.0" y1="494" x2="1395.0" y2="494" stroke="#FFFFFF" stroke-opacity="0.3" stroke-dasharray="4 7"/>
+<line x1="205.0" y1="494" x2="205.0" y2="560" stroke="#FFFFFF" stroke-opacity="0.3" stroke-dasharray="4 7"/>
+<rect x="100" y="560" width="210" height="150" rx="10" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.2"/>
+<text x="205.0" y="602" fill="#FFFFFF" fill-opacity="0.62" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="16" text-anchor="middle">Via Roma 14</text>
+<text x="205.0" y="674" fill="#E8442E" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="50" font-weight="700" text-anchor="middle">?</text>
+<line x1="443.0" y1="494" x2="443.0" y2="560" stroke="#FFFFFF" stroke-opacity="0.3" stroke-dasharray="4 7"/>
+<rect x="338" y="560" width="210" height="150" rx="10" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.2"/>
+<text x="443.0" y="602" fill="#FFFFFF" fill-opacity="0.62" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="16" text-anchor="middle">Via Manno 3</text>
+<text x="443.0" y="674" fill="#E8442E" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="50" font-weight="700" text-anchor="middle">?</text>
+<line x1="681.0" y1="494" x2="681.0" y2="560" stroke="#FFFFFF" stroke-opacity="0.3" stroke-dasharray="4 7"/>
+<rect x="576" y="560" width="210" height="150" rx="10" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.2"/>
+<text x="681.0" y="602" fill="#FFFFFF" fill-opacity="0.62" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="16" text-anchor="middle">Corso Vittorio 22</text>
+<text x="681.0" y="674" fill="#E8442E" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="50" font-weight="700" text-anchor="middle">?</text>
+<line x1="919.0" y1="494" x2="919.0" y2="560" stroke="#FFFFFF" stroke-opacity="0.3" stroke-dasharray="4 7"/>
+<rect x="814" y="560" width="210" height="150" rx="10" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.2"/>
+<text x="919.0" y="602" fill="#FFFFFF" fill-opacity="0.62" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="16" text-anchor="middle">Via Sardegna 8</text>
+<text x="919.0" y="674" fill="#E8442E" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="50" font-weight="700" text-anchor="middle">?</text>
+<line x1="1157.0" y1="494" x2="1157.0" y2="560" stroke="#FFFFFF" stroke-opacity="0.3" stroke-dasharray="4 7"/>
+<rect x="1052" y="560" width="210" height="150" rx="10" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.2"/>
+<text x="1157.0" y="602" fill="#FFFFFF" fill-opacity="0.62" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="16" text-anchor="middle">Largo C. Felice 5</text>
+<text x="1157.0" y="674" fill="#E8442E" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="50" font-weight="700" text-anchor="middle">?</text>
+<line x1="1395.0" y1="494" x2="1395.0" y2="560" stroke="#FFFFFF" stroke-opacity="0.3" stroke-dasharray="4 7"/>
+<rect x="1290" y="560" width="210" height="150" rx="10" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.2"/>
+<text x="1395.0" y="602" fill="#FFFFFF" fill-opacity="0.62" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="16" text-anchor="middle">Via Baylle 11</text>
+<text x="1395.0" y="674" fill="#E8442E" font-family="DejaVu Sans Mono, SFMono-Regular, Menlo, monospace" font-size="50" font-weight="700" text-anchor="middle">?</text>
+<text x="800" y="790" fill="#FFFFFF" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Split it wrong and nobody notices.</text>
+<text x="800" y="840" fill="#E8442E" font-family="Inter, Carlito, DejaVu Sans, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="middle">For a year.</text>
+</svg>

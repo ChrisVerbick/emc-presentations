@@ -1,0 +1,514 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   EMC deck — presentation chrome.
+
+   Slides are authored at a fixed 1600×900 and scaled to fit whatever screen
+   they land on, so type and spacing keep their exact proportions on a venue
+   projector, a laptop, or a 4K TV. Nothing reflows mid-talk.
+
+   Design tokens mirror resources/css/app.css. Fun is the default; Pro is a
+   token swap on [data-mode="pro"].
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+@font-face { font-family:'Alcyone'; font-weight:400; font-display:block; src:url('fonts/Alcyone-Regular.woff2') format('woff2'); }
+@font-face { font-family:'Alcyone'; font-weight:500; font-display:block; src:url('fonts/Alcyone-Medium.woff2') format('woff2'); }
+@font-face { font-family:'Alcyone'; font-weight:600; font-display:block; src:url('fonts/Alcyone-SemiBold.woff2') format('woff2'); }
+@font-face { font-family:'Alcyone'; font-weight:700; font-display:block; src:url('fonts/Alcyone-Bold.woff2') format('woff2'); }
+
+:root, [data-mode="fun"] {
+  --page:#E4EDF0; --ink:#14264F; --band-deep:#0C1832; --band-alt:#0C1832;
+  --card:#223B66; --card-ink:#FFFFFF; --ink-dark:#FFFFFF;
+  --accent:#F0453E; --highlight:#F4B740; --eyebrow:#0B5474; --eyebrow-dark:#F0453E;
+  --hl-bg:var(--highlight); --hl-ink:var(--ink);
+  --cta-bg:var(--accent); --cta-ink:#FFFFFF; --cta-ring:none;
+  --photo-frame:none; --photo-bg:var(--card); --rule-w:0px;
+  --scrim:rgb(from var(--ink) r g b / 0.72);
+}
+[data-mode="pro"] {
+  --page:#2A3340; --ink:#FFFFFF; --band-alt:#1B222C; --band-deep:#12161D;
+  --card:#FFFFFF; --card-ink:#12161D; --ink-dark:#FFFFFF;
+  --accent:#8FA6BC; --highlight:#C6D3DE; --eyebrow:#8FA6BC; --eyebrow-dark:#8FA6BC;
+  --hl-bg:transparent; --hl-ink:var(--highlight);
+  --cta-bg:transparent; --cta-ink:#FFFFFF; --cta-ring:inset 0 0 0 3px #FFFFFF;
+  --photo-frame:inset 0 0 0 1px #FFFFFF; --photo-bg:var(--band-alt); --rule-w:28px;
+  --scrim:rgb(from var(--band-deep) r g b / 0.72);
+}
+
+/* Authoring canvas. Every size below is in these units, never viewport units —
+   that is what keeps a 16:9 projector and a laptop pixel-identical. */
+:root {
+  --W:1600; --H:900;
+  --fs-hero:96px; --fs-display:86px; --fs-h1:69px; --fs-h2:55px; --fs-h3:44px;
+  --fs-h4:35px; --fs-h5:28px; --fs-lead:22.5px; --fs-body:18px;
+  --fs-small:14.5px; --fs-overline:13px;
+}
+
+* { box-sizing:border-box; }
+html, body { margin:0; padding:0; height:100%; background:#000; overflow:hidden; }
+body { font-family:'Alcyone', Inter, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+
+#stage { position:fixed; inset:0; background:#000; }
+
+/* The scaled 1600×900 canvas. JS sets --scale; nothing else moves. */
+/* Centred by translate, not by the stage's grid alignment. Once the 1600px canvas
+   is wider than the viewport — every phone — grid centring falls back to "safe"
+   and pins the overflowing item to the start, which threw the rotated slide clean
+   off screen. translate(-50%,-50%) has no such fallback. */
+#canvas {
+  position:absolute; left:50%; top:50%;
+  width:calc(var(--W) * 1px); height:calc(var(--H) * 1px);
+  transform:translate(-50%, -50%) rotate(var(--rotate, 0deg)) scale(var(--scale, 1));
+  transform-origin:center center;
+  overflow:hidden; background:var(--band-deep);
+}
+
+.slide {
+  position:absolute; inset:0;
+  display:flex; flex-direction:column;
+  padding:80px;
+  background:var(--band-deep); color:var(--ink-dark);
+  opacity:0; visibility:hidden;
+  transition:opacity .32s cubic-bezier(0.22,1,0.36,1);
+}
+.slide[data-active] { opacity:1; visibility:visible; }
+
+/* Band variants */
+.slide.is-page { background:var(--page); color:var(--ink); }
+.slide.is-alt  { background:var(--band-alt); color:var(--ink-dark); }
+
+/* Running header / footer, hidden on cover + closing */
+.slide__head, .slide__foot {
+  position:absolute; left:80px; right:80px; z-index:5;
+  display:flex; justify-content:space-between;
+  font-size:var(--fs-overline); letter-spacing:1.5px; text-transform:uppercase;
+  font-weight:500; opacity:.6; pointer-events:none;
+}
+.slide__head { top:28px; }
+/* Indented past the slide number, which owns the bottom-left corner. */
+.slide__foot { bottom:26px; left:136px; }
+
+/* Corner monogram. */
+.slide__mark { position:absolute; right:80px; bottom:60px; width:58px; height:auto; z-index:4; }
+
+/* Slide number, bottom-left on every slide. One element in the canvas rather than
+   markup repeated across fifty slides; deck.js writes the value and copies the
+   active slide's colour so it reads on light and dark bands alike. */
+#slideno {
+  position:absolute; left:80px; bottom:26px; z-index:7;
+  font:700 13px/1 'Alcyone', system-ui, sans-serif; letter-spacing:1.5px;
+  opacity:.5; pointer-events:none;
+}
+
+/* Entrance animations — only on the active slide, and only once it lands */
+@keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
+@keyframes liftUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:none; } }
+@keyframes ruleDraw { from { transform:scaleX(0); } to { transform:scaleX(1); } }
+@keyframes slideL { from { opacity:0; transform:translateX(-32px); } to { opacity:1; transform:none; } }
+@keyframes slideR { from { opacity:0; transform:translateX(32px); } to { opacity:1; transform:none; } }
+@keyframes blurIn { from { opacity:0; filter:blur(3px); } to { opacity:1; filter:none; } }
+
+.slide[data-active] [data-anim="fade"] { animation:fadeUp .55s cubic-bezier(0.22,1,0.36,1) both; }
+.slide[data-active] [data-anim="lift"] { animation:liftUp .5s cubic-bezier(0.22,1,0.36,1) both; }
+.slide[data-active] [data-anim="rule"] { animation:ruleDraw .45s cubic-bezier(0.22,1,0.36,1) both; transform-origin:left; }
+.slide[data-active] [data-anim="left"] { animation:slideL .6s cubic-bezier(0.22,1,0.36,1) both; }
+.slide[data-active] [data-anim="right"]{ animation:slideR .6s cubic-bezier(0.22,1,0.36,1) both; }
+.slide[data-active] [data-anim="blur"] { animation:blurIn .65s cubic-bezier(0.22,1,0.36,1) both; }
+.slide:not([data-active]) [data-anim] { animation:none; opacity:0; }
+
+/* Stagger. data-delay="1".."8" was already in the markup but never had a rule
+   behind it, so staggered lists were landing all at once. */
+.slide[data-active] [data-delay="1"] { animation-delay:0.09s; }
+.slide[data-active] [data-delay="2"] { animation-delay:0.18s; }
+.slide[data-active] [data-delay="3"] { animation-delay:0.27s; }
+.slide[data-active] [data-delay="4"] { animation-delay:0.36s; }
+.slide[data-active] [data-delay="5"] { animation-delay:0.45s; }
+.slide[data-active] [data-delay="6"] { animation-delay:0.54s; }
+.slide[data-active] [data-delay="7"] { animation-delay:0.63s; }
+.slide[data-active] [data-delay="8"] { animation-delay:0.72s; }
+
+/* "Done" tick on a schedule row already behind us. */
+.done {
+  display:inline-flex; align-items:center; gap:6px; margin-left:14px;
+  padding:4px 12px; border-radius:999px; vertical-align:baseline; position:relative; top:-2px;
+  font-size:var(--fs-overline); font-weight:700; letter-spacing:1px; text-transform:uppercase;
+  background:rgb(from var(--eyebrow) r g b / .13); color:var(--eyebrow);
+}
+.done svg { width:14px; height:14px; fill:none; stroke:currentColor; stroke-width:3.2; stroke-linecap:round; stroke-linejoin:round; }
+
+/* Typography helpers */
+.eyebrow { font-size:var(--fs-overline); letter-spacing:2px; text-transform:uppercase; font-weight:700; color:var(--eyebrow); }
+.slide:not(.is-page) .eyebrow { color:var(--eyebrow-dark); }
+.rule { display:inline-block; width:var(--rule-w); height:2px; background:currentColor; }
+h1,h2,h3 { margin:0; font-weight:700; letter-spacing:-0.02em; }
+p { margin:0; }
+/* The highlight is a band, not the full inline box. A plain background-color fills
+   the inline *content area*, which is sized from the font's ascent+descent (94px at
+   --fs-display) and is therefore taller than the 89px line-height. It spilled into
+   the line above and, painting later in document order, clipped its descenders.
+   z-index can't help — the overlap is geometric, and a negative z-index would drop
+   the highlight behind the slide's own background. A gradient confines it instead. */
+mark {
+  background-color:transparent;
+  background-image:linear-gradient(var(--hl-bg), var(--hl-bg));
+  background-repeat:no-repeat;
+  background-size:100% 0.82em;
+  background-position:0 0.17em;
+  color:var(--hl-ink);
+  padding:0 .1em;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;
+}
+
+/* The wordmark is a real two-colour asset (indigo letters, coral glyphs), so it
+   ships as an <img> of the right kit variant per band. It used to be a CSS mask
+   of a single flat colour, which threw away the coral, went invisible on any
+   light band, and relied on mask shorthand + var() — the combination Safari
+   fails to parse. */
+.logo { display:block; width:240px; height:auto; }
+
+
+/* ── Brand launch ────────────────────────────────────────────────────────
+   The token blocks at the top of this file are scoped to [data-mode], not to
+   :root, which means two panels on one slide can each run a different mode.
+   That is the whole trick behind the Fun/Pro split — no duplicated palette. */
+
+/* The lockup on a light band. --ink-dark is white in both modes, so the plain
+   .logo disappears on Fun's pale page; this keys off --ink instead. */
+
+.duo { position:absolute; inset:0; display:grid; grid-template-columns:1fr 1fr; }
+.duo__half {
+  position:relative; display:flex; flex-direction:column;
+  align-items:center; justify-content:center; gap:28px; padding:80px;
+  background:var(--page); color:var(--ink);
+}
+.duo__tag {
+  position:absolute; top:34px; left:50%; translate:-50%;
+  font-size:var(--fs-overline); letter-spacing:2px; text-transform:uppercase;
+  font-weight:700; color:var(--eyebrow);
+}
+/* The seam sits on the container, not the Pro half — on the half it resolved to
+   Pro's steel accent and read as an accidental gap rather than a brand edge. */
+.duo { position:absolute; }
+.duo::after {
+  content:''; position:absolute; top:0; bottom:0; left:50%; width:4px;
+  margin-left:-2px; background:#F0453E; z-index:4;
+}
+.slide[data-active] .duo__half:first-child { animation:slideL .7s cubic-bezier(0.22,1,0.36,1) both; }
+.slide[data-active] .duo__half:last-child  { animation:slideR .7s cubic-bezier(0.22,1,0.36,1) .12s both; }
+
+/* Palette */
+.swatches { display:grid; grid-template-columns:repeat(6, 1fr); gap:18px; width:100%; }
+.swatch { display:flex; flex-direction:column; gap:10px; }
+.swatch i {
+  display:block; height:150px; border-radius:10px;
+  /* Keys off --ink, not --ink-dark: on a light band --ink-dark is white, so the
+   hairline vanished — and Pale Sky is the page colour, leaving that swatch
+   invisible against its own slide. */
+  box-shadow:inset 0 0 0 1px rgb(from var(--ink) r g b / .22);
+}
+.swatch b { font-size:var(--fs-small); font-weight:700; letter-spacing:.5px; }
+
+
+/* ── Glyphs ──────────────────────────────────────────────────────────────
+   Masked, not <img>, so each glyph takes the mode's accent the way the manual
+   requires (coral in Fun, steel in Pro) from a single neutral source file. */
+.glyphs { display:grid; grid-template-columns:repeat(7, 1fr); gap:20px; }
+.glyph-card { display:flex; flex-direction:column; align-items:center; gap:16px; text-align:center; }
+/* One rule: the element IS the <svg>, so a separate `svg.glyph` selector only
+   out-specifies the size set here. */
+.glyph { width:86px; height:86px; display:block; color:var(--accent); fill:currentColor; }
+.glyph-card b { font-size:var(--fs-small); letter-spacing:1px; text-transform:uppercase; }
+.glyph-card span { font-size:var(--fs-overline); line-height:1.5; opacity:.65; }
+
+/* ── Speaker ─────────────────────────────────────────────────────────────
+   Founder photo left; company identity, what it does, and bio right. */
+.speaker { display:grid; grid-template-columns:1fr 1.55fr; gap:60px; align-items:center; height:100%; }
+.speaker__photo {
+  aspect-ratio:3/4; border-radius:14px; background:var(--photo-bg); box-shadow:var(--photo-frame);
+  display:grid; place-items:center; padding:24px; text-align:center;
+}
+.speaker__body { display:flex; flex-direction:column; gap:22px; align-items:flex-start; }
+/* A company logo is a flex item here: without this it stretches to the column
+   width and `width:auto` resolves to the stretched size, not the aspect ratio. */
+.speaker__body > img { align-self:flex-start; max-width:300px; object-fit:contain; }
+.speaker__logo {
+  height:74px; width:230px; border-radius:10px; display:grid; place-items:center;
+  background:rgb(from var(--ink) r g b / .06); box-shadow:inset 0 0 0 1px rgb(from var(--ink) r g b / .22);
+  font-size:var(--fs-overline); letter-spacing:1.5px; text-transform:uppercase; opacity:.75;
+}
+.speaker__does { font-size:var(--fs-lead); line-height:1.4; color:rgb(from var(--ink) r g b / .85); }
+.speaker__bio { font-size:var(--fs-body); line-height:1.65; color:rgb(from var(--ink) r g b / .75); max-width:46em; }
+.placeholder { font-size:var(--fs-small); color:rgb(from var(--ink-dark) r g b / .55); }
+
+/* ── Browser frame ───────────────────────────────────────────────────────── */
+.browser { border-radius:14px; overflow:hidden; box-shadow:0 34px 90px rgba(0,0,0,.5); background:#151b28; }
+.browser__bar { height:36px; display:flex; align-items:center; gap:9px; padding:0 16px; background:#232b3b; }
+.browser__bar i { width:11px; height:11px; border-radius:50%; background:#4a5670; }
+.browser img { display:block; width:100%; height:auto; }
+.browser__cap { margin-top:14px; font-size:var(--fs-small); letter-spacing:1px; text-transform:uppercase; opacity:.6; }
+
+
+/* ── Platform grid ───────────────────────────────────────────────────────── */
+.shots { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px 24px; max-width:1160px; }
+.shot { display:flex; flex-direction:column; gap:9px; }
+.shot__frame {
+  border-radius:10px; overflow:hidden; aspect-ratio:1440/900;
+  box-shadow:0 14px 34px rgba(0,0,0,.22), inset 0 0 0 1px rgb(from var(--ink) r g b / .14);
+  background:rgb(from var(--ink) r g b / .05);
+}
+/* Cover-from-the-top: the supplied dashboard captures are full-page and far
+   taller than the tile, so anchoring to the top keeps every tile the same
+   shape while still showing the part of the page that identifies it. */
+.shot__frame img { display:block; width:100%; height:100%; object-fit:cover; object-position:top center; }
+.shot b { font-size:var(--fs-overline); letter-spacing:.6px; text-transform:uppercase; }
+.shot span { font-size:var(--fs-overline); opacity:.62; line-height:1.45; }
+
+
+/* ── Presenter showcase ──────────────────────────────────────────────────
+   Full-bleed image under a thin co-branded strip: presenter's mark left, ours
+   right. Images are contained, never cropped — the set mixes portrait photos
+   with screenshots whose text would be destroyed by a 16:9 crop. */
+.showcase { position:absolute; inset:0; display:flex; flex-direction:column; background:var(--band-deep); }
+/* Three columns rather than space-between: the name stays optically centred on
+   the slide no matter how wide the two logos are. */
+.showcase__strip {
+  flex:0 0 82px; display:grid; grid-template-columns:1fr auto 1fr; align-items:center;
+  padding:0 44px; background:#0C1832; box-shadow:inset 0 -1px 0 rgba(255,255,255,.12);
+}
+.showcase__strip > :first-child { justify-self:start; }
+.showcase__strip > :last-child  { justify-self:end; }
+.showcase__strip .who {
+  justify-self:center; color:#fff; font-weight:700;
+  font-size:17px; letter-spacing:3px; text-transform:uppercase; white-space:nowrap;
+}
+.showcase__strip img { display:block; width:auto; }
+.showcase__strip .co { height:40px; }
+.showcase__strip .em { height:30px; }
+/* The Essentzia script fills less of its box than the other two marks, so it
+   needs a touch more height to sit at the same optical weight. */
+.showcase__strip .co--essentzia { height:48px; }
+/* Kasu is a stacked mark — at the shared 40px it reads far smaller than the
+   single-line wordmarks beside it. */
+.showcase__strip .co--kasu { height:58px; }
+/* Video sits in the same box as a still, so a film and a screenshot in the same
+   stream are framed identically. */
+.slide .showcase__img video {
+  position:absolute; top:24px; left:40px;
+  width:calc(100% - 80px); height:calc(100% - 82px);
+  object-fit:contain; display:block; background:#000;
+}
+/* The image is pinned to a definite rect so object-fit has something real to
+   contain against; max-height:100% inside an auto-sized track is circular and
+   resolves to the image's natural size, which overflows the slide. */
+.showcase__img { flex:1; min-height:0; position:relative; }
+.showcase__img img {
+  position:absolute; top:24px; left:40px;
+  width:calc(100% - 80px); height:calc(100% - 82px);
+  object-fit:contain; display:block;
+}
+
+/* Photos go full-bleed and cropped, since letterboxing a 4:3 or 3:4 snapshot
+   leaves the subjects tiny. Screenshots stay contained above — cropping those
+   would cut the text, which is the whole reason they are on screen.
+   object-position is per-image: with cover, the visible band is
+   `pos% x (scaledHeight - boxHeight)` from the top, so the value is chosen to
+   land on the faces rather than the ceiling or the floor. */
+.showcase--bleed .showcase__img img {
+  top:0; left:0; width:100%; height:100%; object-fit:cover;
+}
+
+/* Inset: a middle ground between the full-bleed band and a fully contained
+   letterbox. The image keeps a fixed column narrower than the slide and crops
+   within it, so a tall shot reads at a usable size without going edge to edge. */
+.showcase--inset .showcase__img img {
+  left:50%; transform:translateX(-50%);
+  width:820px; object-fit:cover; border-radius:4px;
+}
+
+
+/* ── Event banner ────────────────────────────────────────────────────────
+   HTML rebuild of the 1920x1080 promo banner. The globe art is 2:1 while the
+   slide is 16:9, so the background is sized and offset explicitly rather than
+   left to `cover` — cover would scale it to exactly 900px tall, leaving no
+   vertical slack and making background-position a no-op. */
+.banner {
+  position:absolute; inset:0; color:#fff; background-color:#04070f;
+  background-image:url('img/banner-bg.jpg');
+  background-repeat:no-repeat;
+  /* The art is pre-cropped symmetrically about the globe (see img/banner-bg.jpg),
+     so plain cover centres it exactly — no hand-tuned offsets to drift. */
+  background-size:cover;
+  background-position:center;
+}
+.banner__pill {
+  position:absolute; top:98px; left:50%; transform:translateX(-50%);
+  background:#fff; color:#0C1832; border-radius:999px; padding:9px 26px;
+  font-size:17px; font-weight:700; letter-spacing:1.4px; text-transform:uppercase; white-space:nowrap;
+}
+.banner__title {
+  position:absolute; left:0; right:0; bottom:161px; text-align:center;
+  font-size:123px; font-weight:700; letter-spacing:-.02em; line-height:1;
+}
+.banner__sub { position:absolute; left:0; right:0; bottom:85px; text-align:center; font-size:55px; line-height:1.2; }
+.banner__sub b { font-weight:700; font-style:italic; }
+
+
+/* ── Community stats ─────────────────────────────────────────────────────
+   Mirrors the site's "community in numbers" block: oversized figure, quiet
+   label beneath. */
+/* Demoted to a supporting line: as oversized figures they read as a second
+   headline and fought the four attributes for the eye. */
+.stats { font-size:var(--fs-lead); color:rgb(from var(--ink) r g b / .6); }
+.stats b { font-weight:700; color:rgb(from var(--ink) r g b / .85); }
+
+.quals { display:grid; grid-template-columns:repeat(4, 1fr); gap:40px; max-width:1440px; }
+.qual { display:flex; flex-direction:column; gap:12px; }
+.qual i { display:block; width:44px; height:3px; background:var(--accent); }
+.qual b { font-size:var(--fs-h4); font-weight:700; line-height:1.15; }
+.qual span { font-size:var(--fs-lead); line-height:1.45; color:rgb(from var(--ink) r g b / .7); }
+
+/* ── Presentation chrome ─────────────────────────────────────────────────── */
+
+/* Progress bar — thin, unobtrusive, reads at the back of a room */
+#progress { position:fixed; left:0; top:0; height:3px; background:var(--accent); z-index:60;
+            width:0; transition:width .3s cubic-bezier(0.22,1,0.36,1); }
+
+/* Slide counter + hints, fade out when idle so they never photograph badly */
+#hud { position:fixed; bottom:16px; right:20px; z-index:60;
+       display:flex; align-items:center; gap:14px;
+       font:600 13px/1 'Alcyone', system-ui, sans-serif; letter-spacing:1px;
+       color:#fff; opacity:.35; transition:opacity .4s; pointer-events:none; }
+body.idle #hud, body.idle #navzones .arrow { opacity:0; }
+body.rotated #hud, body.rotated #navzones .arrow, body.rotated #progress { display:none; }
+#hud .key { opacity:.6; font-size:11px; letter-spacing:.5px; text-transform:uppercase; }
+
+/* Click zones: left third back, right two-thirds forward. Arrows only appear
+   on mouse movement, so a trackpad user gets affordance and a projector doesn't. */
+#navzones { position:fixed; inset:0; z-index:55; display:flex; }
+#navzones .zone { flex:1; cursor:pointer; display:flex; align-items:center; }
+#navzones .zone.prev { flex:0 0 28%; justify-content:flex-start; padding-left:24px; }
+#navzones .zone.next { justify-content:flex-end; padding-right:24px; }
+#navzones .arrow { font-size:28px; color:#fff; opacity:.28; transition:opacity .3s;
+                   user-select:none; text-shadow:0 2px 12px rgba(0,0,0,.6); }
+#navzones .zone:hover .arrow { opacity:.75; }
+
+/* Blank screen (B or . — the standard clicker blank key) */
+#blank { position:fixed; inset:0; background:#000; z-index:80; display:none; }
+body.blanked #blank { display:block; }
+body.blanked-white #blank { display:block; background:#fff; }
+
+/* Overview grid (O) — jump to any slide mid-talk without scrubbing */
+#overview { position:fixed; inset:0; background:rgba(8,12,22,.96); z-index:90;
+            display:none; grid-template-columns:repeat(auto-fill, minmax(190px, 1fr)); gap:18px;
+            padding:40px; overflow:auto; align-content:start; }
+/* Row height is set from JS (sizeThumbs). Everything in a card is absolutely
+   positioned, so its intrinsic height is 0 — and neither aspect-ratio nor
+   percentage padding contributes to intrinsic track sizing. Left to itself the
+   grid gave every row an equal slice of the container and the cards overflowed
+   into each other. */
+body.overview #overview { display:grid; }
+#overview .card { border-radius:8px; overflow:hidden; cursor:pointer; background:#161b26;
+                  aspect-ratio:16/9; position:relative; box-shadow:0 0 0 1px rgba(255,255,255,.08); }
+/* Live slide clones, scaled to card width. Everything animated is pinned to its
+   finished state — a thumbnail mid-entrance reads as a broken slide. */
+#overview .thumb { position:absolute; inset:0; overflow:hidden; }
+#overview .thumb .slide {
+  position:absolute; top:0; left:0; width:1600px; height:900px;
+  transform:scale(var(--thumb-scale, .2)); transform-origin:top left;
+  opacity:1 !important; visibility:visible !important; transition:none !important;
+}
+#overview .thumb .slide, #overview .thumb .slide * {
+  animation:none !important; clip-path:none !important;
+}
+#overview .thumb .slide [data-anim], #overview .thumb .reveal * { opacity:1 !important; }
+#overview .thumb .reveal__rule { display:none !important; }
+#overview .card[data-current] { box-shadow:0 0 0 3px var(--accent); }
+#overview .card > span { position:absolute; inset:auto 0 0 0; z-index:2; padding:10px 12px;
+                       font:600 12px/1.3 'Alcyone', system-ui, sans-serif; color:#fff;
+                       background:linear-gradient(to top, rgba(0,0,0,.92) 0%, rgba(0,0,0,.72) 60%, transparent 100%); }
+#overview .card > b { position:absolute; z-index:2; top:8px; left:10px; font:700 11px/1 system-ui; color:#8b93a0; }
+
+/* Help (?) */
+#help { position:fixed; inset:0; background:rgba(8,12,22,.96); z-index:95; display:none;
+        place-items:center; color:#fff; font-family:'Alcyone', system-ui, sans-serif; }
+body.help #help { display:grid; }
+#help table { border-collapse:collapse; font-size:15px; }
+#help td { padding:7px 18px 7px 0; }
+#help td:first-child { font-weight:700; color:var(--accent); white-space:nowrap; }
+#help h3 { font-size:24px; margin:0 0 18px; }
+
+/* Video slides */
+.slide video { width:100%; height:100%; object-fit:contain; background:#000; }
+.video-wrap { position:absolute; inset:0; background:#000; display:grid; place-items:center; }
+.video-hint { position:absolute; bottom:38px; left:50%; transform:translateX(-50%);
+              font:600 14px/1 'Alcyone', system-ui, sans-serif; letter-spacing:1px;
+              color:#fff; opacity:.55; text-transform:uppercase; pointer-events:none; }
+.slide[data-video-playing] .video-hint { opacity:0; }
+/* Missing media shouldn't be discovered on stage: the poster says so plainly. */
+.video-missing { display:none; position:absolute; inset:0; place-items:center; text-align:center;
+                 padding:80px; color:#fff; background:var(--band-deep); }
+/* Overlaid, not swapped in: hiding the <video> stops it loading, so a slow file
+   could never clear the flag once the readiness deadline had set it. */
+.slide[data-video-missing] .video-missing { display:grid; z-index:6; }
+
+
+/* ── Logo reveal ─────────────────────────────────────────────────────────
+   Stands in for a film. An accent rule draws across, the wordmark wipes
+   through it left to right, the rule fades and the line lands. It runs off
+   the existing logo mask, so it inherits the mode colours for free and there
+   is no asset that can fail to load in the room. */
+@keyframes revealSweep {
+  0%   { transform:translateX(-390px); opacity:0; }
+  9%   { opacity:1; }
+  86%  { opacity:1; }
+  100% { transform:translateX(390px); opacity:0; }
+}
+@keyframes revealWipe {
+  from { clip-path:inset(0 100% 0 0); }
+  to   { clip-path:inset(0 0 0 0); }
+}
+@keyframes revealSettle {
+  from { transform:scale(1.05); }
+  to   { transform:none; }
+}
+
+.reveal { position:relative; display:grid; place-items:center; }
+/* The bar IS the wipe edge, so it must share the wipe's easing exactly —
+   any mismatch and it visibly detaches from the edge it is supposed to cut. */
+.reveal__rule {
+  position:absolute; top:50%; left:50%; z-index:3;
+  width:5px; height:230px; margin:-115px 0 0 -2.5px;
+  background:var(--accent); opacity:0;
+}
+.reveal__mark { width:760px; position:relative; z-index:2; clip-path:inset(0 100% 0 0); }
+
+.slide[data-active] .reveal          { animation:revealSettle 2.4s cubic-bezier(0.22,1,0.36,1) both; }
+.slide[data-active] .reveal__rule    { animation:revealSweep 1.2s cubic-bezier(0.65,0,0.35,1) .35s both; }
+.slide[data-active] .reveal__mark    { animation:revealWipe 1.2s cubic-bezier(0.65,0,0.35,1) .35s both; }
+.slide[data-active] .reveal__caption { animation:fadeUp .6s cubic-bezier(0.22,1,0.36,1) 1.7s both; }
+/* Stepping back onto the slide replays it, same as the other entrances. */
+.slide:not([data-active]) .reveal,
+.slide:not([data-active]) .reveal *,
+.slide:not([data-active]) .reveal__caption { animation:none; opacity:0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .slide, #progress { transition:none; }
+  .slide[data-active] [data-anim] { animation:none; }
+  .slide[data-active] .reveal, .slide[data-active] .reveal * { animation:none; }
+  .reveal__mark { clip-path:none; }
+  .reveal__rule { display:none; }
+}
+
+/* Print / PDF export: every slide on its own page, chrome removed */
+@media print {
+  @page { size:1600px 900px; margin:0; }
+  html, body { height:auto; overflow:visible; background:#fff; }
+  #stage { position:static; display:block; }
+  #stage { position:static; }
+  #canvas { position:static; transform:none; width:1600px; height:900px; }
+  #progress, #hud, #navzones, #overview, #help, #blank { display:none !important; }
+  .slide { position:relative; opacity:1 !important; visibility:visible !important;
+           page-break-after:always; break-after:page; }
+  .slide[data-active] [data-anim], .slide [data-anim] { animation:none !important; opacity:1 !important; transform:none !important; }
+  .reveal, .reveal * { animation:none !important; opacity:1 !important; }
+  .reveal__mark { clip-path:none !important; }
+  .reveal__rule { display:none !important; }
+}
