@@ -1,0 +1,14 @@
+# Video lives on the presenting laptop, never in git.
+*/media/
+
+# Raw material presenters send over — kept beside the deck while it's built.
+*/sources/
+
+# Snapshots of a deck directory. The directory is the artefact.
+*.zip
+
+.DS_Store
+
+# ...but the template keeps its empty media/ so `cp -R` yields the directory.
+!_template/media/
+!_template/media/.gitkeep

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="fun">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entrepreneurs Meet — REPLACE ME, DD Month YYYY</title>
+<link rel="stylesheet" href="deck.css?v=246dd773">
+</head>
+<body>
+
+<!-- Accent progress bar. deck.js writes its width; do not remove. -->
+<div id="progress"></div>
+
+<div id="stage">
+  <!-- The fixed 1600×900 authoring canvas. deck.js scales this whole box with a
+       single CSS transform, so EVERY size inside it is px, em, ch or % — NEVER
+       vw/vh/vmin/vmax/svh/dvh. A viewport unit re-measures against the browser
+       window instead of the canvas, and the slide comes out a different shape on
+       the venue projector than it did on your laptop. -->
+  <div id="canvas">
+
+    <!-- ══════════════════════════════════════════════════════════════════════
+         SLIDES GO HERE. Copy an example below, delete the rest.
+
+         On the <section>:
+           class="slide"          deep band  — --band-deep, white ink
+           class="slide is-page"  light page — --page, --ink
+           class="slide is-alt"   alt band   — --band-alt, white ink
+           data-label="…"         caption in the O overview grid. REQUIRED —
+                                  extract-copy.py skips sections without one.
+           data-mode="fun"|"pro"  per-slide token swap, mirrored onto <html>
+           data-autoplay          video slides only
+           style="padding:0"      full-bleed slides only (default padding 80px)
+
+         On any child:
+           data-anim="fade|lift|rule|left|right|blur"
+           data-delay="1".."8"    0.09s per step
+
+         Alternate the bands: page, band, page, band. Accents are punctuation —
+         coral and amber together should never cover more than a tenth of a
+         slide. One <mark> phrase per slide, maximum.
+         ══════════════════════════════════════════════════════════════════════ -->
+
+    <!-- ─── 01 · COVER ─────────────────────────────────────────────────────
+         Deep band. No running header or footer on a cover. -->
+    <section class="slide" data-label="Cover" data-mode="fun" style="justify-content:space-between;">
+      <img class="slide__mark" src="img/logomark-fun-dark.svg" alt="" aria-hidden="true">
+      <img class="logo" src="img/wordmark-fun-dark.svg" alt="Entrepreneurs Meet" data-anim="fade">
+      <h1 style="font-size:var(--fs-hero); line-height:1; max-width:14ch;" data-anim="fade">Event title here</h1>
+      <div class="eyebrow" data-anim="fade">DD Month YYYY · Venue · Location</div>
+    </section>
+
+    <!-- ─── 02 · CONTENT SLIDE — the standard shape ────────────────────────
+         Rule + eyebrow, heading, lead. Running head and foot go on every slide
+         EXCEPT cover, closing, full-bleed and showcase slides.
+         slide__mark is the light logomark on is-page, dark on deep/alt. -->
+    <section class="slide is-page" data-label="Section title" data-mode="fun" style="justify-content:center; gap:34px;">
+      <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span>Entrepreneurs Meet · Event name</span></div>
+      <div class="slide__foot"><span>19:00 · Arrival</span><span></span></div>
+      <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+        <span class="rule" style="color:var(--eyebrow);"></span><span class="eyebrow">Eyebrow</span>
+      </div>
+      <h2 style="font-size:var(--fs-h2); line-height:1.12;" data-anim="fade">One idea per slide.</h2>
+      <p style="font-size:var(--fs-lead); line-height:1.45; max-width:44em;" data-anim="fade" data-delay="1">
+        Lead paragraph. Keep the measure narrow — max-width in em or ch, never a percentage of the canvas.
+      </p>
+    </section>
+
+    <!-- ─── 03 · SECTION DIVIDER ───────────────────────────────────────────
+         Alt band with an oversized ghost number sitting behind the title. -->
+    <section class="slide is-alt" data-label="Part one" data-mode="fun" style="justify-content:center;">
+      <img class="slide__mark" src="img/logomark-fun-dark.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span>Entrepreneurs Meet · Event name</span></div>
+      <div class="slide__foot"><span>20:00</span><span></span></div>
+      <div style="position:absolute; right:4%; top:50%; transform:translateY(-50%); font-size:420px; line-height:1; font-weight:700; color:rgb(from var(--ink-dark) r g b / .08); user-select:none;">01</div>
+      <div style="position:relative; display:flex; flex-direction:column; gap:20px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule"></span><span class="eyebrow">Part one</span>
+        </div>
+        <h2 style="font-size:var(--fs-h1); line-height:.98;" data-anim="fade">Section title.</h2>
+      </div>
+    </section>
+
+    <!-- ─── 04 · AGENDA / SCHEDULE ─────────────────────────────────────────
+         Add <span class="done"> after a row's <b> once that item is behind you. -->
+    <section class="slide is-page" data-label="Schedule" data-mode="fun" style="justify-content:center; gap:40px;">
+      <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span>Entrepreneurs Meet · Event name</span></div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule" style="color:var(--eyebrow);"></span><span class="eyebrow">Tonight</span>
+        </div>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12;" data-anim="fade">Here's how the evening runs.</h2>
+      </div>
+      <ol style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:26px; max-width:44em;">
+        <li style="display:flex; gap:28px; align-items:baseline;" data-anim="fade" data-delay="1">
+          <span style="font-size:var(--fs-h5); font-weight:700; color:var(--eyebrow); min-width:5.5ch;">19:00</span>
+          <span><b style="font-size:var(--fs-h5); font-weight:700;">Arrival</b><span class="done"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Done</span><br>
+          <span style="font-size:var(--fs-body); color:rgb(from var(--ink) r g b / .8);">Doors open, welcome drinks.</span></span>
+        </li>
+        <li style="display:flex; gap:28px; align-items:baseline;" data-anim="fade" data-delay="2">
+          <span style="font-size:var(--fs-h5); font-weight:700; color:var(--eyebrow); min-width:5.5ch;">20:00</span>
+          <span><b style="font-size:var(--fs-h5); font-weight:700;">Presentations</b><br>
+          <span style="font-size:var(--fs-body); color:rgb(from var(--ink) r g b / .8);">Short talks from members.</span></span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ─── 05 · STATEMENT ─────────────────────────────────────────────────
+         One claim, twelve words or fewer, one <mark> phrase at most. -->
+    <section class="slide is-page" data-label="Statement" data-mode="fun" style="align-items:center; justify-content:center;">
+      <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span>Entrepreneurs Meet · Event name</span></div>
+      <p style="font-size:var(--fs-display); line-height:1.04; max-width:16ch; text-align:center; font-weight:700; letter-spacing:-.02em;" data-anim="fade">
+        You might walk in not knowing anyone. You <mark>won't leave</mark> that way.
+      </p>
+    </section>
+
+    <!-- ─── 06 · ATTRIBUTE GRID + STAT LINE ────────────────────────────────
+         .quals is a fixed four-column grid. Four items, or restyle it. -->
+    <section class="slide is-page" data-label="The community" data-mode="fun" style="justify-content:center; gap:44px;">
+      <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span>Entrepreneurs Meet · Event name</span></div>
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <span class="eyebrow" style="color:var(--accent);" data-anim="fade"><mark>The community</mark></span>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12;" data-anim="fade">Four things worth knowing.</h2>
+      </div>
+      <div class="quals">
+        <div class="qual" data-anim="fade" data-delay="1"><i></i><b>Not-for-profit</b><span>Run for the community.</span></div>
+        <div class="qual" data-anim="fade" data-delay="2"><i></i><b>Volunteer-led</b><span>Organised by members.</span></div>
+        <div class="qual" data-anim="fade" data-delay="3"><i></i><b>Sector-agnostic</b><span>Every industry.</span></div>
+        <div class="qual" data-anim="fade" data-delay="4"><i></i><b>Diverse</b><span>All stages, many passports.</span></div>
+      </div>
+      <p class="stats" data-anim="fade" data-delay="5"><b>160</b> members · <b>15+</b> nationalities</p>
+    </section>
+
+    <!-- ─── 07 · BULLET / LINK LIST ────────────────────────────────────────
+         list-style:none always — the deck has no bullet glyph. -->
+    <section class="slide is-page" data-label="Where to find us" data-mode="fun" style="justify-content:center; gap:34px;">
+      <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span>Entrepreneurs Meet · Event name</span></div>
+      <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+        <span class="rule" style="color:var(--eyebrow);"></span><span class="eyebrow">Live tonight</span>
+      </div>
+      <h2 style="font-size:var(--fs-h1); line-height:.98; max-width:16ch;" data-anim="fade">It's already everywhere.</h2>
+      <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:16px; max-width:1180px;">
+        <li style="font-size:var(--fs-h5);" data-anim="fade" data-delay="1"><b>emcagliari.com</b> — the site.</li>
+        <li style="font-size:var(--fs-h5);" data-anim="fade" data-delay="2"><b>LinkedIn</b> — the community feed.</li>
+      </ul>
+    </section>
+
+    <!-- ─── 08 · SPEAKER LEAD-IN ───────────────────────────────────────────-->
+    <section class="slide is-alt" data-label="Next · Name" data-mode="fun" style="justify-content:center;">
+      <img class="slide__mark" src="img/logomark-fun-dark.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span>Entrepreneurs Meet · Event name</span></div>
+      <div class="slide__foot"><span>20:00 · Presentations</span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule"></span><span class="eyebrow">Next</span>
+        </div>
+        <h2 style="font-size:var(--fs-h1); line-height:.98;" data-anim="fade">Speaker Name</h2>
+        <p style="font-size:var(--fs-lead); color:rgb(from var(--ink-dark) r g b / .75);" data-anim="fade" data-delay="1">Company</p>
+      </div>
+    </section>
+
+    <!-- ─── 09 · SPEAKER BIO ───────────────────────────────────────────────
+         Portrait left at 3:4, identity right. object-position is per-photo:
+         tune the second value until the face sits well in the frame.
+         No company logo yet? Swap the <img> for:
+           <div class="speaker__logo">Company</div>
+         No portrait yet? Wrap a <span class="placeholder">Photo to come</span>
+         in a <div class="speaker__photo"> instead of the image block. -->
+    <section class="slide is-page" data-label="Bio · Name" data-mode="fun" style="padding:80px;">
+      <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span>Entrepreneurs Meet · Event name</span></div>
+      <div class="slide__foot"><span>20:00 · Presentations</span><span></span></div>
+      <div class="speaker">
+        <div data-anim="left">
+          <div style="aspect-ratio:3/4; border-radius:14px; overflow:hidden; box-shadow:var(--photo-frame);">
+            <img src="img/speakers/name-bio.jpg" alt="Speaker Name"
+                 style="width:100%; height:100%; object-fit:cover; object-position:center 32%; display:block;">
+          </div>
+        </div>
+        <div class="speaker__body" data-anim="right">
+          <img src="img/speakers/company-logo.png" alt="Company" style="height:46px; width:auto; display:block;">
+          <p class="speaker__does">One line on what the company does.</p>
+          <span class="eyebrow">Speaker Name · Founder of Company</span>
+          <p class="speaker__bio">Two to four sentences. Written prose, not bullets — this is read aloud as an introduction.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 10 · SHOWCASE IMAGE ────────────────────────────────────────────
+         Full-bleed image under a co-branded strip. Three variants:
+           .showcase             contained — screenshots, anything carrying text
+           .showcase--bleed      cover, edge to edge — photographs
+           .showcase--inset      cropped 820px column — tall shots
+         With --bleed, tune object-position per image with an inline style. -->
+    <section class="slide" data-label="Name · 01" data-mode="fun" style="padding:0;">
+      <div class="showcase">
+        <div class="showcase__strip">
+          <img class="co" src="img/speakers/company-white.png" alt="Company">
+          <span class="who">Speaker Name</span>
+          <img class="em" src="img/wordmark-fun-dark.svg" alt="Entrepreneurs Meet">
+        </div>
+        <div class="showcase__img"><img src="img/speakers/name-1.jpg" alt="Caption"></div>
+      </div>
+    </section>
+
+    <!-- ─── 11 · SHOWCASE VIDEO ────────────────────────────────────────────
+         data-autoplay plays on entry; Space or a click pauses; leaving the slide
+         always stops it. .video-missing must be a direct child of .slide, NOT of
+         .showcase. Video lives in media/ and is never committed. -->
+    <section class="slide" data-label="Name · Film" data-mode="fun" data-autoplay style="padding:0;">
+      <div class="showcase">
+        <div class="showcase__strip">
+          <img class="co" src="img/speakers/company-white.png" alt="Company">
+          <span class="who">Speaker Name</span>
+          <img class="em" src="img/wordmark-fun-dark.svg" alt="Entrepreneurs Meet">
+        </div>
+        <div class="showcase__img">
+          <video preload="auto" playsinline>
+            <source src="media/name-film.mp4" type="video/mp4">
+          </video>
+          <div class="video-hint">Space or click to pause</div>
+        </div>
+      </div>
+      <div class="video-missing">
+        <div>
+          <p style="font-size:var(--fs-h3); font-weight:700; margin-bottom:16px;">Film not found</p>
+          <p style="font-size:var(--fs-body); opacity:.75; line-height:1.6;">Expected at <b>media/name-film.mp4</b> — H.264 + AAC, 1920×1080.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 12 · FULL-BLEED IMAGE, no strip ────────────────────────────────
+         For artwork a speaker supplied already composed to 16:9. -->
+    <section class="slide" data-label="Name · The problem" data-mode="fun" style="padding:0;">
+      <img src="img/speakers/name-slide.svg" alt="The problem"
+           style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
+    </section>
+
+    <!-- ─── 13 · SCREENSHOT PAIR, browser frames ───────────────────────────-->
+    <section class="slide is-page" data-label="The site" data-mode="fun" style="justify-content:center; gap:34px;">
+      <div class="slide__head"><span>Entrepreneurs Meet · Event name</span></div>
+      <h2 style="font-size:var(--fs-h3); line-height:1.15;" data-anim="fade">Same location. Two voices.</h2>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:start;">
+        <div data-anim="left">
+          <div class="browser"><div class="browser__bar"><i></i><i></i><i></i></div><img src="img/site/home-fun.png" alt="Home page, Fun"></div>
+          <p class="browser__cap">emcagliari.com — Fun</p>
+        </div>
+        <div data-anim="right">
+          <div class="browser"><div class="browser__bar"><i></i><i></i><i></i></div><img src="img/site/home-pro.png" alt="Home page, Pro"></div>
+          <p class="browser__cap">emcagliari.com/pro — Pro</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 14 · SCREENSHOT TILE GRID ──────────────────────────────────────
+         Fixed three columns, 1440×900 tiles, cover-from-top. Six reads well. -->
+    <section class="slide is-page" data-label="The platform" data-mode="fun" style="justify-content:center; gap:30px;">
+      <div class="slide__head"><span>Entrepreneurs Meet · Event name</span></div>
+      <h2 style="font-size:var(--fs-h3); line-height:1.1;" data-anim="fade">We built the whole platform.</h2>
+      <div class="shots">
+        <div class="shot" data-anim="lift" data-delay="1">
+          <div class="shot__frame"><img src="img/site/events.png" alt="Events screen"></div>
+          <b>Events</b><span>Every gathering, past and upcoming.</span>
+        </div>
+        <div class="shot" data-anim="lift" data-delay="2">
+          <div class="shot__frame"><img src="img/site/tickets.png" alt="Tickets screen"></div>
+          <b>Tickets</b><span>Capacity and paid ticketing.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 15 · PALETTE / MODE ────────────────────────────────────────────
+         Set data-mode="pro" on the section to make the whole slide Pro — the
+         token swap is the argument. A Pro version also wants
+         style="background:var(--page); color:var(--ink);" so it sits on the
+         light Pro page rather than the deep band. -->
+    <section class="slide is-page" data-label="Fun mode" data-mode="fun" style="justify-content:center; gap:34px;">
+      <div class="slide__head"><span>Entrepreneurs Meet · The brand</span></div>
+      <h2 style="font-size:var(--fs-h1); line-height:1;" data-anim="fade">Fun. <mark>The water's warm.</mark></h2>
+      <div class="swatches" style="max-width:1000px;">
+        <div class="swatch" data-anim="lift" data-delay="1"><i style="background:#14264F"></i><b>Indigo Ink</b></div>
+        <div class="swatch" data-anim="lift" data-delay="2"><i style="background:#E4EDF0"></i><b>Pale Sky</b></div>
+        <div class="swatch" data-anim="lift" data-delay="3"><i style="background:#F0453E"></i><b>Coral</b></div>
+        <div class="swatch" data-anim="lift" data-delay="4"><i style="background:#F4B740"></i><b>Amber</b></div>
+      </div>
+    </section>
+
+    <!-- ─── 16 · DUO SPLIT — Fun beside Pro ────────────────────────────────
+         The only slide where both modes appear at once. Identical markup in
+         each half; only data-mode differs. That is the whole point. -->
+    <section class="slide" data-label="Never mix" data-mode="fun" style="padding:0;">
+      <div class="duo">
+        <div class="duo__half" data-mode="fun">
+          <span class="duo__tag">Fun</span>
+          <img class="logo" src="img/wordmark-fun-light.svg" alt="Entrepreneurs Meet" style="width:300px;">
+          <p style="font-size:var(--fs-h5); text-align:center; font-weight:700; max-width:20ch;">Where good ideas and good people find each other.</p>
+        </div>
+        <div class="duo__half" data-mode="pro">
+          <span class="duo__tag">Pro</span>
+          <img class="logo" src="img/wordmark-pro-slate.svg" alt="Entrepreneurs Meet" style="width:300px;">
+          <p style="font-size:var(--fs-h5); text-align:center; font-weight:700; max-width:20ch;">Talent doesn't escape to paradise. It builds a future there.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 17 · LOGO REVEAL ───────────────────────────────────────────────
+         Pure CSS, ~2.4s on entry, replays if you step back onto it. Nothing to
+         encode and nothing that can fail to load in the room. -->
+    <section class="slide is-page" data-label="The reveal" data-mode="fun" style="align-items:center; justify-content:center; gap:52px;">
+      <div class="reveal">
+        <span class="reveal__rule"></span>
+        <img class="logo reveal__mark" src="img/wordmark-fun-light.svg" alt="Entrepreneurs Meet">
+      </div>
+      <p class="reveal__caption" style="font-size:var(--fs-lead); text-align:center; color:rgb(from var(--ink) r g b / .75); max-width:34em;">
+        Caption lands after the wipe.
+      </p>
+    </section>
+
+    <!-- ─── 18 · CLOSING ───────────────────────────────────────────────────
+         Deep band, no running header or footer. -->
+    <section class="slide" data-label="Closing" data-mode="fun" style="align-items:center; justify-content:center; gap:36px; text-align:center;">
+      <h2 style="font-size:var(--fs-display); line-height:1.04; max-width:16ch;" data-anim="fade"><mark>Thank you</mark><br>for being here.</h2>
+      <p style="font-size:var(--fs-lead); color:rgb(from var(--ink-dark) r g b / .8);" data-anim="fade">
+        Next gathering: <b>Thursday DD Month</b> — last Thursday of the month, as always.
+      </p>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:14px;" data-anim="fade">
+        <img class="logo" src="img/wordmark-fun-dark.svg" alt="Entrepreneurs Meet" style="width:185px;">
+        <span class="eyebrow" style="color:rgb(from var(--ink-dark) r g b / .6); font-weight:500;">emcagliari.com</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════════
+         The remaining archetypes are commented out because each one needs an
+         asset the template does not ship. Uncomment and supply the asset.
+
+         deck.js collects .slide document-wide, so these MUST stay inside a real
+         HTML comment — a hidden wrapper div would put them in the running order.
+         ══════════════════════════════════════════════════════════════════════ -->
+
+    <!-- ─── 19 · GLYPH GRID ────────────────────────────────────────────────
+         Seven-column grid. Glyph paths are INLINED <svg>, never <img> — that is
+         how each mark takes the current mode's accent from one neutral source.
+         Copy the path data out of the brand manual's logo kit.
+    <section class="slide is-page" data-label="The glyphs" data-mode="fun" style="justify-content:center; gap:52px;">
+      <div class="glyphs">
+        <div class="glyph-card" data-anim="lift" data-delay="1">
+          <svg class="glyph" viewBox="0 0 100 100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="…"/></svg>
+          <b>Spark</b><span>Enterprise · ambition.</span>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- ─── 20 · EVENT BANNER ──────────────────────────────────────────────
+         An HTML rebuild of the promo banner, so the type stays live rather than
+         being baked into a JPEG. Needs img/banner-bg.jpg — per-deck promo art,
+         not vendored here. Without it .banner falls back to its flat #04070f.
+    <section class="slide" data-label="Event banner" data-mode="fun" style="padding:0;">
+      <div class="banner">
+        <div class="banner__pill">Event kicker</div>
+        <div class="banner__title">Event Title</div>
+        <div class="banner__sub">Tagline. <b>Emphasis.</b></div>
+      </div>
+    </section>
+    -->
+
+    <!-- ─── 21 · STANDALONE VIDEO, no strip ────────────────────────────────
+    <section class="slide" data-label="Film" data-mode="fun" data-autoplay style="padding:0;">
+      <div class="video-wrap">
+        <video preload="auto" playsinline>
+          <source src="media/film.mp4" type="video/mp4">
+        </video>
+        <div class="video-hint">Space or click to pause</div>
+      </div>
+      <div class="video-missing">
+        <div>
+          <p style="font-size:var(--fs-h3); font-weight:700; margin-bottom:16px;">Film not found</p>
+          <p style="font-size:var(--fs-body); opacity:.75; line-height:1.6;">Put the file at <b>media/film.mp4</b>.</p>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- Slide number. Lives inside #canvas so it scales with the slide; deck.js
+         writes the value and matches it to the band's ink colour. -->
+    <div id="slideno"></div>
+  </div>
+</div>
+
+<!-- ══ PRESENTER CHROME ══════════════════════════════════════════════════════
+     deck.js dereferences #progress, #canvas, #counter, #overview and both
+     #navzones zones without a null check. Remove any one of them and the deck
+     throws on boot and renders blank. #slideno is guarded and optional;
+     #blank, #help, #hud and #stage are styling only. ══════════════════════ -->
+<div id="navzones">
+  <div class="zone prev"><span class="arrow">‹</span></div>
+  <div class="zone next"><span class="arrow">›</span></div>
+</div>
+
+<div id="hud">
+  <span id="counter">01 / 01</span>
+  <span class="key">? for keys</span>
+</div>
+
+<div id="blank"></div>
+<div id="overview"></div>
+
+<div id="help">
+  <div>
+    <h3>Controls</h3>
+    <table>
+      <tr><td>→ ↓ Space PageDn</td><td>Next slide — also the clicker's forward button</td></tr>
+      <tr><td>← ↑ PageUp</td><td>Previous slide — also the clicker's back button</td></tr>
+      <tr><td>Space / K</td><td>Play or pause the video, on slides that have one</td></tr>
+      <tr><td>F / F5</td><td>Fullscreen</td></tr>
+      <tr><td>B or .</td><td>Blank to black — any key brings the slide back</td></tr>
+      <tr><td>W or ,</td><td>Blank to white</td></tr>
+      <tr><td>O</td><td>Overview grid — click any slide to jump to it</td></tr>
+      <tr><td>M</td><td>Flip this slide between Fun and Pro</td></tr>
+      <tr><td>1 – 9</td><td>Jump to that slide</td></tr>
+      <tr><td>Home / End</td><td>First / last slide</td></tr>
+      <tr><td>?</td><td>Close this</td></tr>
+    </table>
+  </div>
+</div>
+
+<script src="deck.js?v=9395ff7e"></script>
+</body>
+</html>
