@@ -12,3 +12,7 @@
 # ...but the template keeps its empty media/ so `cp -R` yields the directory.
 !_template/media/
 !_template/media/.gitkeep
+
+# Post-event web builds. Regenerate with `npm run web:build <deck>`.
+/dist/
+node_modules/

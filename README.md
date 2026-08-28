@@ -98,6 +98,22 @@ A slide is entirely Fun or entirely Pro — never a blend. The one exception is 
 
 Both are stdlib-only and must be run **from inside the deck directory**.
 
+## After the event — publishing to the Library
+
+The venue build is wrong for the web. `scripts/build-web-deck.mjs` collapses a deck into
+one self-contained HTML file: video slides dropped, every raster re-encoded to WebP capped
+at the 1600x900 canvas, and CSS, JS, fonts and images inlined as `data:` URIs.
+
+```bash
+npm install                                    # once — sharp, build tooling only
+npm run web:build 2026-08-27-summer-party
+  → dist/2026-08-27-summer-party.deck.html     # 23.6 MB across 72 files → 6.6 MB in one
+```
+
+It still runs offline from `file://`, so it doubles as the archive copy. Upload it to a
+new Library item at `/admin/library`, tag it **`Events`**, and leave **Members Only** on.
+The Library renders an `.html` file in a sandboxed 16:9 iframe with a fullscreen button.
+
 ## Assets
 
 `media/` and `sources/` are gitignored. **Video is never committed** — it lives on the

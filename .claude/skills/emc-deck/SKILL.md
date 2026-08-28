@@ -204,6 +204,37 @@ cwd-relative (`pathlib.Path('index.html')`), so running it from the repo root fa
 `EXCLUDE` filters slides by `data-label` prefix when a deck has streams worth
 omitting, such as presenter bios.
 
+## After the event — the Library build
+
+The venue build is wrong for the web: full-size photography, a multi-megabyte film,
+seventy-odd separate requests. `scripts/build-web-deck.mjs` collapses a deck into one
+self-contained HTML file for the members' Library.
+
+```bash
+node scripts/build-web-deck.mjs <deck-directory>
+  → dist/<deck>.deck.html
+```
+
+It drops every slide containing a `<video>`, re-encodes each raster to WebP capped at the
+1600x900 canvas (nothing can render larger, so nothing larger is carried), and inlines the
+CSS, JS, fonts and images as `data:` URIs. The summer party deck goes 23.6 MB across 72
+files → 6.6 MB in one. The result still runs offline from `file://` — there is nothing
+left for it to fetch — so it doubles as the archive copy.
+
+The script fails loudly if any reference survives un-inlined, rather than shipping a deck
+that would try to fetch from whatever origin it lands on.
+
+Then publish it:
+
+1. `/admin/library` → New → upload `dist/<deck>.deck.html`.
+2. Tag it **`Events`** (type `library`). That one tag is the whole relationship between a
+   deck and the event — it drives the `Event Library · EP nn` eyebrow and breadcrumb and
+   the home page's Event Library band. There is no foreign key.
+3. Leave **Members Only** on. It defaults to on.
+
+The Library show page detects an `.html` file and renders it in a sandboxed 16:9 iframe
+with a fullscreen button. Keyboard control works once the viewer clicks into the deck.
+
 ## Presenting
 
 `?` shows the full key map. Worth knowing while authoring: `O` opens the overview

@@ -81,7 +81,12 @@
         if (slide.querySelector('video')) armVideoDeadline(slide);
         if (slide.dataset.autoplay !== undefined) playVideo(slide);
         syncOverview();
-        history.replaceState(null, '', `#${index + 1}`);
+        // Deep-link the slide number. Guarded because the deck is also embedded in a
+        // sandboxed iframe in the members' Library, where the document has an opaque
+        // origin. Chrome allows a fragment-only replaceState there — verified — but
+        // the History API has a thin history of agreeing across engines, and a slide
+        // deck losing navigation mid-talk is not the place to find out.
+        try { history.replaceState(null, '', `#${index + 1}`); } catch {}
     }
 
     const next = () => show(index + 1);

@@ -1,0 +1,12 @@
+{
+    "name": "emc-presentations",
+    "private": true,
+    "type": "module",
+    "description": "Decks run with zero dependencies; sharp is build tooling for the post-event web build only.",
+    "scripts": {
+        "web:build": "node scripts/build-web-deck.mjs"
+    },
+    "devDependencies": {
+        "sharp": "^0.34.5"
+    }
+}
