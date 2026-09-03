@@ -1,0 +1,94 @@
+# Publishes the Summer Party deck to GitHub Pages as a single self-contained page.
+#
+# Alcyone is licensed from atipo foundry and is not redistributable, so the four faces
+# are gitignored and never reach this repository. They are injected here instead, from
+# encrypted repository secrets, into a build artifact that is served but never committed
+# — so the typeface is on the website and not in the clone. With the secrets unset the
+# build drops the @font-face rules and the deck falls back to system type; that is the
+# only difference, and it is reversible by adding the secrets and re-running.
+#
+#   gh secret set ALCYONE_REGULAR_B64  < <(base64 -i 2026-08-27-summer-party/fonts/Alcyone-Regular.woff2)
+#   gh secret set ALCYONE_MEDIUM_B64   < <(base64 -i 2026-08-27-summer-party/fonts/Alcyone-Medium.woff2)
+#   gh secret set ALCYONE_SEMIBOLD_B64 < <(base64 -i 2026-08-27-summer-party/fonts/Alcyone-SemiBold.woff2)
+#   gh secret set ALCYONE_BOLD_B64     < <(base64 -i 2026-08-27-summer-party/fonts/Alcyone-Bold.woff2)
+name: Deploy deck to Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time; let a run in flight finish rather than cancelling it midway.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  DECK: 2026-08-27-summer-party
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Restore licensed fonts
+        env:
+          ALCYONE_REGULAR_B64: ${{ secrets.ALCYONE_REGULAR_B64 }}
+          ALCYONE_MEDIUM_B64: ${{ secrets.ALCYONE_MEDIUM_B64 }}
+          ALCYONE_SEMIBOLD_B64: ${{ secrets.ALCYONE_SEMIBOLD_B64 }}
+          ALCYONE_BOLD_B64: ${{ secrets.ALCYONE_BOLD_B64 }}
+        run: |
+          mkdir -p "$DECK/fonts"
+          restored=0
+          face () {
+            [ -n "$2" ] || return 0
+            printf '%s' "$2" | base64 -d > "$DECK/fonts/$1"
+            restored=$((restored + 1))
+          }
+          face Alcyone-Regular.woff2  "$ALCYONE_REGULAR_B64"
+          face Alcyone-Medium.woff2   "$ALCYONE_MEDIUM_B64"
+          face Alcyone-SemiBold.woff2 "$ALCYONE_SEMIBOLD_B64"
+          face Alcyone-Bold.woff2     "$ALCYONE_BOLD_B64"
+          echo "restored $restored/4 Alcyone faces"
+          if [ "$restored" -ne 0 ] && [ "$restored" -ne 4 ]; then
+            echo "::warning::Only $restored of 4 faces are set — the deck will mix Alcyone with fallback type."
+          fi
+          if [ "$restored" -eq 0 ]; then
+            echo "::notice::No font secrets set — building on the Inter/system-ui fallback stack."
+          fi
+
+      - run: npm ci
+
+      - name: Build the deck
+        run: npm run web:build "$DECK"
+
+      - name: Assemble the site
+        run: |
+          mkdir -p _site
+          cp "dist/$DECK.deck.html" _site/index.html
+          ls -lh _site
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

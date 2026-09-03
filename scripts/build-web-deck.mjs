@@ -19,6 +19,7 @@
  */
 import sharp from 'sharp';
 import { readFile, writeFile, mkdir, stat } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import path from 'node:path';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
@@ -61,6 +62,22 @@ function dropVideoSlides(html) {
         /<video[\s>]/.test(section) ? (dropped++, '') : section
     );
     return { html: out, dropped };
+}
+
+/**
+ * Alcyone is licensed for one website and is gitignored, so a clone — CI included —
+ * has none of the four faces. Rather than fail, drop the @font-face rules whose file
+ * is missing: every `font-family` in deck.css names `Alcyone` first and a fallback
+ * after it, so the deck renders on the system face instead of on nothing.
+ */
+function dropMissingFaces(css, deckDir) {
+    const dropped = [];
+    const out = css.replace(/^@font-face \{[^}]*?src:url\('([^']+)'\)[^}]*\}\n?/gm, (rule, rel) => {
+        if (existsSync(path.join(deckDir, rel))) return rule;
+        dropped.push(rel);
+        return '';
+    });
+    return { css: out, dropped };
 }
 
 /** Every asset path referenced by the HTML, minus the cache-busting stamp. */
@@ -117,9 +134,16 @@ let html = await readFile(path.join(deckDir, 'index.html'), 'utf8');
 let css = await readFile(path.join(deckDir, 'deck.css'), 'utf8');
 const js = await readFile(path.join(deckDir, 'deck.js'), 'utf8');
 
+const faces = dropMissingFaces(css, deckDir);
+css = faces.css;
+
 const sourceSize = Buffer.byteLength(html) + Buffer.byteLength(css) + Buffer.byteLength(js);
 
 console.log(`\nWeb deck — ${slug}\n`);
+
+if (faces.dropped.length) {
+    console.log(`  fonts:  ${faces.dropped.length} @font-face dropped — not present, falling back to system type`);
+}
 
 const slidesBefore = (html.match(/<section class="slide/g) ?? []).length;
 ({ html } = ((r) => (console.log(`  slides: ${slidesBefore} → ${slidesBefore - r.dropped}  (${r.dropped} video)`), r))(

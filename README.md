@@ -69,7 +69,7 @@ Three rules matter more than the rest:
    transform. A `vw`/`vh` anywhere inside it re-measures against the browser window
    instead, and the slide comes out a different shape on the projector.
 2. **Relative paths only.** No absolute URLs, no CDN, no Google Fonts. Alcyone is
-   vendored in `fonts/`.
+   vendored in `fonts/` — see [Fonts](#fonts), which this repository does not carry.
 3. **Don't remove the chrome.** `deck.js` needs `#progress`, `#canvas`, `#counter`,
    `#overview` and both `#navzones` zones. Drop one and the deck renders blank.
 
@@ -114,6 +114,26 @@ It still runs offline from `file://`, so it doubles as the archive copy. Upload 
 new Library item at `/admin/library`, tag it **`Events`**, and leave **Members Only** on.
 The Library renders an `.html` file in a sandboxed 16:9 iframe with a fullscreen button.
 
+## Fonts
+
+Alcyone is licensed from [atipo foundry](https://www.atipofoundry.com/license) for one
+website, and the licence does not permit redistribution — so the four `.woff2` faces are
+gitignored and a fresh clone does not contain them. Copy them into each deck's `fonts/`
+directory from the organisers' shared drive:
+
+```
+fonts/Alcyone-Regular.woff2      400
+fonts/Alcyone-Medium.woff2       500
+fonts/Alcyone-SemiBold.woff2     600
+fonts/Alcyone-Bold.woff2         700
+```
+
+Without them the deck still runs — `deck.css` carries `'Alcyone', Inter, system-ui,
+sans-serif` throughout, so it falls back to the system face — but the type is not the
+brand's and it is not what to put on a projector. The web build drops the `@font-face`
+rules rather than fail when the files are absent, which is how the public GitHub Pages
+copy is built.
+
 ## Assets
 
 `media/` and `sources/` are gitignored. **Video is never committed** — it lives on the
@@ -129,5 +149,6 @@ deck can never surprise you.
 
 ## Provenance
 
-The engine and template are MIT. The brand assets and the Alcyone typeface are
-Entrepreneurs Meet's and are **not** redistributable — keep this repository private.
+The engine and template are MIT. The brand assets are Entrepreneurs Meet's, and the
+Alcyone typeface is licensed from atipo foundry — neither is redistributable, which is
+why the typeface is not in this repository. See [Fonts](#fonts).

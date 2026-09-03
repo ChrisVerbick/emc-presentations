@@ -41,7 +41,9 @@ copy the file forward into the deck you are working on.
   library, write the ten lines instead or drop the idea.
 - **Must run from `file://` offline.** Every `href` and `src` is relative. No
   absolute paths, no `https://` assets, no Google Fonts — Alcyone is vendored in
-  `fonts/` as four `.woff2` files.
+  `fonts/` as four `.woff2` files. Those files are **gitignored** (licensed, not
+  redistributable); a clone renders on the `Inter, system-ui` fallback until they are
+  copied in from the organisers' shared drive.
 - **The canvas is fixed at 1600×900.** `deck.js` scales the whole `#canvas` box with
   one CSS transform. Every size inside it is **px, em, ch or %** — never `vw`, `vh`,
   `vmin`, `vmax`, `svh` or `dvh`. A viewport unit re-measures against the browser
@@ -165,7 +167,7 @@ the current mode's accent from one neutral source.
 
 | Path | Contents | Git |
 |---|---|---|
-| `fonts/` | Alcyone Regular/Medium/SemiBold/Bold `.woff2` | committed, shared |
+| `fonts/` | Alcyone Regular/Medium/SemiBold/Bold `.woff2` | **gitignored — licensed, copy in locally** |
 | `img/logomark-*.svg`, `img/wordmark-*.svg` | brand marks, per band and mode | committed, shared |
 | `img/speakers/` | portraits, company logos | per-deck |
 | `img/site/` | product screenshots, 1440×900 | per-deck |

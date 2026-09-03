@@ -16,3 +16,8 @@
 # Post-event web builds. Regenerate with `npm run web:build <deck>`.
 /dist/
 node_modules/
+
+# Alcyone is licensed from atipo foundry for one website — emcagliari.com — and the
+# licence does not cover redistribution. The .woff2 faces live in each deck directory
+# on the presenting laptop, never in the repo, where a clone would hand them out.
+*/fonts/*.woff2
