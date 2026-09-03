@@ -244,6 +244,15 @@ grid — live scaled clones of every slide, the fastest way to review pacing and
 alternation. `M` flips the current slide between Fun and Pro. `#7` in the URL
 deep-links to slide 7. `B` blanks to black.
 
+Navigation is **horizontal only** off the keyboard: swipe left/right, or scroll
+left/right on a trackpad. A vertical scroll or swipe does nothing — in an embedded
+iframe that gesture belongs to the page around the deck, not to the deck. Keyboard,
+clicker and click zones are unaffected; ↑/↓ still step slides.
+
+On a phone held upright the deck shows a dismissible "turn your phone" prompt rather
+than laying the canvas on its side. It appears only on coarse pointers, and only when
+turning the device would buy at least 1.25x the scale.
+
 Video: entering a slide arms an 8-second readiness deadline and shows a plain "not
 found" card if the file never produces a frame. Leaving a slide always stops its
 video. Test every video slide before the event — that card exists because

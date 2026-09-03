@@ -28,22 +28,39 @@
 
     /* ── Scaling ─────────────────────────────────────────────────────────── */
 
-    // A phone held upright would otherwise render the 16:9 slide as a thin strip
-    // across the middle of the screen. Lay the canvas on its side instead so it
-    // fills the display, and remember it so touch input can follow suit.
-    let rotated = false;
+    // A 16:9 slide on an upright phone renders as a strip about a fifth of the
+    // screen tall. This used to lay the canvas on its side to fill the display,
+    // which suits a deck you opened on purpose and startles a reader who has just
+    // tapped a link and found the page lying down. Ask instead, and let them turn
+    // the device — coarse pointers only, since a narrow window is resizable.
+    const coarse = window.matchMedia('(pointer:coarse)');
+    let turnDismissed = false;
+
+    const turn = document.createElement('div');
+    turn.id = 'turn';
+    turn.setAttribute('role', 'status');
+    turn.innerHTML =
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"'
+        + ' stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+        + '<rect x="8" y="2" width="8" height="14" rx="1.6"></rect>'
+        + '<path d="M4.5 15.5a8 8 0 0 0 7 6.4"></path><path d="M4.2 19.4 4.5 15.4l4 .4">'
+        + '</path></svg>'
+        + '<span>Turn your phone for a full-size slide</span>'
+        + '<button type="button" aria-label="Dismiss">\u00d7</button>';
+    turn.querySelector('button').addEventListener('click', () => {
+        turnDismissed = true;
+        body.classList.remove('cramped');
+    });
 
     function fit() {
         const vw = window.innerWidth, vh = window.innerHeight;
         const upright = Math.min(vw / DESIGN_W, vh / DESIGN_H);
         const sideways = Math.min(vh / DESIGN_W, vw / DESIGN_H);
-        // Turn the slide only when doing so buys real size — a phone held upright
-        // gains ~1.8x, a tablet ~1.4x, a near-square window barely anything, and
-        // rotating for a marginal gain just disorients. No device-width guesswork.
-        rotated = sideways > upright * 1.25;
-        canvas.style.setProperty('--scale', rotated ? sideways : upright);
-        canvas.style.setProperty('--rotate', rotated ? '90deg' : '0deg');
-        document.body.classList.toggle('rotated', rotated);
+        canvas.style.setProperty('--scale', upright);
+        // Only worth asking when turning buys real size: a phone held upright gains
+        // ~1.8x, a tablet ~1.4x, a near-square window nothing. No device sniffing.
+        body.classList.toggle('cramped',
+            coarse.matches && !turnDismissed && sideways > upright * 1.25);
     }
 
     /* ── Navigation ──────────────────────────────────────────────────────── */
@@ -311,16 +328,18 @@
         next();
     });
 
-    // Mouse wheel — deliberately throttled, so a trackpad's inertia doesn't skip
-    // four slides on one flick.
+    // Mouse wheel — horizontal only, and deliberately throttled so a trackpad's
+    // inertia doesn't skip four slides on one flick. Vertical belongs to whatever
+    // is embedding the deck: in the Library's iframe a plain scroll down the page
+    // was walking the deck forward under the reader.
     let wheelLock = 0;
     window.addEventListener('wheel', (e) => {
         if (body.classList.contains('overview')) return;
         const now = Date.now();
         if (now - wheelLock < 600) return;
-        if (Math.abs(e.deltaY) < 20) return;
+        if (Math.abs(e.deltaX) < 20) return;
         wheelLock = now;
-        e.deltaY > 0 ? next() : prev();
+        e.deltaX > 0 ? next() : prev();
     }, { passive: true });
 
     // Touch — for reviewing on a tablet.
@@ -330,12 +349,10 @@
     }, { passive: true });
     window.addEventListener('touchend', (e) => {
         if (touchX === null) return;
-        const rawX = e.changedTouches[0].clientX - touchX;
-        const rawY = e.changedTouches[0].clientY - touchY;
-        // When the canvas is rotated the slide's horizontal axis runs down the
-        // screen, so a swipe along the phone's long edge has to map to it.
-        const dx = rotated ? rawY : rawX;
-        const dy = rotated ? rawX : rawY;
+        const dx = e.changedTouches[0].clientX - touchX;
+        const dy = e.changedTouches[0].clientY - touchY;
+        // Horizontal only. A swipe up or down is the reader scrolling the page the
+        // deck is embedded in, not a request for the next slide.
         if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) dx < 0 ? next() : prev();
         touchX = touchY = null;
     }, { passive: true });
@@ -352,6 +369,7 @@
     /* ── Boot ────────────────────────────────────────────────────────────── */
 
     window.addEventListener('resize', () => { fit(); sizeThumbs(); });
+    body.appendChild(turn);
     fit();
     buildOverview();
 

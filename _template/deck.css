@@ -51,12 +51,12 @@ body { font-family:'Alcyone', Inter, system-ui, sans-serif; -webkit-font-smoothi
 /* The scaled 1600×900 canvas. JS sets --scale; nothing else moves. */
 /* Centred by translate, not by the stage's grid alignment. Once the 1600px canvas
    is wider than the viewport — every phone — grid centring falls back to "safe"
-   and pins the overflowing item to the start, which threw the rotated slide clean
-   off screen. translate(-50%,-50%) has no such fallback. */
+   and pins the overflowing item to the start, which throws the slide off screen.
+   translate(-50%,-50%) has no such fallback. */
 #canvas {
   position:absolute; left:50%; top:50%;
   width:calc(var(--W) * 1px); height:calc(var(--H) * 1px);
-  transform:translate(-50%, -50%) rotate(var(--rotate, 0deg)) scale(var(--scale, 1));
+  transform:translate(-50%, -50%) scale(var(--scale, 1));
   transform-origin:center center;
   overflow:hidden; background:var(--band-deep);
 }
@@ -377,7 +377,6 @@ mark {
        font:600 13px/1 'Alcyone', system-ui, sans-serif; letter-spacing:1px;
        color:#fff; opacity:.35; transition:opacity .4s; pointer-events:none; }
 body.idle #hud, body.idle #navzones .arrow { opacity:0; }
-body.rotated #hud, body.rotated #navzones .arrow, body.rotated #progress { display:none; }
 #hud .key { opacity:.6; font-size:11px; letter-spacing:.5px; text-transform:uppercase; }
 
 /* Click zones: left third back, right two-thirds forward. Arrows only appear
@@ -389,6 +388,25 @@ body.rotated #hud, body.rotated #navzones .arrow, body.rotated #progress { displ
 #navzones .arrow { font-size:28px; color:#fff; opacity:.28; transition:opacity .3s;
                    user-select:none; text-shadow:0 2px 12px rgba(0,0,0,.6); }
 #navzones .zone:hover .arrow { opacity:.75; }
+
+/* Turn-your-phone prompt (deck.js builds it; body.cramped shows it). A 16:9 slide
+   on an upright phone is a strip a fifth of the screen tall, so say so rather than
+   silently laying the canvas on its side. Above the nav zones so the dismiss button
+   takes the tap, below #blank so B still covers everything. */
+#turn { position:fixed; left:50%; bottom:20px; transform:translateX(-50%); z-index:70;
+        display:none; align-items:center; gap:10px;
+        max-width:calc(100vw - 28px); padding:11px 12px 11px 15px;
+        border-radius:999px; background:rgba(12,24,50,.94); color:#fff;
+        font:600 14px/1.25 'Alcyone', Inter, system-ui, sans-serif;
+        box-shadow:0 6px 26px rgba(0,0,0,.5); }
+body.cramped #turn { display:flex; }
+#turn svg { flex:0 0 auto; width:21px; height:21px; color:var(--highlight);
+            animation:turn-tip 2.6s ease-in-out infinite; }
+#turn button { flex:0 0 auto; margin-left:2px; width:26px; height:26px; padding:0;
+               border:0; border-radius:50%; background:rgb(255 255 255 / .12);
+               color:#fff; font:400 17px/1 system-ui, sans-serif; cursor:pointer; }
+@keyframes turn-tip { 0%, 62%, 100% { transform:rotate(0deg); }
+                      78%, 90% { transform:rotate(-88deg); } }
 
 /* Blank screen (B or . — the standard clicker blank key) */
 #blank { position:fixed; inset:0; background:#000; z-index:80; display:none; }
@@ -495,6 +513,7 @@ body.help #help { display:grid; }
   .slide[data-active] .reveal, .slide[data-active] .reveal * { animation:none; }
   .reveal__mark { clip-path:none; }
   .reveal__rule { display:none; }
+  #turn svg { animation:none; }
 }
 
 /* Print / PDF export: every slide on its own page, chrome removed */
@@ -504,7 +523,7 @@ body.help #help { display:grid; }
   #stage { position:static; display:block; }
   #stage { position:static; }
   #canvas { position:static; transform:none; width:1600px; height:900px; }
-  #progress, #hud, #navzones, #overview, #help, #blank { display:none !important; }
+  #progress, #hud, #navzones, #overview, #help, #blank, #turn { display:none !important; }
   .slide { position:relative; opacity:1 !important; visibility:visible !important;
            page-break-after:always; break-after:page; }
   .slide[data-active] [data-anim], .slide [data-anim] { animation:none !important; opacity:1 !important; transform:none !important; }
