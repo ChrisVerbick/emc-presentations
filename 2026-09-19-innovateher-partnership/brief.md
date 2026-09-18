@@ -19,7 +19,7 @@ need confirming.
 ## 01 · Cover
 Band: deep
 
-Title: Entrepreneurs Meet × Innovate Her 
+Title: Innovate Her × Entrepreneurs Meet 
 Sub: A partnership proposal.
 Eyebrow: 19 September 2026 · Cagliari
 

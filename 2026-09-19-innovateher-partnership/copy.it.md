@@ -7,7 +7,7 @@ header is omitted; footers appear as `footer:` where they carry anything of thei
 
 ×
 
-### Entrepreneurs Meet × Innovate Her
+### Innovate Her × Entrepreneurs Meet
 
 Una proposta di partnership.
 
