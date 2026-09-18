@@ -19,9 +19,9 @@ footer: Chi siamo
 
 **Chi siamo**
 
-### Entrepreneurs Meet è dove le buone idee e le brave persone si incontrano.
+### Entrepreneurs Meet è il luogo in cui le buone idee e le persone di valore si incontrano.
 
-Da tre anni costruiamo a Cagliari una community di imprenditori senza scopo di lucro, gestita dai suoi membri. È nata da una domanda: perché qui così tante persone costruiscono da sole?
+Da oltre 3 anni stiamo costruendo a Cagliari una comunità senza scopo di lucro di imprenditori, gestita dai suoi membri. Tutto è partito da una domanda: perché qui così tante persone lavorano da sole?
 
 185
 
@@ -33,13 +33,13 @@ Nazionalità.
 
 41
 
-Eventi, in 19 sedi diverse a Cagliari.
+Eventi, distribuiti in 19 sedi a Cagliari.
 
 30+
 
 Imprenditori ospiti che hanno raccontato la loro storia.
 
-Volontari · Tutti i settori · Nessuna sede fissa
+Gestito da volontari · Senza limiti di settore · Senza sede fissa
 
 ## 03 · Pitch · Cosa facciamo
 
@@ -47,56 +47,56 @@ footer: Cosa facciamo
 
 **Cosa facciamo**
 
-### Non è il solito evento di networking.
+### Questo non è il solito evento di networking.
 
-- Ogni mese Il meetup L’ultimo giovedì di ogni mese, alle 19:00, ogni volta in una sede diversa. Si parte con sfide collaborative, poi conversazioni vere e networking aperto. Trentacinque eventi, finora.
-- Due volte l’anno Gli eventi principali La cena di Kickoff a gennaio. Il Summer Party ad agosto a Torre delle Stelle.
-- Nel mezzo I formati nati intorno NetWalking sul Bastione. I workshop Hustle & Grow. I Working Day. Brunch con un investitore.
-- Sempre La piattaforma entrepreneursmeet.it: eventi e biglietteria, la directory dei membri, una library degli eventi e base di conoscenza, un blog. Costruita dai membri, per i membri.
+- Mensile Il meetup L’ultimo giovedì di ogni mese, alle 19:00, in una sede diversa ogni mese. Si inizia con sfide collaborative, seguite da conversazioni autentiche e networking aperto. Trentacinque eventi e il numero continua a crescere.
+- Due volte all’anno Gli eventi principali Cena di apertura a gennaio. La festa estiva ad agosto alla Torre delle Stelle.
+- Nel frattempo I format nati attorno all’iniziativa NetWalking sul Bastione. Workshop Hustle & Grow. Working Days. Brunch con un investitore.
+- Sempre La piattaforma entrepreneursmeet.it — elenco degli eventi e biglietteria, un elenco dei membri, un archivio di eventi e una base di conoscenze, un blog. Realizzata dai membri, per i membri.
 
-## 04 · Pitch · Perché conta
+## 04 · Pitch · Perché è importante
 
-footer: Perché conta
+footer: Perché è importante
 
 **La nostra visione e il nostro obiettivo**
 
-Mettere Cagliari sulla mappa del mondo — e fare in modo che chi arriva si senta a casa.
+Portare Cagliari sulla mappa del mondo — e fare in modo che chiunque vi arrivi si senta a casa.
 
-Talento, persone guidate dai valori e capitale, attratti dall’isola e dalla bella vita. Vediamo una Cagliari capitale mediterranea dell’impresa: inclusiva, colta, dallo sguardo globale.
+Talento, persone guidate dai valori e capitali, attratti dall’isola e dalla bella vita. Immaginiamo una Cagliari che si affermi come capitale mediterranea delle iniziative imprenditoriali: inclusiva, colta, con una mentalità globale.
 
-## 05 · La nostra community
+## 05 · La nostra comunità
 
-footer: La nostra community
+footer: La nostra comunità
 
-**La nostra community**
+**La nostra comunità**
 
 ### Chi si presenta il giovedì.
 
-Founder e builder
+Fondatori e imprenditori
 
-Guidano un’azienda oggi, o stanno per farlo.
+Chi gestisce un’azienda oggi, o sta per farlo.
 
-Freelance e consulenti
+Lavoratori autonomi e consulenti
 
-Un’impresa di una persona sola, in cerca del prossimo collaboratore.
+Imprenditori in solitaria, alla ricerca del prossimo collaboratore.
 
-Remote worker e nomadi
+Lavoratori da remoto e nomadi
 
-Arrivati per l’isola, rimasti per le persone.
+Siamo venuti per l’isola, restiamo per la gente.
 
-Sardi che fanno impresa qui
+Residenti che costruiscono a casa propria
 
-Titolari d’impresa e imprenditori sardi.
+Imprenditori e titolari di attività sardi.
 
-Investitori e mentor
+Investitori e mentori
 
-Capitale ed esperienza, in cerca di un motivo per restare.
+Capitale ed esperienza, alla ricerca di un motivo per restare.
 
 I curiosi
 
-Non ancora convinti. Sono venuti lo stesso. Sono tornati.
+Non ne sono ancora sicuri. Sono venuti lo stesso. Sono tornati.
 
-185 membri · 18 nazionalità · nuovi arrivati e sardi, che costruiscono insieme
+185 membri · 18 nazionalità · nuovi arrivati e gente del posto, che costruiscono insieme
 
 ## 06 · Quattro modi per entrare
 
@@ -106,29 +106,29 @@ footer: La proposta
 
 **La proposta**
 
-### Quattro sessioni che potremmo tenere a Innovate Her.
+### Quattro sessioni che potremmo organizzare a Innovate Her.
 
 ## 07 · Sessione A
 
 footer: Sessione A di quattro
 
-**Sessione A · Talk**
+**Sessione A · Interventi**
 
-### Storie di founder, in formato breve.
+### Storie dei fondatori, raccontate in forma sintetica.
 
-Il nostro formato mensile, portato sul palco della conferenza: quattro o cinque membri, sette minuti a testa, una cosa vera che hanno imparato.
+Il nostro formato mensile, portato sul palco della conferenza: quattro o cinque membri, sette minuti ciascuno, una cosa concreta che hanno imparato.
 
 Formato
 
-Lightning talk, moderati.
+Interventi lampo, moderati.
 
 Durata
 
 45 minuti.
 
-Per chi
+A chi è rivolto
 
-Chi è all’inizio del percorso e vuole la prova che qui si può fare.
+Chiunque sia agli inizi del proprio percorso e desideri la conferma che qui sia possibile farlo.
 
 ## 08 · Sessione B
 
@@ -136,23 +136,23 @@ footer: Sessione B di quattro
 
 **Sessione B · Workshop**
 
-### Tavoli rotondi su una domanda difficile.
+### Tavole rotonde su una domanda complessa.
 
-Tavoli da otto, con un facilitatore. Ognuno prende un problema, ci lavora per quaranta minuti e riporta al gruppo. L’audio viene registrato e i risultati consegnati.
+Tavoli di otto persone con un facilitatore. Ogni tavolo affronta un problema, ci lavora per quaranta minuti e presenta i risultati. Viene registrato l’audio e vengono forniti i risultati.
 
 Formato
 
-Tavoli rotondi facilitati.
+Tavole rotonde con moderatore.
 
 Durata
 
 60 minuti.
 
-Per chi
+A chi è rivolto
 
-Operatori e stakeholder a cui sta a cuore una causa o una missione.
+Operatori e parti interessate che hanno a cuore una causa o una missione.
 
-Problema / tema da definire con il team di Innovate Her.
+Problema/argomento da definire insieme al team di Innovate Her.
 
 ## 09 · Sessione C
 
@@ -160,21 +160,21 @@ footer: Sessione C di quattro
 
 **Sessione C · Networking**
 
-### L’aperitivo, facilitato da noi.
+### L’aperitivo, organizzato da noi.
 
-La parte delle nostre serate per cui la gente torna, alla fine dell’evento principale di Innovate Her. Un host a ogni tavolo, così nessuno resta da solo con un bicchiere in mano.
+Il momento delle nostre serate per cui le persone tornano, al termine dell’evento principale di Innovate Her. Ci sono ospiti a ogni tavolo, così nessuno rimane da solo con il proprio drink.
 
 Formato
 
-Networking con host.
+Networking guidato.
 
 Durata
 
-90 minuti, a fine giornata.
+90 minuti, a chiusura della giornata.
 
-Per chi
+A chi è rivolto
 
-Tutti. Soprattutto chi è venuto da solo.
+A tutti. Soprattutto a chi è venuto da solo.
 
 ## 10 · Sessione D
 
@@ -182,9 +182,9 @@ footer: Sessione D di quattro
 
 **Sessione D · NetWalking + Aperitivo**
 
-### Visita guidata con una guida professionista, aperitivo facoltativo alla fine.
+### Visita guidata da una guida professionista, con aperitivo facoltativo al termine.
 
-I nostri incontri in movimento, uniti a una passeggiata nella storia di Cagliari. Si finisce da Biffi’s American Bar per un drink.
+I nostri incontri in movimento, abbinati a un percorso storico a piedi per Cagliari. Si conclude all’American Bar di Biffi per un drink.
 
 Formato
 
@@ -192,11 +192,11 @@ Visita guidata e aperitivo.
 
 Durata
 
-45 minuti di visita, 2 ore di aperitivo.
+Visita di 45 minuti, aperitivo di 2 ore.
 
-Per chi
+A chi è rivolto
 
-Tutti. Soprattutto chi è arrivato a Cagliari da solo.
+A tutti. Soprattutto a chi è venuto da solo a Cagliari.
 
 ## 11 · Partner
 
@@ -206,9 +206,9 @@ footer: Partner
 
 **Un’ultima cosa**
 
-### Cerchiamo partner commerciali.
+### Stiamo cercando partner commerciali.
 
-Non per fare margine. Per aiutarci a costruire e far crescere una community.
+Non per realizzare un margine di profitto, ma per contribuire a costruire e far crescere una comunità.
 
 ## 12 · Il budget
 
@@ -216,27 +216,27 @@ footer: Partner · Il budget
 
 **Quanto costa un anno**
 
-### Diecimila euro. Quattordici serate. Incontri con i professionisti del posto che non hanno prezzo.
+### Diecimila euro. Quattordici serate. Interazioni inestimabili con i professionisti del territorio.
 
-€6.000
+6.000 €
 
-Dodici meetup mensili
+Dodici incontri mensili
 
-€500 a serata. Lo spazio, il drink di benvenuto, la cena dell’ospite, il fotografo.
+500 € a serata. Lo spazio, l’aperitivo di benvenuto, la cena per un ospite d’onore, il fotografo.
 
-€4.000
+4.000 €
 
 Due eventi principali
 
-€2.000 ciascuno. Il Kickoff a gennaio, il Summer Party ad agosto. Cento persone, un palco, cibo e bevande.
+2.000 € ciascuno. Lancio a gennaio, festa estiva ad agosto. Cento persone, un palco, cibo e bevande.
 
-€10.000
+10.000 €
 
-L’anno intero
+L’intero anno
 
-€54 a membro. €714 a evento. Zero in stipendi: siamo tutti volontari, qui nessuno è pagato.
+54 € a socio. 714 € per evento. Zero spese per gli stipendi: tutti sono volontari, nessuno qui viene pagato.
 
-60% · i meetup mensili
+60% · gli incontri mensili
 
 40% · i due eventi principali
 
@@ -246,57 +246,57 @@ footer: Partner · Il budget
 
 **Quanto costa un anno**
 
-### Diecimila euro. Quattordici serate. Incontri con i professionisti del posto che non hanno prezzo.
+### Diecimila euro. Quattordici serate. Interazioni inestimabili con i professionisti del territorio.
 
-Dodici meetup mensili
+Dodici incontri mensili
 
-Lo spazio, il drink di benvenuto, la cena dell’ospite, il fotografo.
+Lo spazio, l’aperitivo di benvenuto, una cena con un ospite d’onore, il fotografo.
 
 Due eventi principali
 
-Il Kickoff a gennaio, il Summer Party ad agosto. Cento persone, un palco, cibo e bevande.
+L’evento di apertura a gennaio, la festa estiva ad agosto. Cento persone, un palco, cibo e bevande.
 
-L’anno intero
+L’intero anno
 
-€50 a membro. €700 a evento. Zero in stipendi: siamo tutti volontari, qui nessuno è pagato.
+50 € a socio. 700 € per evento. Zero spese per gli stipendi: tutti sono volontari, nessuno qui viene pagato.
 
-60% · i meetup mensili
+60% · gli incontri mensili
 
 40% · i due eventi principali
 
-## 14 · Chi raggiungete
+## 14 · Chi raggiungi
 
-footer: Partner · Chi raggiungete
+footer: Partner · A chi ti rivolgi
 
 **Cosa ottiene un partner**
 
-### Il vostro brand nella sala dove si costruisce l’ecosistema di Cagliari.
+### Il tuo marchio nella sala in cui si sta costruendo l’ecosistema di Cagliari.
 
 185
 
-Membri, tutti iscritti per scelta. Non una mailing list.
+Membri, tutti iscritti volontariamente. Non è una mailing list.
 
 18
 
-Nazionalità. Metà della sala si è trasferita qui apposta.
+Nazionalità. Metà dei presenti si è trasferita qui appositamente.
 
 14
 
-Serate l’anno con il vostro nome sul banner, all’ingresso e sul sito.
+Sere all’anno in cui il tuo nome compare sullo striscione, sulla porta e sul sito web.
 
 19
 
-Sedi finora. Ognuna un’attività locale con il proprio pubblico.
+Sedi finora. Ognuna è un’attività locale con la propria rete di contatti.
 
-- Sponsorizzazione eventi Una serata, o l’anno intero.
-- Partnership di community Creare insieme programmi, vantaggi e attività per i membri.
-- Collaborazione istituzionale Aiutateci ad attrarre sull’isola talento e capitale guidati dai valori.
+- Sponsorizzazione degli eventi Una sola serata o per l’intero anno.
+- Partnership con la comunità Co-creazione di programmi, vantaggi e iniziative per i soci.
+- Collaborazione istituzionale Aiutaci ad attirare sull’isola talenti e capitali che condividono i nostri valori.
 
 ## 15 · Chiusura
 
 ### Costruiamolo insieme.
 
-Prossimo incontro: giovedì 24 settembre — l’ultimo giovedì del mese, come sempre. Venite a vedere.
+Prossimo incontro: giovedì 24 settembre — l’ultimo giovedì del mese, come sempre. Venite a dare un’occhiata.
 
 **emcagliari.com**
 
