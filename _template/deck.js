@@ -92,8 +92,7 @@
             slideNo.style.color = getComputedStyle(slide).color;
         }
 
-        progress.style.width = `${((index + 1) / slides.length) * 100}%`;
-        counter.textContent = `${String(index + 1).padStart(2, '0')} / ${slides.length}`;
+        refreshChrome();
 
         if (slide.querySelector('video')) armVideoDeadline(slide);
         if (slide.dataset.autoplay !== undefined) playVideo(slide);
@@ -106,8 +105,58 @@
         try { history.replaceState(null, '', `#${index + 1}`); } catch {}
     }
 
-    const next = () => show(index + 1);
-    const prev = () => show(index - 1);
+    /* ── Skipping ────────────────────────────────────────────────────────
+       S marks the current slide as skipped: next/prev step over it, the progress
+       bar and the overview dim it, print drops it. A direct jump (number key,
+       overview click, #n in the URL) still lands on it, which is how you get back
+       to un-skip it. The set is remembered per deck in localStorage so a decision
+       made in rehearsal holds on the night; data-skip in the markup is the
+       authored default when nothing has been stored yet. */
+    const SKIP_KEY = `emc-skip:${location.pathname}`;
+    const isSkipped = (i) => slides[i].hasAttribute('data-skip');
+    const live = () => slides.reduce((n, s) => n + (s.hasAttribute('data-skip') ? 0 : 1), 0);
+    const livePos = (i) => slides.slice(0, i + 1).filter((s) => !s.hasAttribute('data-skip')).length;
+
+    function step(from, dir) {
+        let i = from + dir;
+        while (i >= 0 && i < slides.length && isSkipped(i)) i += dir;
+        return (i < 0 || i >= slides.length) ? null : i;
+    }
+    function first() { const i = step(-1, 1); return i === null ? 0 : i; }
+    function last() { const i = step(slides.length, -1); return i === null ? slides.length - 1 : i; }
+
+    function saveSkips() {
+        const list = slides.map((s, i) => (s.hasAttribute('data-skip') ? i : -1)).filter((i) => i >= 0);
+        try { localStorage.setItem(SKIP_KEY, JSON.stringify(list)); } catch (_) { /* file:// in some browsers */ }
+    }
+    function loadSkips() {
+        let list = null;
+        try { list = JSON.parse(localStorage.getItem(SKIP_KEY) || 'null'); } catch (_) { /* ignore */ }
+        if (!Array.isArray(list)) return;
+        slides.forEach((s, i) => list.includes(i) ? s.setAttribute('data-skip', '') : s.removeAttribute('data-skip'));
+    }
+    function toggleSkip() {
+        const slide = slides[index];
+        if (slide.hasAttribute('data-skip')) slide.removeAttribute('data-skip');
+        else if (live() > 1) slide.setAttribute('data-skip', '');   // never skip the last live slide
+        else return;
+        saveSkips();
+        refreshChrome();
+        const card = overview.children[index];
+        if (card) card.toggleAttribute('data-skip', slide.hasAttribute('data-skip'));
+    }
+
+    function refreshChrome() {
+        const slide = slides[index];
+        const skipped = slide.hasAttribute('data-skip');
+        progress.style.width = `${(livePos(index) / live()) * 100}%`;
+        counter.textContent = `${String(index + 1).padStart(2, '0')} / ${slides.length}`
+            + (skipped ? ' \u00b7 skipped' : '');
+        body.classList.toggle('on-skipped', skipped);
+    }
+
+    const next = () => { const i = step(index, 1); if (i !== null) show(i); };
+    const prev = () => { const i = step(index, -1); if (i !== null) show(i); };
 
     /* ── Video ───────────────────────────────────────────────────────────── */
 
@@ -213,6 +262,7 @@
         slides.forEach((slide, i) => {
             const card = document.createElement('div');
             card.className = 'card';
+            if (slide.hasAttribute('data-skip')) card.setAttribute('data-skip', '');
 
             const thumb = document.createElement('div');
             thumb.className = 'thumb';
@@ -232,7 +282,7 @@
 
             card.appendChild(thumb);
             card.insertAdjacentHTML('beforeend',
-                `<b>${String(i + 1).padStart(2, '0')}</b><span>${slide.dataset.label || ''}</span>`);
+                `<b>${String(i + 1).padStart(2, '0')}</b><span>${overviewLabel(slide)}</span>`);
             card.addEventListener('click', () => { body.classList.remove('overview'); show(i); });
             overview.appendChild(card);
         });
@@ -259,6 +309,37 @@
     // USB presentation remotes almost all emit PageDown/PageUp. Some Logitech
     // units send F5 to start and Esc to stop instead, and a few send "." to blank
     // — all handled below so a clicker works without configuration.
+    /* ── Language ────────────────────────────────────────────────────────
+       Only decks that ship a #lang switch are bilingual; everything here is a
+       no-op without it. data-label-it (etc.) gives the overview caption in each
+       language; the CSS lang rule then shows the right one. */
+    const langSwitch = document.getElementById('lang');
+    const LANGS = langSwitch ? [...langSwitch.querySelectorAll('button[data-lang]')].map((b) => b.dataset.lang) : [];
+    function overviewLabel(slide) {
+        if (!LANGS.length) return slide.dataset.label || '';
+        return LANGS.map((l) => `<span lang="${l}">${slide.getAttribute('data-label-' + l) || slide.dataset.label || ''}</span>`).join('');
+    }
+    function setLang(l) {
+        if (!LANGS.includes(l)) return;
+        root.setAttribute('data-lang', l);
+        root.lang = l;
+        langSwitch.querySelectorAll('button[data-lang]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === l)));
+        try { localStorage.setItem('emc-lang', l); } catch (_) { /* file:// in some browsers */ }
+    }
+    function toggleLang() {
+        const cur = root.getAttribute('data-lang') || LANGS[0];
+        setLang(LANGS[(LANGS.indexOf(cur) + 1) % LANGS.length]);
+    }
+    if (langSwitch) {
+        langSwitch.addEventListener('click', (e) => {
+            const b = e.target.closest('button[data-lang]');
+            if (b) { setLang(b.dataset.lang); e.stopPropagation(); }
+        });
+        let saved = null;
+        try { saved = localStorage.getItem('emc-lang'); } catch (_) { /* ignore */ }
+        setLang(saved && LANGS.includes(saved) ? saved : (root.getAttribute('data-lang') || LANGS[0]));
+    }
+
     const FORWARD = new Set(['ArrowRight', 'ArrowDown', 'PageDown', ' ', 'Spacebar', 'Enter', 'n', 'N']);
     const BACK = new Set(['ArrowLeft', 'ArrowUp', 'PageUp', 'Backspace', 'p', 'P']);
 
@@ -273,8 +354,9 @@
         }
         if (body.classList.contains('overview')) {
             if (k === 'Escape' || k === 'o' || k === 'O') { body.classList.remove('overview'); e.preventDefault(); }
-            else if (FORWARD.has(k)) { show(index + 1); e.preventDefault(); }
-            else if (BACK.has(k)) { show(index - 1); e.preventDefault(); }
+            else if (FORWARD.has(k)) { next(); e.preventDefault(); }
+            else if (BACK.has(k)) { prev(); e.preventDefault(); }
+            else if (k === 's' || k === 'S') { toggleSkip(); e.preventDefault(); }
             return;
         }
         if (body.classList.contains('blanked') || body.classList.contains('blanked-white')) {
@@ -294,14 +376,16 @@
         if (BACK.has(k)) { prev(); e.preventDefault(); return; }
 
         switch (k) {
-            case 'Home': show(0); break;
-            case 'End': show(slides.length - 1); break;
+            case 'Home': show(first()); break;
+            case 'End': show(last()); break;
+            case 's': case 'S': toggleSkip(); break;
             case 'f': case 'F': case 'F5': toggleFullscreen(); break;
             case 'Escape': if (document.fullscreenElement) document.exitFullscreen(); break;
             case 'b': case 'B': case '.': body.classList.toggle('blanked'); break;
             case 'w': case 'W': case ',': body.classList.toggle('blanked-white'); break;
             case 'o': case 'O': toggleClass('overview'); sizeThumbs(); syncOverview(); break;
             case '?': case '/': toggleClass('help'); break;
+            case 'l': case 'L': toggleLang(); break;
             case 'm': case 'M': {
                 const slide = slides[index];
                 slide.dataset.mode = (slide.dataset.mode === 'pro') ? 'fun' : 'pro';
@@ -371,10 +455,11 @@
     window.addEventListener('resize', () => { fit(); sizeThumbs(); });
     body.appendChild(turn);
     fit();
+    loadSkips();
     buildOverview();
 
     // Deep link: #7 opens on slide 7, so a rehearsal can resume where it stopped.
     const fromHash = parseInt((location.hash || '').slice(1), 10);
-    show(Number.isFinite(fromHash) && fromHash > 0 ? fromHash - 1 : 0, { restartVideo: false });
+    show(Number.isFinite(fromHash) && fromHash > 0 ? fromHash - 1 : first(), { restartVideo: false });
     wake();
 })();

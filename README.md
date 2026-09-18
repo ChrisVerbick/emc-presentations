@@ -50,6 +50,7 @@ cd 2026-09-24-september-meetup
 | `W` or `,` | Blank to white |
 | `O` | Overview grid — click any slide to jump to it |
 | `M` | Flip this slide between Fun and Pro |
+| `S` | Skip this slide — it drops out of the running order until you press `S` on it again. Remembered per deck; `data-skip` on a `<section>` is the authored default |
 | `1`–`9` | Jump to that slide |
 | `Home` / `End` | First / last slide |
 | `?` | Show or hide the key map |

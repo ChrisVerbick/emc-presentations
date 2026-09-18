@@ -73,6 +73,7 @@ Every slide is one `<section>`:
 | `data-label` | free text | Caption in the `O` overview grid. **Required** — `extract-copy.py` keys on it and skips sections without one. |
 | `data-mode` | `fun` \| `pro` | Swaps the token block for this slide and mirrors it onto `<html>`, so the chrome follows. Defaults to `fun`. |
 | `data-autoplay` | present | Plays the slide's video on entry |
+| `data-skip` | present | Out of the running order: next/prev pass over it, the web build drops it. `S` toggles it live; that choice is stored in localStorage per deck and overrides the markup |
 | `style="padding:0"` | — | Full-bleed slides only — banner, showcase, video, raw image. Default padding is 80px. |
 
 On any child element:

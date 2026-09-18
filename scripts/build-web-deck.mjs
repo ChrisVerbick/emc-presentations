@@ -52,16 +52,20 @@ const mb = (n) => `${(n / 1048576).toFixed(1)} MB`;
 
 /**
  * Strip every <section class="slide"> that carries a <video>, plus the .video-missing
- * card that sits beside it. Done on the raw string rather than a DOM: the deck is
+ * card that sits beside it, and every section authored with data-skip (the engine's
+ * S key writes skips to localStorage, not the file — only a skip committed to the
+ * markup is dropped here). Done on the raw string rather than a DOM: the deck is
  * hand-written HTML with one section per slide and no nesting, and pulling in a parser
  * to walk a flat list would be the only dependency this script didn't need.
  */
 function dropVideoSlides(html) {
-    let dropped = 0;
-    const out = html.replace(/[ \t]*<section class="slide[\s\S]*?<\/section>\n?/g, (section) =>
-        /<video[\s>]/.test(section) ? (dropped++, '') : section
-    );
-    return { html: out, dropped };
+    let dropped = 0, skipped = 0;
+    const out = html.replace(/[ \t]*<section class="slide[\s\S]*?<\/section>\n?/g, (section) => {
+        if (/<video[\s>]/.test(section)) { dropped++; return ''; }
+        if (/<section class="slide[^>]*\sdata-skip[\s>=]/.test(section)) { skipped++; return ''; }
+        return section;
+    });
+    return { html: out, dropped, skipped };
 }
 
 /**
@@ -146,7 +150,7 @@ if (faces.dropped.length) {
 }
 
 const slidesBefore = (html.match(/<section class="slide/g) ?? []).length;
-({ html } = ((r) => (console.log(`  slides: ${slidesBefore} → ${slidesBefore - r.dropped}  (${r.dropped} video)`), r))(
+({ html } = ((r) => (console.log(`  slides: ${slidesBefore} → ${slidesBefore - r.dropped - r.skipped}  (${r.dropped} video, ${r.skipped} data-skip)`), r))(
     dropVideoSlides(html)
 ));
 

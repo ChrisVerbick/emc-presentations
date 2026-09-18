@@ -414,6 +414,15 @@
   <div class="zone next"><span class="arrow">›</span></div>
 </div>
 
+<!-- Bilingual deck? Author every text as <span lang="en">…</span><span lang="it">…</span>,
+     add data-label-en / data-label-it beside data-label, set data-lang="en" on <html>,
+     and uncomment this switch. L toggles; the choice is remembered in localStorage.
+<div id="lang" aria-label="Language">
+  <button type="button" data-lang="en" aria-pressed="true">EN</button>
+  <button type="button" data-lang="it" aria-pressed="false">IT</button>
+</div>
+-->
+
 <div id="hud">
   <span id="counter">01 / 01</span>
   <span class="key">? for keys</span>
@@ -434,6 +443,8 @@
       <tr><td>W or ,</td><td>Blank to white</td></tr>
       <tr><td>O</td><td>Overview grid — click any slide to jump to it</td></tr>
       <tr><td>M</td><td>Flip this slide between Fun and Pro</td></tr>
+      <tr><td>S</td><td>Skip this slide — next/prev pass over it; press again to restore</td></tr>
+      <tr><td>L</td><td>Switch language, on a bilingual deck</td></tr>
       <tr><td>1 – 9</td><td>Jump to that slide</td></tr>
       <tr><td>Home / End</td><td>First / last slide</td></tr>
       <tr><td>?</td><td>Close this</td></tr>

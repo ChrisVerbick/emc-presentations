@@ -356,14 +356,16 @@ mark {
    label beneath. */
 /* Demoted to a supporting line: as oversized figures they read as a second
    headline and fought the four attributes for the eye. */
-.stats { font-size:var(--fs-lead); color:rgb(from var(--ink) r g b / .6); }
-.stats b { font-weight:700; color:rgb(from var(--ink) r g b / .85); }
+/* .stats and .qual span key off currentColor, not --ink: --ink is the page ink, so on a
+   deep or alt band they would vanish into the background. currentColor is the band's own. */
+.stats { font-size:var(--fs-lead); color:rgb(from currentColor r g b / .6); }
+.stats b { font-weight:700; color:rgb(from currentColor r g b / .85); }
 
 .quals { display:grid; grid-template-columns:repeat(4, 1fr); gap:40px; max-width:1440px; }
 .qual { display:flex; flex-direction:column; gap:12px; }
 .qual i { display:block; width:44px; height:3px; background:var(--accent); }
 .qual b { font-size:var(--fs-h4); font-weight:700; line-height:1.15; }
-.qual span { font-size:var(--fs-lead); line-height:1.45; color:rgb(from var(--ink) r g b / .7); }
+.qual span { font-size:var(--fs-lead); line-height:1.45; color:rgb(from currentColor r g b / .7); }
 
 /* ── Presentation chrome ─────────────────────────────────────────────────── */
 
@@ -372,11 +374,39 @@ mark {
             width:0; transition:width .3s cubic-bezier(0.22,1,0.36,1); }
 
 /* Slide counter + hints, fade out when idle so they never photograph badly */
+/* Aside photo: a full-height photograph pinned to the right edge of a content slide,
+   the copy keeping to the left. Width is fixed so the measure on the left is predictable;
+   tune object-position per photo inline. Sits under the running head/foot and the corner
+   mark (z-index 1 vs their 5). */
+.aside-photo { position:absolute; top:0; right:0; bottom:0; width:560px; z-index:1; overflow:hidden;
+               box-shadow:var(--photo-frame); }
+.aside-photo img { width:100%; height:100%; object-fit:cover; display:block; }
+.slide.has-aside > :not(.aside-photo, .slide__head, .slide__foot, .slide__mark) { position:relative; z-index:2; }
+
 #hud { position:fixed; bottom:16px; right:20px; z-index:60;
        display:flex; align-items:center; gap:14px;
        font:600 13px/1 'Alcyone', system-ui, sans-serif; letter-spacing:1px;
        color:#fff; opacity:.35; transition:opacity .4s; pointer-events:none; }
 body.idle #hud, body.idle #navzones .arrow { opacity:0; }
+
+/* Bilingual decks. Copy is authored inline as <span lang="en">…</span><span lang="it">…</span>
+   pairs; <html data-lang> picks which one shows. Nothing is fetched — both languages ship in
+   the file, so it still runs from file:// and the web build carries both. #lang is the
+   switch (top right); deck.js sets data-lang from it, from the L key or from localStorage.
+   The <html> element is not its own descendant, so its own lang attribute is untouched. */
+html[data-lang="it"] [lang="en"], html[data-lang="en"] [lang="it"] { display:none !important; }
+#lang { position:fixed; top:14px; right:20px; z-index:60; display:flex; gap:4px;
+        font:600 12px/1 'Alcyone', system-ui, sans-serif; letter-spacing:1px;
+        opacity:.55; transition:opacity .4s;
+        /* difference against the band: white on a dark band, ink on a light page, so the
+           presenter can find it on either. */
+        mix-blend-mode:difference; }
+#lang:hover { opacity:1; }
+body.idle #lang { opacity:0; }
+#lang button { padding:7px 9px; border:0; border-radius:6px; background:transparent;
+               color:#fff; font:inherit; letter-spacing:inherit; cursor:pointer;
+               text-shadow:0 1px 6px rgba(0,0,0,.5); }
+#lang button[aria-pressed="true"] { background:rgb(255 255 255 / .18); }
 #hud .key { opacity:.6; font-size:11px; letter-spacing:.5px; text-transform:uppercase; }
 
 /* Click zones: left third back, right two-thirds forward. Arrows only appear
@@ -439,6 +469,12 @@ body.overview #overview { display:grid; }
 #overview .thumb .slide [data-anim], #overview .thumb .reveal * { opacity:1 !important; }
 #overview .thumb .reveal__rule { display:none !important; }
 #overview .card[data-current] { box-shadow:0 0 0 3px var(--accent); }
+/* Skipped slides (S): dimmed in the grid, tagged, still clickable so they can be
+   restored. On stage the HUD counter says so; the slide itself is untouched. */
+#overview .card[data-skip] .thumb { opacity:.28; filter:grayscale(1); }
+#overview .card[data-skip] > span::after { content:'skipped'; float:right; font-size:10px; letter-spacing:1px;
+                                           text-transform:uppercase; color:var(--highlight); }
+body.on-skipped #hud { opacity:.9; color:var(--highlight); }
 #overview .card > span { position:absolute; inset:auto 0 0 0; z-index:2; padding:10px 12px;
                        font:600 12px/1.3 'Alcyone', system-ui, sans-serif; color:#fff;
                        background:linear-gradient(to top, rgba(0,0,0,.92) 0%, rgba(0,0,0,.72) 60%, transparent 100%); }
@@ -523,7 +559,8 @@ body.help #help { display:grid; }
   #stage { position:static; display:block; }
   #stage { position:static; }
   #canvas { position:static; transform:none; width:1600px; height:900px; }
-  #progress, #hud, #navzones, #overview, #help, #blank, #turn { display:none !important; }
+  #progress, #hud, #navzones, #overview, #help, #blank, #turn, #lang { display:none !important; }
+  .slide[data-skip] { display:none !important; }
   .slide { position:relative; opacity:1 !important; visibility:visible !important;
            page-break-after:always; break-after:page; }
   .slide[data-active] [data-anim], .slide [data-anim] { animation:none !important; opacity:1 !important; transform:none !important; }
