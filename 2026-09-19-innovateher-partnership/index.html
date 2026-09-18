@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="fun" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entrepreneurs Meet — Innovate&hairsp;Her partnership, 19 September 2026</title>
+<link rel="stylesheet" href="deck.css?v=2b1a22d4">
+</head>
+<body>
+
+<div id="progress"></div>
+
+<div id="stage">
+  <div id="canvas">
+
+    <!-- ══════════════════════════════════════════════════════════════════════
+         Source of truth for the words is brief.md (English). Every piece of copy
+         here is a pair — <span lang="en">…</span><span lang="it">…</span> — and
+         every slide carries data-label-en / data-label-it for the overview.
+         <html data-lang> decides which shows: the EN / IT switch top right, the
+         L key, or localStorage. Edit both halves of a pair together.
+
+         Running order:
+           01  Cover                       ghost × behind the title
+           02  Pitch · Who we are          figures + the origin question
+           03  Pitch · What we do          the calendar + aside photo
+           04  Pitch · Why it matters      vision + goal, as a statement
+           05  Our community               the six member categories
+           06  Divider · Four ways in
+           07  Session A · Talks           + aside photo
+           08  Session B · Workshop        + aside photo
+           09  Session C · Networking     + aside photo
+           10  Session D · NetWalking      + aside photo
+           11  Divider · Partners
+           12  The budget                  €10k a year, in three figures
+           13  The commitment              the same, without the figures
+           14  Who you reach               the demographic, framed for a sponsor
+           15  Closing
+         ══════════════════════════════════════════════════════════════════════ -->
+
+    <!-- 01 · COVER ─────────────────────────────────────────────────────
+         The × is the ghost glyph, same 8% white as the divider numbers, so it
+         reads as the biggest thing on the slide without shouting. -->
+    <section class="slide" data-label="Cover" data-label-en="Cover" data-label-it="Copertina" data-mode="fun" style="justify-content:space-between;">
+      <img class="slide__mark" src="img/logomark-fun-dark.svg" alt="" aria-hidden="true">
+      <div aria-hidden="true" style="position:absolute; right:6%; top:50%; transform:translateY(-52%); font-size:720px; line-height:1; font-weight:700; color:rgb(from var(--ink-dark) r g b / .08); user-select:none;">&times;</div>
+      <img class="logo" src="img/wordmark-fun-dark.svg" alt="Entrepreneurs Meet" data-anim="fade" style="position:relative;">
+      <div style="position:relative; display:flex; flex-direction:column; gap:24px;">
+        <h1 style="font-size:var(--fs-hero); line-height:1; max-width:14ch;" data-anim="fade">Entrepreneurs Meet<br><span style="color:var(--accent);">&times;</span> Innovate&hairsp;Her</h1>
+        <p style="font-size:var(--fs-lead); color:rgb(from var(--ink-dark) r g b / .75); max-width:40em;" data-anim="fade" data-delay="1">
+          <span lang="en">A partnership proposal.</span><span lang="it">Una proposta di partnership.</span>
+        </p>
+      </div>
+      <div class="eyebrow" data-anim="fade" style="position:relative;">
+        <span lang="en">19 September 2026 &middot; Cagliari</span><span lang="it">19 settembre 2026 &middot; Cagliari</span>
+      </div>
+    </section>
+
+    <!-- 02 · PITCH ONE — WHO WE ARE ─────────────────────────────────
+         Figures are live off emcagliari.com (Sep 2026). -->
+    <section class="slide is-page" data-label="Pitch &middot; Who we are" data-label-en="Pitch &middot; Who we are" data-label-it="Pitch &middot; Chi siamo" data-mode="fun" style="justify-content:center; gap:44px;">
+      <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">Who we are</span><span lang="it">Chi siamo</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule" style="color:var(--eyebrow);"></span><span class="eyebrow"><span lang="en">Who we are</span><span lang="it">Chi siamo</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:22ch;" data-anim="fade">
+          <span lang="en">Entrepreneurs Meet is where good ideas and good people find each other.</span><span lang="it">Entrepreneurs Meet &egrave; dove le buone idee e le brave persone si incontrano.</span>
+        </h2>
+        <p style="font-size:var(--fs-lead); line-height:1.45; max-width:44em; color:rgb(from var(--ink) r g b / .8);" data-anim="fade" data-delay="1">
+          <span lang="en">Over 3 years, we have been building a not-for-profit community of entrepreneurs in Cagliari, run by its members. It started with one question: why are so many people here building alone?</span><span lang="it">Da tre anni costruiamo a Cagliari una community di imprenditori senza scopo di lucro, gestita dai suoi membri. &Egrave; nata da una domanda: perch&eacute; qui cos&igrave; tante persone costruiscono da sole?</span>
+        </p>
+      </div>
+      <div class="quals">
+        <div class="qual" data-anim="fade" data-delay="3"><i></i><b>185</b><span><span lang="en">Members.</span><span lang="it">Membri.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="4"><i></i><b>18</b><span><span lang="en">Nationalities.</span><span lang="it">Nazionalit&agrave;.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="5"><i></i><b>41</b><span><span lang="en">Events, across 19 venues in Cagliari.</span><span lang="it">Eventi, in 19 sedi diverse a Cagliari.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="6"><i></i><b>30+</b><span><span lang="en">Guest entrepreneurs who have told their story.</span><span lang="it">Imprenditori ospiti che hanno raccontato la loro storia.</span></span></div>
+      </div>
+      <p class="stats" data-anim="fade" data-delay="7">
+        <span lang="en"><b>Volunteer-led</b> &middot; <b>Sector-agnostic</b> &middot; <b>No fixed address</b></span><span lang="it"><b>Volontari</b> &middot; <b>Tutti i settori</b> &middot; <b>Nessuna sede fissa</b></span>
+      </p>
+    </section>
+
+    <!-- 03 · PITCH TWO — WHAT WE DO ─────────────────────────────────
+         Aside photo: the audience, flipped so they face the copy. -->
+    <section class="slide is-alt has-aside" data-label="Pitch &middot; What we do" data-label-en="Pitch &middot; What we do" data-label-it="Pitch &middot; Cosa facciamo" data-mode="fun" style="justify-content:center; gap:36px;">
+      <div class="aside-photo"><img src="img/speakers/audience.jpg?v=7f22ef83" alt="" style="object-position:38% top;"></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">What we do</span><span lang="it">Cosa facciamo</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:12px; max-width:880px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule"></span><span class="eyebrow"><span lang="en">What we do</span><span lang="it">Cosa facciamo</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:20ch;" data-anim="fade">
+          <span lang="en">This isn&rsquo;t your average networking event.</span><span lang="it">Non &egrave; il solito evento di networking.</span>
+        </h2>
+      </div>
+      <ol style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:20px; max-width:880px;">
+        <li style="display:flex; gap:24px; align-items:baseline;" data-anim="fade" data-delay="1">
+          <span style="font-size:var(--fs-h5); font-weight:700; color:var(--eyebrow); flex:0 0 200px; white-space:nowrap;"><span lang="en">Monthly</span><span lang="it">Ogni mese</span></span>
+          <span><b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">The meetup</span><span lang="it">Il meetup</span></b><br>
+          <span style="font-size:var(--fs-body); line-height:1.45; color:rgb(from var(--ink-dark) r g b / .8);"><span lang="en">Last Thursday of every month, 19:00, a different venue each month. Kickoff with collaborative challenges, then real conversations and open networking. Thirty-five events and counting.</span><span lang="it">L&rsquo;ultimo gioved&igrave; di ogni mese, alle 19:00, ogni volta in una sede diversa. Si parte con sfide collaborative, poi conversazioni vere e networking aperto. Trentacinque eventi, finora.</span></span></span>
+        </li>
+        <li style="display:flex; gap:24px; align-items:baseline;" data-anim="fade" data-delay="2">
+          <span style="font-size:var(--fs-h5); font-weight:700; color:var(--eyebrow); flex:0 0 200px; white-space:nowrap;"><span lang="en">Twice a year</span><span lang="it">Due volte l&rsquo;anno</span></span>
+          <span><b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">The headline events</span><span lang="it">Gli eventi principali</span></b><br>
+          <span style="font-size:var(--fs-body); line-height:1.45; color:rgb(from var(--ink-dark) r g b / .8);"><span lang="en">Kickoff dinner in January. The Summer Party in August at Torre delle Stelle.</span><span lang="it">La cena di Kickoff a gennaio. Il Summer Party ad agosto a Torre delle Stelle.</span></span></span>
+        </li>
+        <li style="display:flex; gap:24px; align-items:baseline;" data-anim="fade" data-delay="3">
+          <span style="font-size:var(--fs-h5); font-weight:700; color:var(--eyebrow); flex:0 0 200px; white-space:nowrap;"><span lang="en">Between</span><span lang="it">Nel mezzo</span></span>
+          <span><b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">The formats that grew around it</span><span lang="it">I formati nati intorno</span></b><br>
+          <span style="font-size:var(--fs-body); line-height:1.45; color:rgb(from var(--ink-dark) r g b / .8);"><span lang="en">NetWalking on the Bastione. Hustle &amp; Grow workshops. Working Days. Brunch with an investor.</span><span lang="it">NetWalking sul Bastione. I workshop Hustle &amp; Grow. I Working Day. Brunch con un investitore.</span></span></span>
+        </li>
+        <li style="display:flex; gap:24px; align-items:baseline;" data-anim="fade" data-delay="4">
+          <span style="font-size:var(--fs-h5); font-weight:700; color:var(--eyebrow); flex:0 0 200px; white-space:nowrap;"><span lang="en">Always</span><span lang="it">Sempre</span></span>
+          <span><b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">The platform</span><span lang="it">La piattaforma</span></b><br>
+          <span style="font-size:var(--fs-body); line-height:1.45; color:rgb(from var(--ink-dark) r g b / .8);"><span lang="en">entrepreneursmeet.it &mdash; events listing &amp; ticketing, a member directory, a library of events and knowledge base, a blog. Built by members, for members.</span><span lang="it">entrepreneursmeet.it: eventi e biglietteria, la directory dei membri, una library degli eventi e base di conoscenza, un blog. Costruita dai membri, per i membri.</span></span></span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 04 · PITCH THREE — WHY IT MATTERS ───────────────────────────
+         Statement archetype: one <mark>. -->
+    <section class="slide is-page" data-label="Pitch &middot; Why it matters" data-label-en="Pitch &middot; Why it matters" data-label-it="Pitch &middot; Perch&eacute; conta" data-mode="fun" style="align-items:center; justify-content:center; gap:32px;">
+      <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">Why it matters</span><span lang="it">Perch&eacute; conta</span></span><span></span></div>
+      <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+        <span class="rule" style="color:var(--eyebrow);"></span><span class="eyebrow"><span lang="en">Our vision &amp; our goal</span><span lang="it">La nostra visione e il nostro obiettivo</span></span>
+      </div>
+      <p style="font-size:var(--fs-display); line-height:1.04; max-width:18ch; text-align:center; font-weight:700; letter-spacing:-.02em;" data-anim="fade">
+        <span lang="en">Put Cagliari on the world map &mdash; and make sure everyone who arrives <mark>finds belonging</mark>.</span><span lang="it">Mettere Cagliari sulla mappa del mondo &mdash; e fare in modo che chi arriva <mark>si senta a casa</mark>.</span>
+      </p>
+      <p style="font-size:var(--fs-lead); line-height:1.45; max-width:42em; text-align:center; color:rgb(from var(--ink) r g b / .75);" data-anim="fade" data-delay="2">
+        <span lang="en">Talent, values-driven people and capital, drawn to the island and the good life. We see a Cagliari that stands as a Mediterranean capital of ventures: inclusive, cultured, globally minded.</span><span lang="it">Talento, persone guidate dai valori e capitale, attratti dall&rsquo;isola e dalla bella vita. Vediamo una Cagliari capitale mediterranea dell&rsquo;impresa: inclusiva, colta, dallo sguardo globale.</span>
+      </p>
+    </section>
+
+    <!-- 05 · OUR COMMUNITY — WHO TURNS UP ────────────────────────────
+         The six member categories are the site's own. Three-by-two grid of
+         .qual cells (.quals is fixed at four columns). Percentages per cell
+         would land harder — pull them from the directory when we have them. -->
+    <section class="slide is-page" data-label="Our community" data-label-en="Our community" data-label-it="La nostra community" data-mode="fun" style="justify-content:center; gap:40px;">
+      <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">Our community</span><span lang="it">La nostra community</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <span class="eyebrow" style="color:var(--accent);" data-anim="fade"><mark><span lang="en">Our community</span><span lang="it">La nostra community</span></mark></span>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:20ch;" data-anim="fade">
+          <span lang="en">Who turns up on a Thursday.</span><span lang="it">Chi si presenta il gioved&igrave;.</span>
+        </h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:30px 40px; max-width:1440px;">
+        <div class="qual" data-anim="fade" data-delay="1"><i></i><b><span lang="en">Founders &amp; builders</span><span lang="it">Founder e builder</span></b><span><span lang="en">Running a company today, or about to.</span><span lang="it">Guidano un&rsquo;azienda oggi, o stanno per farlo.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="2"><i></i><b><span lang="en">Freelancers &amp; consultants</span><span lang="it">Freelance e consulenti</span></b><span><span lang="en">A business of one, looking for the next collaborator.</span><span lang="it">Un&rsquo;impresa di una persona sola, in cerca del prossimo collaboratore.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="3"><i></i><b><span lang="en">Remote workers &amp; nomads</span><span lang="it">Remote worker e nomadi</span></b><span><span lang="en">Arrived for the island, staying for the people.</span><span lang="it">Arrivati per l&rsquo;isola, rimasti per le persone.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="4"><i></i><b><span lang="en">Locals building at home</span><span lang="it">Sardi che fanno impresa qui</span></b><span><span lang="en">Sardinian business owners and entrepreneurs.</span><span lang="it">Titolari d&rsquo;impresa e imprenditori sardi.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="5"><i></i><b><span lang="en">Investors &amp; mentors</span><span lang="it">Investitori e mentor</span></b><span><span lang="en">Capital and experience, looking for a reason to stay.</span><span lang="it">Capitale ed esperienza, in cerca di un motivo per restare.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="6"><i></i><b><span lang="en">The curious</span><span lang="it">I curiosi</span></b><span><span lang="en">Not sure yet. Came anyway. Came back.</span><span lang="it">Non ancora convinti. Sono venuti lo stesso. Sono tornati.</span></span></div>
+      </div>
+      <p class="stats" data-anim="fade" data-delay="7" style="margin-top:16px;">
+        <span lang="en"><b>185</b> members &middot; <b>18</b> nationalities &middot; newcomers and locals, <b>building together</b></span><span lang="it"><b>185</b> membri &middot; <b>18</b> nazionalit&agrave; &middot; nuovi arrivati e sardi, <b>che costruiscono insieme</b></span>
+      </p>
+    </section>
+
+    <!-- 06 · DIVIDER — FOUR WAYS IN ──────────────────────────────── -->
+    <section class="slide is-alt" data-label="Four ways in" data-label-en="Four ways in" data-label-it="Quattro modi per entrare" data-mode="fun" style="justify-content:center;">
+      <img class="slide__mark" src="img/logomark-fun-dark.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">The proposal</span><span lang="it">La proposta</span></span><span></span></div>
+      <div style="position:absolute; right:4%; top:50%; transform:translateY(-50%); font-size:420px; line-height:1; font-weight:700; color:rgb(from var(--ink-dark) r g b / .08); user-select:none;">03</div>
+      <div style="position:relative; display:flex; flex-direction:column; gap:20px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule"></span><span class="eyebrow"><span lang="en">The proposal</span><span lang="it">La proposta</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h1); line-height:.98; max-width:16ch;" data-anim="fade">
+          <span lang="en">Four sessions we could run at Innovate&hairsp;Her.</span><span lang="it">Quattro sessioni che potremmo tenere a Innovate&hairsp;Her.</span>
+        </h2>
+      </div>
+    </section>
+
+    <!-- 07–10 · SESSION PROPOSALS ────────────────────────────────────
+         One shape, four times: eyebrow with the session letter, title, lead,
+         then a three-column fact row (Format · Length · Who it's for). All
+         four carry an aside photo, so the copy keeps to 880px. -->
+    <section class="slide is-page has-aside" data-label="Session A" data-label-en="Session A" data-label-it="Sessione A" data-mode="fun" style="justify-content:center; gap:36px;">
+      <div class="aside-photo"><img src="img/speakers/speaker.jpg?v=d01c7221" alt="" style="object-position:55% 20%;"></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">Session A of four</span><span lang="it">Sessione A di quattro</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:14px; max-width:880px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule" style="color:var(--eyebrow);"></span><span class="eyebrow"><span lang="en">Session A &middot; Talks</span><span lang="it">Sessione A &middot; Talk</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:18ch;" data-anim="fade">
+          <span lang="en">Founder stories, told in short form.</span><span lang="it">Storie di founder, in formato breve.</span>
+        </h2>
+        <p style="font-size:var(--fs-lead); line-height:1.45; max-width:40em; color:rgb(from var(--ink) r g b / .8);" data-anim="fade" data-delay="1">
+          <span lang="en">Our monthly format, lifted onto the conference stage: four or five members, seven minutes each, one real thing they learned.</span><span lang="it">Il nostro formato mensile, portato sul palco della conferenza: quattro o cinque membri, sette minuti a testa, una cosa vera che hanno imparato.</span>
+        </p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:32px; max-width:880px;">
+        <div class="qual" data-anim="fade" data-delay="2"><i></i><b><span lang="en">Format</span><span lang="it">Formato</span></b><span><span lang="en">Lightning talks, moderated.</span><span lang="it">Lightning talk, moderati.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="3"><i></i><b><span lang="en">Length</span><span lang="it">Durata</span></b><span><span lang="en">45 minutes.</span><span lang="it">45 minuti.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="4"><i></i><b><span lang="en">Who it&rsquo;s for</span><span lang="it">Per chi</span></b><span><span lang="en">Anyone early on the road, wanting proof it can be done here.</span><span lang="it">Chi &egrave; all&rsquo;inizio del percorso e vuole la prova che qui si pu&ograve; fare.</span></span></div>
+      </div>
+    </section>
+
+    <section class="slide is-alt has-aside" data-label="Session B" data-label-en="Session B" data-label-it="Sessione B" data-mode="fun" style="justify-content:center; gap:36px;">
+      <div class="aside-photo"><img src="img/speakers/roundtable.jpg?v=34a5eece" alt="" style="object-position:42% center;"></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">Session B of four</span><span lang="it">Sessione B di quattro</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:14px; max-width:880px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule"></span><span class="eyebrow"><span lang="en">Session B &middot; Workshop</span><span lang="it">Sessione B &middot; Workshop</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:18ch;" data-anim="fade">
+          <span lang="en">Round tables on one hard question.</span><span lang="it">Tavoli rotondi su una domanda difficile.</span>
+        </h2>
+        <p style="font-size:var(--fs-lead); line-height:1.45; max-width:40em; color:rgb(from var(--ink-dark) r g b / .8);" data-anim="fade" data-delay="1">
+          <span lang="en">Facilitated tables of eight. Each takes one problem, works it for forty minutes and reports back. Audio is captured and outcomes are delivered.</span><span lang="it">Tavoli da otto, con un facilitatore. Ognuno prende un problema, ci lavora per quaranta minuti e riporta al gruppo. L&rsquo;audio viene registrato e i risultati consegnati.</span>
+        </p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:32px; max-width:880px;">
+        <div class="qual" data-anim="fade" data-delay="2"><i></i><b><span lang="en">Format</span><span lang="it">Formato</span></b><span><span lang="en">Facilitated round tables.</span><span lang="it">Tavoli rotondi facilitati.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="3"><i></i><b><span lang="en">Length</span><span lang="it">Durata</span></b><span><span lang="en">60 minutes.</span><span lang="it">60 minuti.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="4"><i></i><b><span lang="en">Who it&rsquo;s for</span><span lang="it">Per chi</span></b><span><span lang="en">Operators and stakeholders that care about a cause or a mission.</span><span lang="it">Operatori e stakeholder a cui sta a cuore una causa o una missione.</span></span></div>
+      </div>
+      <p style="font-size:var(--fs-small); color:rgb(from var(--ink-dark) r g b / .6); max-width:880px;" data-anim="fade" data-delay="5">
+        <span lang="en">Problem / topic to be decided with the Innovate&hairsp;Her team.</span><span lang="it">Problema / tema da definire con il team di Innovate&hairsp;Her.</span>
+      </p>
+    </section>
+
+    <section class="slide is-page has-aside" data-label="Session C" data-label-en="Session C" data-label-it="Sessione C" data-mode="fun" style="justify-content:center; gap:36px;">
+      <div class="aside-photo"><img src="img/speakers/aperitivo.jpg?v=1c0a9ec0" alt="" style="object-position:58% 30%;"></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">Session C of four</span><span lang="it">Sessione C di quattro</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:14px; max-width:880px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule" style="color:var(--eyebrow);"></span><span class="eyebrow"><span lang="en">Session C &middot; Networking</span><span lang="it">Sessione C &middot; Networking</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:18ch;" data-anim="fade">
+          <span lang="en">The aperitivo, facilitated by us.</span><span lang="it">L&rsquo;aperitivo, facilitato da noi.</span>
+        </h2>
+        <p style="font-size:var(--fs-lead); line-height:1.45; max-width:40em; color:rgb(from var(--ink) r g b / .8);" data-anim="fade" data-delay="1">
+          <span lang="en">The part of our evenings people come back for, at the end of the main Innovate&hairsp;Her event. Hosts at every table so nobody stands alone with a drink.</span><span lang="it">La parte delle nostre serate per cui la gente torna, alla fine dell&rsquo;evento principale di Innovate&hairsp;Her. Un host a ogni tavolo, cos&igrave; nessuno resta da solo con un bicchiere in mano.</span>
+        </p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:32px; max-width:880px;">
+        <div class="qual" data-anim="fade" data-delay="2"><i></i><b><span lang="en">Format</span><span lang="it">Formato</span></b><span><span lang="en">Hosted networking.</span><span lang="it">Networking con host.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="3"><i></i><b><span lang="en">Length</span><span lang="it">Durata</span></b><span><span lang="en">90 minutes, close of day.</span><span lang="it">90 minuti, a fine giornata.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="4"><i></i><b><span lang="en">Who it&rsquo;s for</span><span lang="it">Per chi</span></b><span><span lang="en">Everyone. Especially the ones who came alone.</span><span lang="it">Tutti. Soprattutto chi &egrave; venuto da solo.</span></span></div>
+      </div>
+    </section>
+
+    <section class="slide is-page has-aside" data-label="Session D" data-label-en="Session D" data-label-it="Sessione D" data-mode="fun" style="justify-content:center; gap:36px;">
+      <div class="aside-photo"><img src="img/speakers/netwalking.jpg?v=dddb70d2" alt="" style="object-position:50% 40%;"></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">Session D of four</span><span lang="it">Sessione D di quattro</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:14px; max-width:880px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule" style="color:var(--eyebrow);"></span><span class="eyebrow"><span lang="en">Session D &middot; NetWalking + Aperitivo</span><span lang="it">Sessione D &middot; NetWalking + Aperitivo</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h3); line-height:1.12; max-width:22ch;" data-anim="fade">
+          <span lang="en">Guided tour by a professional guide, optional aperitivo at the end.</span><span lang="it">Visita guidata con una guida professionista, aperitivo facoltativo alla fine.</span>
+        </h2>
+        <p style="font-size:var(--fs-lead); line-height:1.45; max-width:40em; color:rgb(from var(--ink) r g b / .8);" data-anim="fade" data-delay="1">
+          <span lang="en">Our moving meetings, paired with a walking history of Cagliari. Ends at Biffi&rsquo;s American Bar for drinks.</span><span lang="it">I nostri incontri in movimento, uniti a una passeggiata nella storia di Cagliari. Si finisce da Biffi&rsquo;s American Bar per un drink.</span>
+        </p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:32px; max-width:880px;">
+        <div class="qual" data-anim="fade" data-delay="2"><i></i><b><span lang="en">Format</span><span lang="it">Formato</span></b><span><span lang="en">Guided tour and aperitivo.</span><span lang="it">Visita guidata e aperitivo.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="3"><i></i><b><span lang="en">Length</span><span lang="it">Durata</span></b><span><span lang="en">45 minute tour, 2 hr aperitivo.</span><span lang="it">45 minuti di visita, 2 ore di aperitivo.</span></span></div>
+        <div class="qual" data-anim="fade" data-delay="4"><i></i><b><span lang="en">Who it&rsquo;s for</span><span lang="it">Per chi</span></b><span><span lang="en">Everyone. Especially the ones who came alone to Cagliari.</span><span lang="it">Tutti. Soprattutto chi &egrave; arrivato a Cagliari da solo.</span></span></div>
+      </div>
+    </section>
+
+    <!-- 11 · DIVIDER — PARTNERS ───────────────────────────────────── -->
+    <section class="slide is-alt" data-label="Partners" data-label-en="Partners" data-label-it="Partner" data-mode="fun" style="justify-content:center;">
+      <img class="slide__mark" src="img/logomark-fun-dark.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">Partners</span><span lang="it">Partner</span></span><span></span></div>
+      <div style="position:absolute; right:4%; top:50%; transform:translateY(-50%); font-size:420px; line-height:1; font-weight:700; color:rgb(from var(--ink-dark) r g b / .08); user-select:none;">04</div>
+      <div style="position:relative; display:flex; flex-direction:column; gap:20px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule"></span><span class="eyebrow"><span lang="en">One more thing</span><span lang="it">Un&rsquo;ultima cosa</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h1); line-height:.98; max-width:16ch;" data-anim="fade">
+          <span lang="en">We&rsquo;re looking for commercial partners.</span><span lang="it">Cerchiamo partner commerciali.</span>
+        </h2>
+        <p style="font-size:var(--fs-lead); color:rgb(from var(--ink-dark) r g b / .75); max-width:40em;" data-anim="fade" data-delay="1">
+          <span lang="en">Not to make a margin. To help build and scale a community.</span><span lang="it">Non per fare margine. Per aiutarci a costruire e far crescere una community.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- 12 · THE BUDGET ──────────────────────────────────────────────
+         What a year costs, in three figures. The split bar is the only place
+         the accents appear. Figures come from the organisers, not the site.
+         Italian uses a point for thousands: €6.000. -->
+    <section class="slide is-page" data-label="The budget" data-label-en="The budget" data-label-it="Il budget" data-mode="fun" style="justify-content:center; gap:40px;">
+      <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">Partners &middot; The budget</span><span lang="it">Partner &middot; Il budget</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule" style="color:var(--eyebrow);"></span><span class="eyebrow"><span lang="en">What a year costs</span><span lang="it">Quanto costa un anno</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:26ch;" data-anim="fade">
+          <span lang="en">Ten thousand euro. Fourteen evenings. Invaluable interactions with local professionals.</span><span lang="it">Diecimila euro. Quattordici serate. Incontri con i professionisti del posto che non hanno prezzo.</span>
+        </h2>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1.1fr; gap:48px; max-width:1440px; align-items:start;">
+        <div style="display:flex; flex-direction:column; gap:10px;" data-anim="fade" data-delay="2">
+          <span style="font-size:var(--fs-h1); font-weight:700; line-height:1; letter-spacing:-.02em;"><span lang="en">&euro;6,000</span><span lang="it">&euro;6.000</span></span>
+          <b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">Twelve monthly meetups</span><span lang="it">Dodici meetup mensili</span></b>
+          <span style="font-size:var(--fs-body); line-height:1.5; color:rgb(from var(--ink) r g b / .7);"><span lang="en">&euro;500 an evening. The space, the welcome drink, a guest speaker&rsquo;s dinner, the photographer.</span><span lang="it">&euro;500 a serata. Lo spazio, il drink di benvenuto, la cena dell&rsquo;ospite, il fotografo.</span></span>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;" data-anim="fade" data-delay="3">
+          <span style="font-size:var(--fs-h1); font-weight:700; line-height:1; letter-spacing:-.02em;"><span lang="en">&euro;4,000</span><span lang="it">&euro;4.000</span></span>
+          <b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">Two headline events</span><span lang="it">Due eventi principali</span></b>
+          <span style="font-size:var(--fs-body); line-height:1.5; color:rgb(from var(--ink) r g b / .7);"><span lang="en">&euro;2,000 each. Kickoff in January, the Summer Party in August. A hundred people, a stage, food &amp; drink.</span><span lang="it">&euro;2.000 ciascuno. Il Kickoff a gennaio, il Summer Party ad agosto. Cento persone, un palco, cibo e bevande.</span></span>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px; padding-left:48px; border-left:2px solid rgb(from var(--ink) r g b / .15);" data-anim="fade" data-delay="4">
+          <span style="font-size:var(--fs-h1); font-weight:700; line-height:1; letter-spacing:-.02em;"><span lang="en">&euro;10,000</span><span lang="it">&euro;10.000</span></span>
+          <b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">The whole year</span><span lang="it">L&rsquo;anno intero</span></b>
+          <span style="font-size:var(--fs-body); line-height:1.5; color:rgb(from var(--ink) r g b / .7);"><span lang="en">&euro;54 per member. &euro;714 per event. Zero spent on salaries &mdash; everyone is a volunteer, nobody here is paid.</span><span lang="it">&euro;54 a membro. &euro;714 a evento. Zero in stipendi: siamo tutti volontari, qui nessuno &egrave; pagato.</span></span>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:10px; max-width:1440px;" data-anim="fade" data-delay="5">
+        <div style="display:flex; height:14px; border-radius:7px; overflow:hidden;">
+          <span style="flex:6; background:var(--accent);"></span>
+          <span style="flex:4; background:var(--highlight);"></span>
+        </div>
+        <div style="display:flex; justify-content:space-between; font-size:var(--fs-small); color:rgb(from var(--ink) r g b / .6);">
+          <span><span lang="en">60% &middot; the monthly meetups</span><span lang="it">60% &middot; i meetup mensili</span></span><span><span lang="en">40% &middot; the two headline events</span><span lang="it">40% &middot; i due eventi principali</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13 · THE COMMITMENT ─────────────────────────────────────────
+         The budget slide again, without the euro figures — for a room where
+         the numbers stay in the drawer. Skip one or the other with S. -->
+    <section class="slide is-page" data-label="The commitment" data-label-en="The commitment" data-label-it="L&rsquo;impegno" data-mode="fun" style="justify-content:center; gap:40px;">
+      <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">Partners &middot; The budget</span><span lang="it">Partner &middot; Il budget</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule" style="color:var(--eyebrow);"></span><span class="eyebrow"><span lang="en">What a year costs</span><span lang="it">Quanto costa un anno</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:26ch;" data-anim="fade">
+          <span lang="en">Ten thousand euro. Fourteen evenings. Invaluable interactions with local professionals.</span><span lang="it">Diecimila euro. Quattordici serate. Incontri con i professionisti del posto che non hanno prezzo.</span>
+        </h2>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1.1fr; gap:48px; max-width:1440px; align-items:start;">
+        <div style="display:flex; flex-direction:column; gap:10px;" data-anim="fade" data-delay="2">
+          <b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">Twelve monthly meetups</span><span lang="it">Dodici meetup mensili</span></b>
+          <span style="font-size:var(--fs-body); line-height:1.5; color:rgb(from var(--ink) r g b / .7);"><span lang="en">The space, the welcome drink, a guest speaker&rsquo;s dinner, the photographer.</span><span lang="it">Lo spazio, il drink di benvenuto, la cena dell&rsquo;ospite, il fotografo.</span></span>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;" data-anim="fade" data-delay="3">
+          <b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">Two headline events</span><span lang="it">Due eventi principali</span></b>
+          <span style="font-size:var(--fs-body); line-height:1.5; color:rgb(from var(--ink) r g b / .7);"><span lang="en">Kickoff in January, the Summer Party in August. A hundred people, a stage, food &amp; drink.</span><span lang="it">Il Kickoff a gennaio, il Summer Party ad agosto. Cento persone, un palco, cibo e bevande.</span></span>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px; padding-left:48px; border-left:2px solid rgb(from var(--ink) r g b / .15);" data-anim="fade" data-delay="4">
+          <b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">The whole year</span><span lang="it">L&rsquo;anno intero</span></b>
+          <span style="font-size:var(--fs-body); line-height:1.5; color:rgb(from var(--ink) r g b / .7);"><span lang="en">&euro;50 per member. &euro;700 per event. Zero spent on salaries &mdash; everyone is a volunteer, nobody here is paid.</span><span lang="it">&euro;50 a membro. &euro;700 a evento. Zero in stipendi: siamo tutti volontari, qui nessuno &egrave; pagato.</span></span>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:10px; max-width:1440px;" data-anim="fade" data-delay="5">
+        <div style="display:flex; height:14px; border-radius:7px; overflow:hidden;">
+          <span style="flex:6; background:var(--accent);"></span>
+          <span style="flex:4; background:var(--highlight);"></span>
+        </div>
+        <div style="display:flex; justify-content:space-between; font-size:var(--fs-small); color:rgb(from var(--ink) r g b / .6);">
+          <span><span lang="en">60% &middot; the monthly meetups</span><span lang="it">60% &middot; i meetup mensili</span></span><span><span lang="en">40% &middot; the two headline events</span><span lang="it">40% &middot; i due eventi principali</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14 · WHO A PARTNER REACHES ───────────────────────────────────
+         Reach in numbers on the left, the site's three partnership models on
+         the right (names verbatim from emcagliari.com/get-involved). -->
+    <section class="slide is-alt" data-label="Who you reach" data-label-en="Who you reach" data-label-it="Chi raggiungete" data-mode="fun" style="justify-content:center; gap:40px;">
+      <img class="slide__mark" src="img/logomark-fun-dark.svg" alt="" aria-hidden="true">
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Innovate&hairsp;Her partnership</span><span lang="it">Entrepreneurs Meet &middot; Partnership Innovate&hairsp;Her</span></span></div>
+      <div class="slide__foot"><span><span lang="en">Partners &middot; Who you reach</span><span lang="it">Partner &middot; Chi raggiungete</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+          <span class="rule"></span><span class="eyebrow"><span lang="en">What a partner gets</span><span lang="it">Cosa ottiene un partner</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:24ch;" data-anim="fade">
+          <span lang="en">Your brand in the room where Cagliari&rsquo;s ecosystem is being built.</span><span lang="it">Il vostro brand nella sala dove si costruisce l&rsquo;ecosistema di Cagliari.</span>
+        </h2>
+      </div>
+      <div style="display:grid; grid-template-columns:1.15fr 1fr; gap:72px; max-width:1440px; align-items:start;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:26px 40px;">
+          <div class="qual" data-anim="fade" data-delay="1"><i></i><b>185</b><span><span lang="en">Members, all of them opted in. Not a mailing list.</span><span lang="it">Membri, tutti iscritti per scelta. Non una mailing list.</span></span></div>
+          <div class="qual" data-anim="fade" data-delay="2"><i></i><b>18</b><span><span lang="en">Nationalities. Half the room moved here on purpose.</span><span lang="it">Nazionalit&agrave;. Met&agrave; della sala si &egrave; trasferita qui apposta.</span></span></div>
+          <div class="qual" data-anim="fade" data-delay="3"><i></i><b>14</b><span><span lang="en">Evenings a year your name is on the banner, the door and the website.</span><span lang="it">Serate l&rsquo;anno con il vostro nome sul banner, all&rsquo;ingresso e sul sito.</span></span></div>
+          <div class="qual" data-anim="fade" data-delay="4"><i></i><b>19</b><span><span lang="en">Venues so far. Every one a local business with their own reach.</span><span lang="it">Sedi finora. Ognuna un&rsquo;attivit&agrave; locale con il proprio pubblico.</span></span></div>
+        </div>
+        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:22px;">
+          <li data-anim="fade" data-delay="3">
+            <b style="font-size:var(--fs-h5); font-weight:700; display:block;"><span lang="en">Event sponsorship</span><span lang="it">Sponsorizzazione eventi</span></b>
+            <span style="font-size:var(--fs-body); line-height:1.5; color:rgb(from var(--ink-dark) r g b / .75);"><span lang="en">One evening, or the full year.</span><span lang="it">Una serata, o l&rsquo;anno intero.</span></span>
+          </li>
+          <li data-anim="fade" data-delay="4">
+            <b style="font-size:var(--fs-h5); font-weight:700; display:block;"><span lang="en">Community partnership</span><span lang="it">Partnership di community</span></b>
+            <span style="font-size:var(--fs-body); line-height:1.5; color:rgb(from var(--ink-dark) r g b / .75);"><span lang="en">Co-create programmes, perks and programming for members.</span><span lang="it">Creare insieme programmi, vantaggi e attivit&agrave; per i membri.</span></span>
+          </li>
+          <li data-anim="fade" data-delay="5">
+            <b style="font-size:var(--fs-h5); font-weight:700; display:block;"><span lang="en">Institutional collaboration</span><span lang="it">Collaborazione istituzionale</span></b>
+            <span style="font-size:var(--fs-body); line-height:1.5; color:rgb(from var(--ink-dark) r g b / .75);"><span lang="en">Help us attract values-driven talent and capital to the island.</span><span lang="it">Aiutateci ad attrarre sull&rsquo;isola talento e capitale guidati dai valori.</span></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 15 · CLOSING ─────────────────────────────────────────────────
+         Centred stack: title, next gathering, the flier, the wordmark. The flier
+         is the same navy as the band, so it carries a ring and a radius to read
+         as a card; the wordmark is pinned to the bottom edge. -->
+    <section class="slide" data-label="Closing" data-label-en="Closing" data-label-it="Chiusura" data-mode="fun" style="align-items:center; justify-content:center; gap:26px; text-align:center; padding-bottom:170px;">
+      <h2 style="font-size:var(--fs-display); line-height:1.04; max-width:16ch;" data-anim="fade">
+        <span lang="en"><mark>Let&rsquo;s build it</mark><br>together.</span><span lang="it"><mark>Costruiamolo</mark><br>insieme.</span>
+      </h2>
+      <p style="font-size:var(--fs-lead); line-height:1.45; max-width:36em; color:rgb(from var(--ink-dark) r g b / .8);" data-anim="fade" data-delay="1">
+        <span lang="en">Next gathering: <b>Thursday 24 September</b> &mdash; last Thursday of the month, as always. Come and see it.</span><span lang="it">Prossimo incontro: <b>gioved&igrave; 24 settembre</b> &mdash; l&rsquo;ultimo gioved&igrave; del mese, come sempre. Venite a vedere.</span>
+      </p>
+      <img src="img/site/monthly-mixer-sept-2026.png?v=fecfbfde" alt="Monthly Mixer, 24 September, 7pm, The Londoner, Cagliari"
+           style="width:340px; height:340px; display:block; border-radius:14px; box-shadow:0 0 0 1px rgb(255 255 255 / .18), 0 24px 60px rgba(0,0,0,.45);"
+           data-anim="lift" data-delay="2">
+      <div style="position:absolute; left:0; right:0; bottom:64px; display:flex; flex-direction:column; align-items:center; gap:12px;" data-anim="fade" data-delay="3">
+        <img class="logo" src="img/wordmark-fun-dark.svg" alt="Entrepreneurs Meet" style="width:185px;">
+        <span class="eyebrow" style="color:rgb(from var(--ink-dark) r g b / .6); font-weight:500;">emcagliari.com</span>
+      </div>
+    </section>
+
+    <div id="slideno"></div>
+  </div>
+</div>
+
+<!-- Presenter chrome -->
+<div id="lang" aria-label="Language">
+  <button type="button" data-lang="en" aria-pressed="true">EN</button>
+  <button type="button" data-lang="it" aria-pressed="false">IT</button>
+</div>
+
+<div id="navzones">
+  <div class="zone prev"><span class="arrow">‹</span></div>
+  <div class="zone next"><span class="arrow">›</span></div>
+</div>
+
+<div id="hud">
+  <span id="counter">01 / 15</span>
+  <span class="key">? for keys</span>
+</div>
+
+<div id="blank"></div>
+<div id="overview"></div>
+
+<div id="help">
+  <div>
+    <h3>Controls</h3>
+    <table>
+      <tr><td>→ ↓ Space PageDn</td><td>Next slide (clicker forward)</td></tr>
+      <tr><td>← ↑ PageUp</td><td>Previous slide (clicker back)</td></tr>
+      <tr><td>Space / K</td><td>Play or pause video, when a slide has one</td></tr>
+      <tr><td>F / F5</td><td>Fullscreen</td></tr>
+      <tr><td>B or .</td><td>Blank to black — any key returns</td></tr>
+      <tr><td>W or ,</td><td>Blank to white</td></tr>
+      <tr><td>O</td><td>Overview grid — click any slide to jump</td></tr>
+      <tr><td>M</td><td>Flip this slide between Fun and Pro</td></tr>
+      <tr><td>S</td><td>Skip this slide — next/prev pass over it; press again to restore</td></tr>
+      <tr><td>L</td><td>Switch language — EN / IT</td></tr>
+      <tr><td>1 – 9</td><td>Jump to slide</td></tr>
+      <tr><td>Home / End</td><td>First / last slide</td></tr>
+      <tr><td>?</td><td>Close this</td></tr>
+    </table>
+  </div>
+</div>
+
+<script src="deck.js?v=08160477"></script>
+</body>
+</html>
