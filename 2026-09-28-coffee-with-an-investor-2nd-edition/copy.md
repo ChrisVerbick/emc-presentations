@@ -1,17 +1,21 @@
-# Coffee with an Investor, Second Edition — deck copy (EN)
+# Coffee Chat with an Investor, 2nd edition — deck copy (EN)
 
 Copy for every slide. Slide numbers match the live deck. The standing running
 header is omitted; footers appear as `footer:` where they carry anything of their own.
 
 ## 01 · Cover
 
-×
+2nd edition
 
-### Innovate Her × Entrepreneurs Meet
+### Coffee Chat with an Investor
 
-A partnership proposal.
+**Investor · Special guest**
 
-19 September 2026 · Cagliari
+Alfredo Coppola
+
+Co-CEO, US Market Access Center, Silicon Valley. Angel investor.
+
+Monday 28 September 2026 · 10:00 · Café at Casa Clát, Cagliari
 
 ## 02 · Pitch · Who we are
 
@@ -41,20 +45,87 @@ Guest entrepreneurs who have told their story.
 
 Volunteer-led · Sector-agnostic · No fixed address
 
-## 03 · Pitch · What we do
+## 03 · Pitch · What we do · 1/4
 
-footer: What we do
+footer: What we do · 1 of 4
 
 **What we do**
 
 ### This isn’t your average networking event.
 
-- Monthly The meetup Last Thursday of every month, 19:00, a different venue each month. Kickoff with collaborative challenges, then real conversations and open networking. Thirty-five events and counting.
-- Twice a year The headline events Kickoff dinner in January. The Summer Party in August at Torre delle Stelle.
-- Between The formats that grew around it NetWalking on the Bastione. Hustle & Grow workshops. Working Days. Brunch with an investor.
-- Always The platform entrepreneursmeet.it — events listing & ticketing, a member directory, a library of events and knowledge base, a blog. Built by members, for members.
+Monthly
 
-## 04 · Pitch · Why it matters
+Twice a year
+
+Between
+
+Always
+
+### The meetup
+
+Last Thursday of every month, 19:00, a different venue each month. Kickoff with collaborative challenges, then real conversations and open networking. Thirty-five events and counting.
+
+## 04 · Pitch · What we do · 2/4
+
+footer: What we do · 2 of 4
+
+**What we do**
+
+### This isn’t your average networking event.
+
+Monthly
+
+Twice a year
+
+Between
+
+Always
+
+### The headline events
+
+Kickoff dinner in January. The Summer Party in August at Torre delle Stelle.
+
+## 05 · Pitch · What we do · 3/4
+
+footer: What we do · 3 of 4
+
+**What we do**
+
+### This isn’t your average networking event.
+
+Monthly
+
+Twice a year
+
+Between
+
+Always
+
+### The formats that grew around it
+
+NetWalking on the Bastione. Hustle & Grow workshops. Working Days. Brunch with an investor.
+
+## 06 · Pitch · What we do · 4/4
+
+footer: What we do · 4 of 4
+
+**What we do**
+
+### This isn’t your average networking event.
+
+Monthly
+
+Twice a year
+
+Between
+
+Always
+
+### The platform
+
+entrepreneursmeet.it — events listing & ticketing, a member directory, a library of events and knowledge base, a blog. Built by members, for members.
+
+## 07 · Pitch · Why it matters
 
 footer: Why it matters
 
@@ -64,7 +135,7 @@ Put Cagliari on the world map — and make sure everyone who arrives finds belon
 
 Talent, values-driven people and capital, drawn to the island and the good life. We see a Cagliari that stands as a Mediterranean capital of ventures: inclusive, cultured, globally minded.
 
-## 05 · Our community
+## 08 · Our community
 
 footer: Our community
 
@@ -98,7 +169,7 @@ Not sure yet. Came anyway. Came back.
 
 185 members · 18 nationalities · newcomers and locals, building together
 
-## 06 · Four ways in
+## 09 · Four ways in
 
 footer: The proposal
 
@@ -108,7 +179,7 @@ footer: The proposal
 
 ### Four sessions we could run at Innovate Her.
 
-## 07 · Session A
+## 10 · Session A
 
 footer: Session A of four
 
@@ -130,7 +201,7 @@ Who it’s for
 
 Anyone early on the road, wanting proof it can be done here.
 
-## 08 · Session B
+## 11 · Session B
 
 footer: Session B of four
 
@@ -154,7 +225,7 @@ Operators and stakeholders that care about a cause or a mission.
 
 Problem / topic to be decided with the Innovate Her team.
 
-## 09 · Session C
+## 12 · Session C
 
 footer: Session C of four
 
@@ -176,7 +247,7 @@ Who it’s for
 
 Everyone. Especially the ones who came alone.
 
-## 10 · Session D
+## 13 · Session D
 
 footer: Session D of four
 
@@ -198,7 +269,7 @@ Who it’s for
 
 Everyone. Especially the ones who came alone to Cagliari.
 
-## 11 · Partners
+## 14 · Partners
 
 footer: Partners
 
@@ -210,7 +281,7 @@ footer: Partners
 
 Not to make a margin. To help build and scale a community.
 
-## 12 · The budget
+## 15 · The budget
 
 footer: Partners · The budget
 
@@ -240,7 +311,7 @@ The whole year
 
 40% · the two headline events
 
-## 13 · The commitment
+## 16 · The commitment
 
 footer: Partners · The budget
 
@@ -264,7 +335,7 @@ The whole year
 
 40% · the two headline events
 
-## 14 · Who you reach
+## 17 · Who you reach
 
 footer: Partners · Who you reach
 
@@ -292,7 +363,7 @@ Venues so far. Every one a local business with their own reach.
 - Community partnership Co-create programmes, perks and programming for members.
 - Institutional collaboration Help us attract values-driven talent and capital to the island.
 
-## 15 · Closing
+## 18 · Closing
 
 ### Let’s build it together.
 

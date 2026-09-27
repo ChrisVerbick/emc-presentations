@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Entrepreneurs Meet — Coffee with an Investor, Second Edition</title>
+<title>Entrepreneurs Meet — Coffee Chat with an Investor, 2nd edition, 28 September 2026</title>
 <link rel="stylesheet" href="deck.css?v=2b1a22d4">
 </head>
 <body>
@@ -21,9 +21,9 @@
          L key, or localStorage. Edit both halves of a pair together.
 
          Running order:
-           01  Cover                       ghost × behind the title
+           01  Cover                       event flier; ghost asterisk behind
            02  Pitch · Who we are          figures + the origin question
-           03  Pitch · What we do          the calendar + aside photo
+           03–06  Pitch · What we do       one point per slide + aside photo
            04  Pitch · Why it matters      vision + goal, as a statement
            05  Our community               the six member categories
            06  Divider · Four ways in
@@ -39,20 +39,25 @@
          ══════════════════════════════════════════════════════════════════════ -->
 
     <!-- 01 · COVER ─────────────────────────────────────────────────────
-         The × is the ghost glyph, same 8% white as the divider numbers, so it
-         reads as the biggest thing on the slide without shouting. -->
+         Mirrors the event flier (resources/IMG_2643.PNG). The ghost glyph is the
+         logomark's asterisk at the divider numbers' 8% white. -->
     <section class="slide" data-label="Cover" data-label-en="Cover" data-label-it="Copertina" data-mode="fun" style="justify-content:space-between;">
       <img class="slide__mark" src="img/logomark-fun-dark.svg" alt="" aria-hidden="true">
-      <div aria-hidden="true" style="position:absolute; right:6%; top:50%; transform:translateY(-52%); font-size:720px; line-height:1; font-weight:700; color:rgb(from var(--ink-dark) r g b / .08); user-select:none;">&times;</div>
-      <img class="logo" src="img/wordmark-fun-dark.svg" alt="Entrepreneurs Meet" data-anim="fade" style="position:relative;">
-      <div style="position:relative; display:flex; flex-direction:column; gap:24px;">
-        <h1 style="font-size:var(--fs-hero); line-height:1; max-width:20ch;" data-anim="fade">Innovate&hairsp;Her<br><span style="color:var(--accent);">&times;</span> Entrepreneurs Meet</h1>
-        <p style="font-size:var(--fs-lead); color:rgb(from var(--ink-dark) r g b / .75); max-width:40em;" data-anim="fade" data-delay="1">
-          <span lang="en">A partnership proposal.</span><span lang="it">Una proposta di partnership.</span>
-        </p>
+      <svg aria-hidden="true" viewBox="139 0 113 117" style="position:absolute; right:7%; top:50%; transform:translateY(-50%); width:620px; height:auto; fill:rgb(from var(--ink-dark) r g b / .08);"><polygon points="251.41 39.29 239.55 18.75 207.08 37.49 207.08 0 183.36 0 183.36 37.49 150.89 18.75 139.02 39.29 171.49 58.04 139.02 76.79 150.89 97.33 183.36 78.59 183.36 116.08 207.08 116.08 207.08 78.59 239.55 97.33 251.41 76.79 218.95 58.04 251.41 39.29"/></svg>
+      <div style="position:relative; display:flex; justify-content:space-between; align-items:center;">
+        <img class="logo" src="img/wordmark-fun-dark.svg" alt="Entrepreneurs Meet" data-anim="fade">
+        <span data-anim="fade" style="border:3px solid rgb(from var(--ink-dark) r g b / .9); border-radius:999px; padding:10px 28px; font-size:var(--fs-lead); font-weight:700; letter-spacing:1.4px; text-transform:uppercase; white-space:nowrap;"><span lang="en">2nd edition</span><span lang="it">2&ordf; edizione</span></span>
       </div>
-      <div class="eyebrow" data-anim="fade" style="position:relative;">
-        <span lang="en">19 September 2026 &middot; Cagliari</span><span lang="it">19 settembre 2026 &middot; Cagliari</span>
+      <div style="position:relative; display:flex; flex-direction:column; gap:28px;">
+        <h1 style="font-size:var(--fs-hero); line-height:1.05; max-width:20ch;" data-anim="fade"><span lang="en">Coffee Chat<br>with <mark>an Investor</mark></span><span lang="it">Coffee Chat<br>con <mark>un investitore</mark></span></h1>
+        <div style="display:flex; flex-direction:column; gap:6px;" data-anim="fade" data-delay="1">
+          <span class="eyebrow" style="color:var(--highlight);"><span lang="en">Investor &middot; Special guest</span><span lang="it">Investitore &middot; Ospite speciale</span></span>
+          <b style="font-size:var(--fs-h3); line-height:1.15;">Alfredo Coppola</b>
+          <span style="font-size:var(--fs-lead); color:rgb(from var(--ink-dark) r g b / .75); max-width:40em;"><span lang="en">Co-CEO, US Market Access Center, Silicon Valley. Angel investor.</span><span lang="it">Co-CEO, US Market Access Center, Silicon Valley. Business angel.</span></span>
+        </div>
+      </div>
+      <div class="eyebrow" data-anim="fade" data-delay="2" style="position:relative;">
+        <span lang="en">Monday 28 September 2026 &middot; 10:00 &middot; Caf&eacute; at Casa Cl&aacute;t, Cagliari</span><span lang="it">Luned&igrave; 28 settembre 2026 &middot; 10:00 &middot; Caf&eacute; at Casa Cl&aacute;t, Cagliari</span>
       </div>
     </section>
 
@@ -60,7 +65,7 @@
          Figures are live off emcagliari.com (Sep 2026). -->
     <section class="slide is-page" data-label="Pitch &middot; Who we are" data-label-en="Pitch &middot; Who we are" data-label-it="Pitch &middot; Chi siamo" data-mode="fun" style="justify-content:center; gap:44px;">
       <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
       <div class="slide__foot"><span><span lang="en">Who we are</span><span lang="it">Chi siamo</span></span><span></span></div>
       <div style="display:flex; flex-direction:column; gap:16px;">
         <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
@@ -84,49 +89,90 @@
       </p>
     </section>
 
-    <!-- 03 · PITCH TWO — WHAT WE DO ─────────────────────────────────
-         Aside photo: the audience, flipped so they face the copy. -->
-    <section class="slide is-alt has-aside" data-label="Pitch &middot; What we do" data-label-en="Pitch &middot; What we do" data-label-it="Pitch &middot; Cosa facciamo" data-mode="fun" style="justify-content:center; gap:36px;">
+    <!-- 03a–d · PITCH TWO — WHAT WE DO, ONE POINT PER SLIDE ────────────
+         Same photo, heading and tracker on all four, un-animated, so stepping
+         through reads as one slide advancing; only the point itself animates. -->
+    <section class="slide is-alt has-aside" data-label="Pitch &middot; What we do &middot; 1/4" data-label-en="Pitch &middot; What we do &middot; 1/4" data-label-it="Pitch &middot; Cosa facciamo &middot; 1/4" data-mode="fun" style="justify-content:flex-start; padding-top:190px; gap:44px;">
       <div class="aside-photo"><img src="img/speakers/audience.jpg?v=7f22ef83" alt="" style="object-position:38% top;"></div>
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
-      <div class="slide__foot"><span><span lang="en">What we do</span><span lang="it">Cosa facciamo</span></span><span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
+      <div class="slide__foot"><span><span lang="en">What we do &middot; 1 of 4</span><span lang="it">Cosa facciamo &middot; 1 di 4</span></span><span></span></div>
       <div style="display:flex; flex-direction:column; gap:12px; max-width:880px;">
-        <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
+        <div style="display:flex; align-items:center; gap:12px;">
           <span class="rule"></span><span class="eyebrow"><span lang="en">What we do</span><span lang="it">Cosa facciamo</span></span>
         </div>
-        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:20ch;" data-anim="fade">
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:20ch;">
           <span lang="en">This isn&rsquo;t your average networking event.</span><span lang="it">Questo non &#xe8; il solito evento di networking.</span>
         </h2>
       </div>
-      <ol style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:20px; max-width:880px;">
-        <li style="display:flex; gap:24px; align-items:baseline;" data-anim="fade" data-delay="1">
-          <span style="font-size:var(--fs-h5); font-weight:700; color:var(--eyebrow); flex:0 0 268px; white-space:nowrap;"><span lang="en">Monthly</span><span lang="it">Mensile</span></span>
-          <span><b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">The meetup</span><span lang="it">Il meetup</span></b><br>
-          <span style="font-size:var(--fs-body); line-height:1.45; color:rgb(from var(--ink-dark) r g b / .8);"><span lang="en">Last Thursday of every month, 19:00, a different venue each month. Kickoff with collaborative challenges, then real conversations and open networking. Thirty-five events and counting.</span><span lang="it">L&#x2019;ultimo gioved&#xec; di ogni mese, alle 19:00, in una sede diversa ogni mese. Si inizia con sfide collaborative, seguite da conversazioni autentiche e networking aperto. Trentacinque eventi e il numero continua a crescere.</span></span></span>
-        </li>
-        <li style="display:flex; gap:24px; align-items:baseline;" data-anim="fade" data-delay="2">
-          <span style="font-size:var(--fs-h5); font-weight:700; color:var(--eyebrow); flex:0 0 268px; white-space:nowrap;"><span lang="en">Twice a year</span><span lang="it">Due volte all&#x2019;anno</span></span>
-          <span><b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">The headline events</span><span lang="it">Gli eventi principali</span></b><br>
-          <span style="font-size:var(--fs-body); line-height:1.45; color:rgb(from var(--ink-dark) r g b / .8);"><span lang="en">Kickoff dinner in January. The Summer Party in August at Torre delle Stelle.</span><span lang="it">Cena di apertura a gennaio. La festa estiva ad agosto alla Torre delle Stelle.</span></span></span>
-        </li>
-        <li style="display:flex; gap:24px; align-items:baseline;" data-anim="fade" data-delay="3">
-          <span style="font-size:var(--fs-h5); font-weight:700; color:var(--eyebrow); flex:0 0 268px; white-space:nowrap;"><span lang="en">Between</span><span lang="it">Nel frattempo</span></span>
-          <span><b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">The formats that grew around it</span><span lang="it">I format nati attorno all&#x2019;iniziativa</span></b><br>
-          <span style="font-size:var(--fs-body); line-height:1.45; color:rgb(from var(--ink-dark) r g b / .8);"><span lang="en">NetWalking on the Bastione. Hustle &amp; Grow workshops. Working Days. Brunch with an investor.</span><span lang="it">NetWalking sul Bastione. Workshop Hustle &amp; Grow. Working Days. Brunch con un investitore.</span></span></span>
-        </li>
-        <li style="display:flex; gap:24px; align-items:baseline;" data-anim="fade" data-delay="4">
-          <span style="font-size:var(--fs-h5); font-weight:700; color:var(--eyebrow); flex:0 0 268px; white-space:nowrap;"><span lang="en">Always</span><span lang="it">Sempre</span></span>
-          <span><b style="font-size:var(--fs-h5); font-weight:700;"><span lang="en">The platform</span><span lang="it">La piattaforma</span></b><br>
-          <span style="font-size:var(--fs-body); line-height:1.45; color:rgb(from var(--ink-dark) r g b / .8);"><span lang="en">entrepreneursmeet.it &mdash; events listing &amp; ticketing, a member directory, a library of events and knowledge base, a blog. Built by members, for members.</span><span lang="it">entrepreneursmeet.it &#x2014; elenco degli eventi e biglietteria, un elenco dei membri, un archivio di eventi e una base di conoscenze, un blog. Realizzata dai membri, per i membri.</span></span></span>
-        </li>
-      </ol>
+      <div style="display:flex; gap:20px; max-width:880px;"><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid var(--accent); color:var(--ink-dark); flex:1;"><span lang="en">Monthly</span><span lang="it">Mensile</span></span><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid rgb(from var(--ink-dark) r g b / .2); color:rgb(from var(--ink-dark) r g b / .4); flex:1;"><span lang="en">Twice a year</span><span lang="it">Due volte all&#x2019;anno</span></span><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid rgb(from var(--ink-dark) r g b / .2); color:rgb(from var(--ink-dark) r g b / .4); flex:1;"><span lang="en">Between</span><span lang="it">Nel frattempo</span></span><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid rgb(from var(--ink-dark) r g b / .2); color:rgb(from var(--ink-dark) r g b / .4); flex:1;"><span lang="en">Always</span><span lang="it">Sempre</span></span></div>
+      <div style="display:flex; flex-direction:column; gap:18px; max-width:880px;">
+        <h3 style="font-size:var(--fs-h3); line-height:1.12; max-width:22ch;" data-anim="fade"><span lang="en">The meetup</span><span lang="it">Il meetup</span></h3>
+        <p style="font-size:var(--fs-lead); line-height:1.5; max-width:34em; color:rgb(from var(--ink-dark) r g b / .8);" data-anim="fade" data-delay="1"><span lang="en">Last Thursday of every month, 19:00, a different venue each month. Kickoff with collaborative challenges, then real conversations and open networking. Thirty-five events and counting.</span><span lang="it">L&#x2019;ultimo gioved&#xec; di ogni mese, alle 19:00, in una sede diversa ogni mese. Si inizia con sfide collaborative, seguite da conversazioni autentiche e networking aperto. Trentacinque eventi e il numero continua a crescere.</span></p>
+      </div>
+    </section>
+
+    <section class="slide is-alt has-aside" data-label="Pitch &middot; What we do &middot; 2/4" data-label-en="Pitch &middot; What we do &middot; 2/4" data-label-it="Pitch &middot; Cosa facciamo &middot; 2/4" data-mode="fun" style="justify-content:flex-start; padding-top:190px; gap:44px;">
+      <div class="aside-photo"><img src="img/speakers/audience.jpg?v=7f22ef83" alt="" style="object-position:38% top;"></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
+      <div class="slide__foot"><span><span lang="en">What we do &middot; 2 of 4</span><span lang="it">Cosa facciamo &middot; 2 di 4</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:12px; max-width:880px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span class="rule"></span><span class="eyebrow"><span lang="en">What we do</span><span lang="it">Cosa facciamo</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:20ch;">
+          <span lang="en">This isn&rsquo;t your average networking event.</span><span lang="it">Questo non &#xe8; il solito evento di networking.</span>
+        </h2>
+      </div>
+      <div style="display:flex; gap:20px; max-width:880px;"><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid rgb(from var(--ink-dark) r g b / .2); color:rgb(from var(--ink-dark) r g b / .4); flex:1;"><span lang="en">Monthly</span><span lang="it">Mensile</span></span><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid var(--accent); color:var(--ink-dark); flex:1;"><span lang="en">Twice a year</span><span lang="it">Due volte all&#x2019;anno</span></span><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid rgb(from var(--ink-dark) r g b / .2); color:rgb(from var(--ink-dark) r g b / .4); flex:1;"><span lang="en">Between</span><span lang="it">Nel frattempo</span></span><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid rgb(from var(--ink-dark) r g b / .2); color:rgb(from var(--ink-dark) r g b / .4); flex:1;"><span lang="en">Always</span><span lang="it">Sempre</span></span></div>
+      <div style="display:flex; flex-direction:column; gap:18px; max-width:880px;">
+        <h3 style="font-size:var(--fs-h3); line-height:1.12; max-width:22ch;" data-anim="fade"><span lang="en">The headline events</span><span lang="it">Gli eventi principali</span></h3>
+        <p style="font-size:var(--fs-lead); line-height:1.5; max-width:34em; color:rgb(from var(--ink-dark) r g b / .8);" data-anim="fade" data-delay="1"><span lang="en">Kickoff dinner in January. The Summer Party in August at Torre delle Stelle.</span><span lang="it">Cena di apertura a gennaio. La festa estiva ad agosto alla Torre delle Stelle.</span></p>
+      </div>
+    </section>
+
+    <section class="slide is-alt has-aside" data-label="Pitch &middot; What we do &middot; 3/4" data-label-en="Pitch &middot; What we do &middot; 3/4" data-label-it="Pitch &middot; Cosa facciamo &middot; 3/4" data-mode="fun" style="justify-content:flex-start; padding-top:190px; gap:44px;">
+      <div class="aside-photo"><img src="img/speakers/audience.jpg?v=7f22ef83" alt="" style="object-position:38% top;"></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
+      <div class="slide__foot"><span><span lang="en">What we do &middot; 3 of 4</span><span lang="it">Cosa facciamo &middot; 3 di 4</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:12px; max-width:880px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span class="rule"></span><span class="eyebrow"><span lang="en">What we do</span><span lang="it">Cosa facciamo</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:20ch;">
+          <span lang="en">This isn&rsquo;t your average networking event.</span><span lang="it">Questo non &#xe8; il solito evento di networking.</span>
+        </h2>
+      </div>
+      <div style="display:flex; gap:20px; max-width:880px;"><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid rgb(from var(--ink-dark) r g b / .2); color:rgb(from var(--ink-dark) r g b / .4); flex:1;"><span lang="en">Monthly</span><span lang="it">Mensile</span></span><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid rgb(from var(--ink-dark) r g b / .2); color:rgb(from var(--ink-dark) r g b / .4); flex:1;"><span lang="en">Twice a year</span><span lang="it">Due volte all&#x2019;anno</span></span><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid var(--accent); color:var(--ink-dark); flex:1;"><span lang="en">Between</span><span lang="it">Nel frattempo</span></span><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid rgb(from var(--ink-dark) r g b / .2); color:rgb(from var(--ink-dark) r g b / .4); flex:1;"><span lang="en">Always</span><span lang="it">Sempre</span></span></div>
+      <div style="display:flex; flex-direction:column; gap:18px; max-width:880px;">
+        <h3 style="font-size:var(--fs-h3); line-height:1.12; max-width:22ch;" data-anim="fade"><span lang="en">The formats that grew around it</span><span lang="it">I format nati attorno all&#x2019;iniziativa</span></h3>
+        <p style="font-size:var(--fs-lead); line-height:1.5; max-width:34em; color:rgb(from var(--ink-dark) r g b / .8);" data-anim="fade" data-delay="1"><span lang="en">NetWalking on the Bastione. Hustle &amp; Grow workshops. Working Days. Brunch with an investor.</span><span lang="it">NetWalking sul Bastione. Workshop Hustle &amp; Grow. Working Days. Brunch con un investitore.</span></p>
+      </div>
+    </section>
+
+    <section class="slide is-alt has-aside" data-label="Pitch &middot; What we do &middot; 4/4" data-label-en="Pitch &middot; What we do &middot; 4/4" data-label-it="Pitch &middot; Cosa facciamo &middot; 4/4" data-mode="fun" style="justify-content:flex-start; padding-top:190px; gap:44px;">
+      <div class="aside-photo"><img src="img/speakers/audience.jpg?v=7f22ef83" alt="" style="object-position:38% top;"></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
+      <div class="slide__foot"><span><span lang="en">What we do &middot; 4 of 4</span><span lang="it">Cosa facciamo &middot; 4 di 4</span></span><span></span></div>
+      <div style="display:flex; flex-direction:column; gap:12px; max-width:880px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span class="rule"></span><span class="eyebrow"><span lang="en">What we do</span><span lang="it">Cosa facciamo</span></span>
+        </div>
+        <h2 style="font-size:var(--fs-h2); line-height:1.12; max-width:20ch;">
+          <span lang="en">This isn&rsquo;t your average networking event.</span><span lang="it">Questo non &#xe8; il solito evento di networking.</span>
+        </h2>
+      </div>
+      <div style="display:flex; gap:20px; max-width:880px;"><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid rgb(from var(--ink-dark) r g b / .2); color:rgb(from var(--ink-dark) r g b / .4); flex:1;"><span lang="en">Monthly</span><span lang="it">Mensile</span></span><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid rgb(from var(--ink-dark) r g b / .2); color:rgb(from var(--ink-dark) r g b / .4); flex:1;"><span lang="en">Twice a year</span><span lang="it">Due volte all&#x2019;anno</span></span><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid rgb(from var(--ink-dark) r g b / .2); color:rgb(from var(--ink-dark) r g b / .4); flex:1;"><span lang="en">Between</span><span lang="it">Nel frattempo</span></span><span style="font-size:var(--fs-body); font-weight:700; padding-top:10px; border-top:3px solid var(--accent); color:var(--ink-dark); flex:1;"><span lang="en">Always</span><span lang="it">Sempre</span></span></div>
+      <div style="display:flex; flex-direction:column; gap:18px; max-width:880px;">
+        <h3 style="font-size:var(--fs-h3); line-height:1.12; max-width:22ch;" data-anim="fade"><span lang="en">The platform</span><span lang="it">La piattaforma</span></h3>
+        <p style="font-size:var(--fs-lead); line-height:1.5; max-width:34em; color:rgb(from var(--ink-dark) r g b / .8);" data-anim="fade" data-delay="1"><span lang="en">entrepreneursmeet.it &mdash; events listing &amp; ticketing, a member directory, a library of events and knowledge base, a blog. Built by members, for members.</span><span lang="it">entrepreneursmeet.it &#x2014; elenco degli eventi e biglietteria, un elenco dei membri, un archivio di eventi e una base di conoscenze, un blog. Realizzata dai membri, per i membri.</span></p>
+      </div>
     </section>
 
     <!-- 04 · PITCH THREE — WHY IT MATTERS ───────────────────────────
          Statement archetype: one <mark>. -->
     <section class="slide is-page" data-label="Pitch &middot; Why it matters" data-label-en="Pitch &middot; Why it matters" data-label-it="Pitch &middot; Perch&eacute; &egrave; importante" data-mode="fun" style="align-items:center; justify-content:center; gap:32px;">
       <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
       <div class="slide__foot"><span><span lang="en">Why it matters</span><span lang="it">Perch&#xe9; &#xe8; importante</span></span><span></span></div>
       <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
         <span class="rule" style="color:var(--eyebrow);"></span><span class="eyebrow"><span lang="en">Our vision &amp; our goal</span><span lang="it">La nostra visione e il nostro obiettivo</span></span>
@@ -145,7 +191,7 @@
          would land harder — pull them from the directory when we have them. -->
     <section class="slide is-page" data-label="Our community" data-label-en="Our community" data-label-it="La nostra comunit&agrave;" data-mode="fun" style="justify-content:center; gap:40px;">
       <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
       <div class="slide__foot"><span><span lang="en">Our community</span><span lang="it">La nostra comunit&#xe0;</span></span><span></span></div>
       <div style="display:flex; flex-direction:column; gap:16px;">
         <span class="eyebrow" style="color:var(--accent);" data-anim="fade"><mark><span lang="en">Our community</span><span lang="it">La nostra comunit&#xe0;</span></mark></span>
@@ -169,7 +215,7 @@
     <!-- 06 · DIVIDER — FOUR WAYS IN ──────────────────────────────── -->
     <section class="slide is-alt" data-label="Four ways in" data-label-en="Four ways in" data-label-it="Quattro modi per entrare" data-mode="fun" style="justify-content:center;">
       <img class="slide__mark" src="img/logomark-fun-dark.svg" alt="" aria-hidden="true">
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
       <div class="slide__foot"><span><span lang="en">The proposal</span><span lang="it">La proposta</span></span><span></span></div>
       <div style="position:absolute; right:4%; top:50%; transform:translateY(-50%); font-size:420px; line-height:1; font-weight:700; color:rgb(from var(--ink-dark) r g b / .08); user-select:none;">03</div>
       <div style="position:relative; display:flex; flex-direction:column; gap:20px;">
@@ -188,7 +234,7 @@
          four carry an aside photo, so the copy keeps to 880px. -->
     <section class="slide is-page has-aside" data-label="Session A" data-label-en="Session A" data-label-it="Sessione A" data-mode="fun" style="justify-content:center; gap:36px;">
       <div class="aside-photo"><img src="img/speakers/speaker.jpg?v=d01c7221" alt="" style="object-position:55% 20%;"></div>
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
       <div class="slide__foot"><span><span lang="en">Session A of four</span><span lang="it">Sessione A di quattro</span></span><span></span></div>
       <div style="display:flex; flex-direction:column; gap:14px; max-width:880px;">
         <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
@@ -210,7 +256,7 @@
 
     <section class="slide is-alt has-aside" data-label="Session B" data-label-en="Session B" data-label-it="Sessione B" data-mode="fun" style="justify-content:center; gap:36px;">
       <div class="aside-photo"><img src="img/speakers/roundtable.jpg?v=34a5eece" alt="" style="object-position:42% center;"></div>
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
       <div class="slide__foot"><span><span lang="en">Session B of four</span><span lang="it">Sessione B di quattro</span></span><span></span></div>
       <div style="display:flex; flex-direction:column; gap:14px; max-width:880px;">
         <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
@@ -235,7 +281,7 @@
 
     <section class="slide is-page has-aside" data-label="Session C" data-label-en="Session C" data-label-it="Sessione C" data-mode="fun" style="justify-content:center; gap:36px;">
       <div class="aside-photo"><img src="img/speakers/aperitivo.jpg?v=1c0a9ec0" alt="" style="object-position:58% 30%;"></div>
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
       <div class="slide__foot"><span><span lang="en">Session C of four</span><span lang="it">Sessione C di quattro</span></span><span></span></div>
       <div style="display:flex; flex-direction:column; gap:14px; max-width:880px;">
         <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
@@ -257,7 +303,7 @@
 
     <section class="slide is-page has-aside" data-label="Session D" data-label-en="Session D" data-label-it="Sessione D" data-mode="fun" style="justify-content:center; gap:36px;">
       <div class="aside-photo"><img src="img/speakers/netwalking.jpg?v=dddb70d2" alt="" style="object-position:50% 40%;"></div>
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
       <div class="slide__foot"><span><span lang="en">Session D of four</span><span lang="it">Sessione D di quattro</span></span><span></span></div>
       <div style="display:flex; flex-direction:column; gap:14px; max-width:880px;">
         <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
@@ -280,7 +326,7 @@
     <!-- 11 · DIVIDER — PARTNERS ───────────────────────────────────── -->
     <section class="slide is-alt" data-label="Partners" data-label-en="Partners" data-label-it="Partner" data-mode="fun" style="justify-content:center;">
       <img class="slide__mark" src="img/logomark-fun-dark.svg" alt="" aria-hidden="true">
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
       <div class="slide__foot"><span><span lang="en">Partners</span><span lang="it">Partner</span></span><span></span></div>
       <div style="position:absolute; right:4%; top:50%; transform:translateY(-50%); font-size:420px; line-height:1; font-weight:700; color:rgb(from var(--ink-dark) r g b / .08); user-select:none;">04</div>
       <div style="position:relative; display:flex; flex-direction:column; gap:20px;">
@@ -302,7 +348,7 @@
          Italian uses a point for thousands: €6.000. -->
     <section class="slide is-page" data-label="The budget" data-label-en="The budget" data-label-it="Il budget" data-mode="fun" style="justify-content:center; gap:40px;">
       <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
       <div class="slide__foot"><span><span lang="en">Partners &middot; The budget</span><span lang="it">Partner &middot; Il budget</span></span><span></span></div>
       <div style="display:flex; flex-direction:column; gap:14px;">
         <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
@@ -345,7 +391,7 @@
          the numbers stay in the drawer. Skip one or the other with S. -->
     <section class="slide is-page" data-label="The commitment" data-label-en="The commitment" data-label-it="L&rsquo;impegno" data-mode="fun" style="justify-content:center; gap:40px;">
       <img class="slide__mark" src="img/logomark-fun-light.svg" alt="" aria-hidden="true">
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
       <div class="slide__foot"><span><span lang="en">Partners &middot; The budget</span><span lang="it">Partner &middot; Il budget</span></span><span></span></div>
       <div style="display:flex; flex-direction:column; gap:14px;">
         <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">
@@ -385,7 +431,7 @@
          the right (names verbatim from emcagliari.com/get-involved). -->
     <section class="slide is-alt" data-label="Who you reach" data-label-en="Who you reach" data-label-it="Chi raggiungi" data-mode="fun" style="justify-content:center; gap:40px;">
       <img class="slide__mark" src="img/logomark-fun-dark.svg" alt="" aria-hidden="true">
-      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Un caff&egrave; con un investitore</span></span></div>
+      <div class="slide__head"><span><span lang="en">Entrepreneurs Meet &middot; Coffee Chat with an Investor</span><span lang="it">Entrepreneurs Meet &middot; Coffee Chat con un investitore</span></span></div>
       <div class="slide__foot"><span><span lang="en">Partners &middot; Who you reach</span><span lang="it">Partner &#xb7; A chi ti rivolgi</span></span><span></span></div>
       <div style="display:flex; flex-direction:column; gap:14px;">
         <div style="display:flex; align-items:center; gap:12px;" data-anim="fade">

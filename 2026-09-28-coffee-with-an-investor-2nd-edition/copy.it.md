@@ -1,17 +1,21 @@
-# Un caffè con un investitore, seconda edizione — copia del deck (IT)
+# Coffee Chat con un investitore, 2ª edizione — copia del deck (IT)
 
 Copy for every slide. Slide numbers match the live deck. The standing running
 header is omitted; footers appear as `footer:` where they carry anything of their own.
 
 ## 01 · Copertina
 
-×
+2ª edizione
 
-### Innovate Her × Entrepreneurs Meet
+### Coffee Chat con un investitore
 
-Una proposta di partnership.
+**Investitore · Ospite speciale**
 
-19 settembre 2026 · Cagliari
+Alfredo Coppola
+
+Co-CEO, US Market Access Center, Silicon Valley. Business angel.
+
+Lunedì 28 settembre 2026 · 10:00 · Café at Casa Clát, Cagliari
 
 ## 02 · Pitch · Chi siamo
 
@@ -41,20 +45,87 @@ Imprenditori ospiti che hanno raccontato la loro storia.
 
 Gestito da volontari · Senza limiti di settore · Senza sede fissa
 
-## 03 · Pitch · Cosa facciamo
+## 03 · Pitch · Cosa facciamo · 1/4
 
-footer: Cosa facciamo
+footer: Cosa facciamo · 1 di 4
 
 **Cosa facciamo**
 
 ### Questo non è il solito evento di networking.
 
-- Mensile Il meetup L’ultimo giovedì di ogni mese, alle 19:00, in una sede diversa ogni mese. Si inizia con sfide collaborative, seguite da conversazioni autentiche e networking aperto. Trentacinque eventi e il numero continua a crescere.
-- Due volte all’anno Gli eventi principali Cena di apertura a gennaio. La festa estiva ad agosto alla Torre delle Stelle.
-- Nel frattempo I format nati attorno all’iniziativa NetWalking sul Bastione. Workshop Hustle & Grow. Working Days. Brunch con un investitore.
-- Sempre La piattaforma entrepreneursmeet.it — elenco degli eventi e biglietteria, un elenco dei membri, un archivio di eventi e una base di conoscenze, un blog. Realizzata dai membri, per i membri.
+Mensile
 
-## 04 · Pitch · Perché è importante
+Due volte all’anno
+
+Nel frattempo
+
+Sempre
+
+### Il meetup
+
+L’ultimo giovedì di ogni mese, alle 19:00, in una sede diversa ogni mese. Si inizia con sfide collaborative, seguite da conversazioni autentiche e networking aperto. Trentacinque eventi e il numero continua a crescere.
+
+## 04 · Pitch · Cosa facciamo · 2/4
+
+footer: Cosa facciamo · 2 di 4
+
+**Cosa facciamo**
+
+### Questo non è il solito evento di networking.
+
+Mensile
+
+Due volte all’anno
+
+Nel frattempo
+
+Sempre
+
+### Gli eventi principali
+
+Cena di apertura a gennaio. La festa estiva ad agosto alla Torre delle Stelle.
+
+## 05 · Pitch · Cosa facciamo · 3/4
+
+footer: Cosa facciamo · 3 di 4
+
+**Cosa facciamo**
+
+### Questo non è il solito evento di networking.
+
+Mensile
+
+Due volte all’anno
+
+Nel frattempo
+
+Sempre
+
+### I format nati attorno all’iniziativa
+
+NetWalking sul Bastione. Workshop Hustle & Grow. Working Days. Brunch con un investitore.
+
+## 06 · Pitch · Cosa facciamo · 4/4
+
+footer: Cosa facciamo · 4 di 4
+
+**Cosa facciamo**
+
+### Questo non è il solito evento di networking.
+
+Mensile
+
+Due volte all’anno
+
+Nel frattempo
+
+Sempre
+
+### La piattaforma
+
+entrepreneursmeet.it — elenco degli eventi e biglietteria, un elenco dei membri, un archivio di eventi e una base di conoscenze, un blog. Realizzata dai membri, per i membri.
+
+## 07 · Pitch · Perché è importante
 
 footer: Perché è importante
 
@@ -64,7 +135,7 @@ Portare Cagliari sulla mappa del mondo — e fare in modo che chiunque vi arrivi
 
 Talento, persone guidate dai valori e capitali, attratti dall’isola e dalla bella vita. Immaginiamo una Cagliari che si affermi come capitale mediterranea delle iniziative imprenditoriali: inclusiva, colta, con una mentalità globale.
 
-## 05 · La nostra comunità
+## 08 · La nostra comunità
 
 footer: La nostra comunità
 
@@ -98,7 +169,7 @@ Non ne sono ancora sicuri. Sono venuti lo stesso. Sono tornati.
 
 185 membri · 18 nazionalità · nuovi arrivati e gente del posto, che costruiscono insieme
 
-## 06 · Quattro modi per entrare
+## 09 · Quattro modi per entrare
 
 footer: La proposta
 
@@ -108,7 +179,7 @@ footer: La proposta
 
 ### Quattro sessioni che potremmo organizzare a Innovate Her.
 
-## 07 · Sessione A
+## 10 · Sessione A
 
 footer: Sessione A di quattro
 
@@ -130,7 +201,7 @@ A chi è rivolto
 
 Chiunque sia agli inizi del proprio percorso e desideri la conferma che qui sia possibile farlo.
 
-## 08 · Sessione B
+## 11 · Sessione B
 
 footer: Sessione B di quattro
 
@@ -154,7 +225,7 @@ Operatori e parti interessate che hanno a cuore una causa o una missione.
 
 Problema/argomento da definire insieme al team di Innovate Her.
 
-## 09 · Sessione C
+## 12 · Sessione C
 
 footer: Sessione C di quattro
 
@@ -176,7 +247,7 @@ A chi è rivolto
 
 A tutti. Soprattutto a chi è venuto da solo.
 
-## 10 · Sessione D
+## 13 · Sessione D
 
 footer: Sessione D di quattro
 
@@ -198,7 +269,7 @@ A chi è rivolto
 
 A tutti. Soprattutto a chi è venuto da solo a Cagliari.
 
-## 11 · Partner
+## 14 · Partner
 
 footer: Partner
 
@@ -210,7 +281,7 @@ footer: Partner
 
 Non per realizzare un margine di profitto, ma per contribuire a costruire e far crescere una comunità.
 
-## 12 · Il budget
+## 15 · Il budget
 
 footer: Partner · Il budget
 
@@ -240,7 +311,7 @@ L’intero anno
 
 40% · i due eventi principali
 
-## 13 · L’impegno
+## 16 · L’impegno
 
 footer: Partner · Il budget
 
@@ -264,7 +335,7 @@ L’intero anno
 
 40% · i due eventi principali
 
-## 14 · Chi raggiungi
+## 17 · Chi raggiungi
 
 footer: Partner · A chi ti rivolgi
 
@@ -292,7 +363,7 @@ Sedi finora. Ognuna è un’attività locale con la propria rete di contatti.
 - Partnership con la comunità Co-creazione di programmi, vantaggi e iniziative per i soci.
 - Collaborazione istituzionale Aiutaci ad attirare sull’isola talenti e capitali che condividono i nostri valori.
 
-## 15 · Chiusura
+## 18 · Chiusura
 
 ### Costruiamolo insieme.
 

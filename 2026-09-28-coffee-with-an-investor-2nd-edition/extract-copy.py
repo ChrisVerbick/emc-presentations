@@ -7,8 +7,8 @@ SRC_NC = re.sub(r'<!--.*?-->', lambda m: '\n' * m.group(0).count('\n'), SRC, fla
 # Bilingual deck: copy is <span lang="en">…</span><span lang="it">…</span> pairs (leaf
 # spans, never nested), and each slide has data-label-<lang>. One pass per language,
 # with the other language's spans stripped before parsing.
-LANGS = {'en': ('copy.md', 'Coffee with an Investor, Second Edition — deck copy (EN)'),
-         'it': ('copy.it.md', 'Un caffè con un investitore, seconda edizione — copia del deck (IT)')}
+LANGS = {'en': ('copy.md', 'Coffee Chat with an Investor, 2nd edition — deck copy (EN)'),
+         'it': ('copy.it.md', 'Coffee Chat con un investitore, 2ª edizione — copia del deck (IT)')}
 
 def source_for(lang):
     other = [l for l in LANGS if l != lang]
