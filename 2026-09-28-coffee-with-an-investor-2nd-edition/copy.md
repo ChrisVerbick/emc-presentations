@@ -169,7 +169,105 @@ Not sure yet. Came anyway. Came back.
 
 185 members · 18 nationalities · newcomers and locals, building together
 
-## 09 · Four ways in
+## 09 · KPIs · In numbers
+
+footer: Our community in numbers
+
+**Our community in numbers**
+
+### And we’ve only just started.
+
+180+
+
+Active members.
+
+18+
+
+Companies supported through our events.
+
+40+
+
+Events so far, since October 2023.
+
+50+
+
+Guest entrepreneurs.
+
+## 10 · KPIs · 4 in 10 women
+
+footer: Our community in numbers
+
+4 in 10
+
+of our members are women.
+
+## 11 · KPIs · Nationalities
+
+footer: Our community in numbers
+
+**Nationalities represented**
+
+### Fifteen nationalities. One language: English.
+
+Our focus is Sardinia, but we look to the whole world — which is why the official language of our meetups is English.
+
+Italian
+
+French
+
+Dutch
+
+American
+
+Indian
+
+German
+
+Brazilian
+
+Argentine
+
+Belgian
+
+Maltese
+
+Swiss
+
+Romanian
+
+Iraqi
+
+Canadian
+
+Spanish
+
+## 12 · KPIs · First-timers
+
+footer: Our community in numbers
+
+**Always new faces**
+
+### About 1 in 3 people at an EMC evening is there for the first time.
+
+It barely moves: 30% in 2025, 29% in 2026 so far. Themed talks, workshops and the New Year kickoff bring in the most newcomers.
+
+30%
+
+First-timers, 2025 onward.
+
+256
+
+Different people through the door.
+
+796
+
+Tickets.
+
+34
+
+Events in the ticket history, July 2024 – August 2026.
+
+## 13 · Four ways in
 
 footer: The proposal
 
@@ -179,7 +277,7 @@ footer: The proposal
 
 ### Four sessions we could run at Innovate Her.
 
-## 10 · Session A
+## 14 · Session A
 
 footer: Session A of four
 
@@ -201,7 +299,7 @@ Who it’s for
 
 Anyone early on the road, wanting proof it can be done here.
 
-## 11 · Session B
+## 15 · Session B
 
 footer: Session B of four
 
@@ -225,7 +323,7 @@ Operators and stakeholders that care about a cause or a mission.
 
 Problem / topic to be decided with the Innovate Her team.
 
-## 12 · Session C
+## 16 · Session C
 
 footer: Session C of four
 
@@ -247,7 +345,7 @@ Who it’s for
 
 Everyone. Especially the ones who came alone.
 
-## 13 · Session D
+## 17 · Session D
 
 footer: Session D of four
 
@@ -269,7 +367,7 @@ Who it’s for
 
 Everyone. Especially the ones who came alone to Cagliari.
 
-## 14 · Partners
+## 18 · Partners
 
 footer: Partners
 
@@ -281,7 +379,7 @@ footer: Partners
 
 Not to make a margin. To help build and scale a community.
 
-## 15 · The budget
+## 19 · The budget
 
 footer: Partners · The budget
 
@@ -311,7 +409,7 @@ The whole year
 
 40% · the two headline events
 
-## 16 · The commitment
+## 20 · The commitment
 
 footer: Partners · The budget
 
@@ -335,7 +433,7 @@ The whole year
 
 40% · the two headline events
 
-## 17 · Who you reach
+## 21 · Who you reach
 
 footer: Partners · Who you reach
 
@@ -363,7 +461,7 @@ Venues so far. Every one a local business with their own reach.
 - Community partnership Co-create programmes, perks and programming for members.
 - Institutional collaboration Help us attract values-driven talent and capital to the island.
 
-## 18 · Closing
+## 22 · Closing
 
 ### Let’s build it together.
 

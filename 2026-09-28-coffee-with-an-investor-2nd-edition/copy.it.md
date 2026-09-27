@@ -169,7 +169,105 @@ Non ne sono ancora sicuri. Sono venuti lo stesso. Sono tornati.
 
 185 membri · 18 nazionalità · nuovi arrivati e gente del posto, che costruiscono insieme
 
-## 09 · Quattro modi per entrare
+## 09 · KPI · In numeri
+
+footer: La community in numeri
+
+**La community in numeri**
+
+### E abbiamo appena cominciato.
+
+180+
+
+Membri attivi.
+
+18+
+
+Aziende sostenute attraverso i nostri eventi.
+
+40+
+
+Eventi fatti finora, da ottobre 2023.
+
+50+
+
+Imprenditori ospiti.
+
+## 10 · KPI · 4 su 10 donne
+
+footer: La community in numeri
+
+4 su 10
+
+dei nostri membri sono donne.
+
+## 11 · KPI · Nazionalità
+
+footer: La community in numeri
+
+**Nazionalità rappresentate**
+
+### Quindici nazionalità. Una lingua: l’inglese.
+
+Sebbene il nostro focus sia sulla Sardegna, guardiamo al mondo intero, ed è per questo che la lingua ufficiale degli incontri è l’inglese.
+
+Italiana
+
+Francese
+
+Olandese
+
+Americana
+
+Indiana
+
+Tedesca
+
+Brasiliana
+
+Argentina
+
+Belga
+
+Maltese
+
+Svizzera
+
+Rumena
+
+Irachena
+
+Canadese
+
+Spagnola
+
+## 12 · KPI · Nuovi arrivati
+
+footer: La community in numeri
+
+**Sempre volti nuovi**
+
+### Circa 1 persona su 3 a una serata EMC è alla sua prima volta.
+
+È un dato stabile: 30% nel 2025, 29% finora nel 2026. Talk tematici, workshop e il kickoff di inizio anno portano il maggior numero di nuovi arrivati.
+
+30%
+
+Nuovi arrivati, dal 2025.
+
+256
+
+Persone diverse che hanno partecipato.
+
+796
+
+Biglietti.
+
+34
+
+Eventi nello storico dei biglietti, luglio 2024 – agosto 2026.
+
+## 13 · Quattro modi per entrare
 
 footer: La proposta
 
@@ -179,7 +277,7 @@ footer: La proposta
 
 ### Quattro sessioni che potremmo organizzare a Innovate Her.
 
-## 10 · Sessione A
+## 14 · Sessione A
 
 footer: Sessione A di quattro
 
@@ -201,7 +299,7 @@ A chi è rivolto
 
 Chiunque sia agli inizi del proprio percorso e desideri la conferma che qui sia possibile farlo.
 
-## 11 · Sessione B
+## 15 · Sessione B
 
 footer: Sessione B di quattro
 
@@ -225,7 +323,7 @@ Operatori e parti interessate che hanno a cuore una causa o una missione.
 
 Problema/argomento da definire insieme al team di Innovate Her.
 
-## 12 · Sessione C
+## 16 · Sessione C
 
 footer: Sessione C di quattro
 
@@ -247,7 +345,7 @@ A chi è rivolto
 
 A tutti. Soprattutto a chi è venuto da solo.
 
-## 13 · Sessione D
+## 17 · Sessione D
 
 footer: Sessione D di quattro
 
@@ -269,7 +367,7 @@ A chi è rivolto
 
 A tutti. Soprattutto a chi è venuto da solo a Cagliari.
 
-## 14 · Partner
+## 18 · Partner
 
 footer: Partner
 
@@ -281,7 +379,7 @@ footer: Partner
 
 Non per realizzare un margine di profitto, ma per contribuire a costruire e far crescere una comunità.
 
-## 15 · Il budget
+## 19 · Il budget
 
 footer: Partner · Il budget
 
@@ -311,7 +409,7 @@ L’intero anno
 
 40% · i due eventi principali
 
-## 16 · L’impegno
+## 20 · L’impegno
 
 footer: Partner · Il budget
 
@@ -335,7 +433,7 @@ L’intero anno
 
 40% · i due eventi principali
 
-## 17 · Chi raggiungi
+## 21 · Chi raggiungi
 
 footer: Partner · A chi ti rivolgi
 
@@ -363,7 +461,7 @@ Sedi finora. Ognuna è un’attività locale con la propria rete di contatti.
 - Partnership con la comunità Co-creazione di programmi, vantaggi e iniziative per i soci.
 - Collaborazione istituzionale Aiutaci ad attirare sull’isola talenti e capitali che condividono i nostri valori.
 
-## 18 · Chiusura
+## 22 · Chiusura
 
 ### Costruiamolo insieme.
 
