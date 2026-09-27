@@ -267,7 +267,17 @@ Tickets.
 
 Events in the ticket history, July 2024 – August 2026.
 
-## 13 · Four ways in
+## 13 · Thank you · Q&A
+
+### Thank you.
+
+Now it’s time for the main event. Let’s begin the Q&A.
+
+## 14 · Blank
+
+_(no copy — image only)_
+
+## 15 · Four ways in
 
 footer: The proposal
 
@@ -277,7 +287,7 @@ footer: The proposal
 
 ### Four sessions we could run at Innovate Her.
 
-## 14 · Session A
+## 16 · Session A
 
 footer: Session A of four
 
@@ -299,7 +309,7 @@ Who it’s for
 
 Anyone early on the road, wanting proof it can be done here.
 
-## 15 · Session B
+## 17 · Session B
 
 footer: Session B of four
 
@@ -323,7 +333,7 @@ Operators and stakeholders that care about a cause or a mission.
 
 Problem / topic to be decided with the Innovate Her team.
 
-## 16 · Session C
+## 18 · Session C
 
 footer: Session C of four
 
@@ -345,7 +355,7 @@ Who it’s for
 
 Everyone. Especially the ones who came alone.
 
-## 17 · Session D
+## 19 · Session D
 
 footer: Session D of four
 
@@ -367,7 +377,7 @@ Who it’s for
 
 Everyone. Especially the ones who came alone to Cagliari.
 
-## 18 · Partners
+## 20 · Partners
 
 footer: Partners
 
@@ -379,7 +389,7 @@ footer: Partners
 
 Not to make a margin. To help build and scale a community.
 
-## 19 · The budget
+## 21 · The budget
 
 footer: Partners · The budget
 
@@ -409,7 +419,7 @@ The whole year
 
 40% · the two headline events
 
-## 20 · The commitment
+## 22 · The commitment
 
 footer: Partners · The budget
 
@@ -433,7 +443,7 @@ The whole year
 
 40% · the two headline events
 
-## 21 · Who you reach
+## 23 · Who you reach
 
 footer: Partners · Who you reach
 
@@ -461,7 +471,7 @@ Venues so far. Every one a local business with their own reach.
 - Community partnership Co-create programmes, perks and programming for members.
 - Institutional collaboration Help us attract values-driven talent and capital to the island.
 
-## 22 · Closing
+## 24 · Closing
 
 ### Let’s build it together.
 

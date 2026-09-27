@@ -267,7 +267,17 @@ Biglietti.
 
 Eventi nello storico dei biglietti, luglio 2024 – agosto 2026.
 
-## 13 · Quattro modi per entrare
+## 13 · Grazie · Q&A
+
+### Grazie.
+
+Ora è il momento dell’evento principale. Iniziamo il Q&A.
+
+## 14 · Vuota
+
+_(no copy — image only)_
+
+## 15 · Quattro modi per entrare
 
 footer: La proposta
 
@@ -277,7 +287,7 @@ footer: La proposta
 
 ### Quattro sessioni che potremmo organizzare a Innovate Her.
 
-## 14 · Sessione A
+## 16 · Sessione A
 
 footer: Sessione A di quattro
 
@@ -299,7 +309,7 @@ A chi è rivolto
 
 Chiunque sia agli inizi del proprio percorso e desideri la conferma che qui sia possibile farlo.
 
-## 15 · Sessione B
+## 17 · Sessione B
 
 footer: Sessione B di quattro
 
@@ -323,7 +333,7 @@ Operatori e parti interessate che hanno a cuore una causa o una missione.
 
 Problema/argomento da definire insieme al team di Innovate Her.
 
-## 16 · Sessione C
+## 18 · Sessione C
 
 footer: Sessione C di quattro
 
@@ -345,7 +355,7 @@ A chi è rivolto
 
 A tutti. Soprattutto a chi è venuto da solo.
 
-## 17 · Sessione D
+## 19 · Sessione D
 
 footer: Sessione D di quattro
 
@@ -367,7 +377,7 @@ A chi è rivolto
 
 A tutti. Soprattutto a chi è venuto da solo a Cagliari.
 
-## 18 · Partner
+## 20 · Partner
 
 footer: Partner
 
@@ -379,7 +389,7 @@ footer: Partner
 
 Non per realizzare un margine di profitto, ma per contribuire a costruire e far crescere una comunità.
 
-## 19 · Il budget
+## 21 · Il budget
 
 footer: Partner · Il budget
 
@@ -409,7 +419,7 @@ L’intero anno
 
 40% · i due eventi principali
 
-## 20 · L’impegno
+## 22 · L’impegno
 
 footer: Partner · Il budget
 
@@ -433,7 +443,7 @@ L’intero anno
 
 40% · i due eventi principali
 
-## 21 · Chi raggiungi
+## 23 · Chi raggiungi
 
 footer: Partner · A chi ti rivolgi
 
@@ -461,7 +471,7 @@ Sedi finora. Ognuna è un’attività locale con la propria rete di contatti.
 - Partnership con la comunità Co-creazione di programmi, vantaggi e iniziative per i soci.
 - Collaborazione istituzionale Aiutaci ad attirare sull’isola talenti e capitali che condividono i nostri valori.
 
-## 22 · Chiusura
+## 24 · Chiusura
 
 ### Costruiamolo insieme.
 
