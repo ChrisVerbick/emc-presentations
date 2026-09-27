@@ -273,9 +273,15 @@ Events in the ticket history, July 2024 – August 2026.
 
 Now it’s time for the main event. Let’s begin the Q&A.
 
-## 14 · Blank
+## 14 · Appendix
 
-_(no copy — image only)_
+footer: Appendix
+
+A
+
+**For reference**
+
+### Appendix.
 
 ## 15 · Four ways in
 

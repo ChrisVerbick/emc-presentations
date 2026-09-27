@@ -273,9 +273,15 @@ Eventi nello storico dei biglietti, luglio 2024 – agosto 2026.
 
 Ora è il momento dell’evento principale. Iniziamo il Q&A.
 
-## 14 · Vuota
+## 14 · Appendice
 
-_(no copy — image only)_
+footer: Appendice
+
+A
+
+**Per approfondire**
+
+### Appendice.
 
 ## 15 · Quattro modi per entrare
 
