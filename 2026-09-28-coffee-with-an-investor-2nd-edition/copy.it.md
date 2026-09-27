@@ -27,19 +27,19 @@ footer: Chi siamo
 
 Da oltre 3 anni stiamo costruendo a Cagliari una comunità senza scopo di lucro di imprenditori, gestita dai suoi membri. Tutto è partito da una domanda: perché qui così tante persone lavorano da sole?
 
-185
+180+
 
-Membri.
+Membri attivi.
 
-18
+15
 
 Nazionalità.
 
-41
+40+
 
-Eventi, distribuiti in 19 sedi a Cagliari.
+Eventi, in più di 16 location a Cagliari.
 
-30+
+50+
 
 Imprenditori ospiti che hanno raccontato la loro storia.
 
@@ -63,7 +63,7 @@ Sempre
 
 ### Il meetup
 
-L’ultimo giovedì di ogni mese, alle 19:00, in una sede diversa ogni mese. Si inizia con sfide collaborative, seguite da conversazioni autentiche e networking aperto. Trentacinque eventi e il numero continua a crescere.
+L’ultimo giovedì di ogni mese, alle 19:00, in una sede diversa ogni mese. Si inizia con sfide collaborative, seguite da conversazioni autentiche e networking aperto. Oltre quaranta eventi e il numero continua a crescere.
 
 ## 04 · Pitch · Cosa facciamo · 2/4
 
@@ -167,7 +167,7 @@ I curiosi
 
 Non ne sono ancora sicuri. Sono venuti lo stesso. Sono tornati.
 
-185 membri · 18 nazionalità · nuovi arrivati e gente del posto, che costruiscono insieme
+180+ membri · 15 nazionalità · nuovi arrivati e gente del posto, che costruiscono insieme
 
 ## 09 · KPI · In numeri
 
@@ -441,11 +441,11 @@ footer: Partner · A chi ti rivolgi
 
 ### Il tuo marchio nella sala in cui si sta costruendo l’ecosistema di Cagliari.
 
-185
+180+
 
-Membri, tutti iscritti volontariamente. Non è una mailing list.
+Membri attivi, tutti iscritti volontariamente. Non è una mailing list.
 
-18
+15
 
 Nazionalità. Metà dei presenti si è trasferita qui appositamente.
 
@@ -453,7 +453,7 @@ Nazionalità. Metà dei presenti si è trasferita qui appositamente.
 
 Sere all’anno in cui il tuo nome compare sullo striscione, sulla porta e sul sito web.
 
-19
+16+
 
 Sedi finora. Ognuna è un’attività locale con la propria rete di contatti.
 

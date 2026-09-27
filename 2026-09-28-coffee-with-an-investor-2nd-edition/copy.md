@@ -27,19 +27,19 @@ footer: Who we are
 
 Over 3 years, we have been building a not-for-profit community of entrepreneurs in Cagliari, run by its members. It started with one question: why are so many people here building alone?
 
-185
+180+
 
-Members.
+Active members.
 
-18
+15
 
 Nationalities.
 
-41
+40+
 
-Events, across 19 venues in Cagliari.
+Events, across 16+ venues in Cagliari.
 
-30+
+50+
 
 Guest entrepreneurs who have told their story.
 
@@ -63,7 +63,7 @@ Always
 
 ### The meetup
 
-Last Thursday of every month, 19:00, a different venue each month. Kickoff with collaborative challenges, then real conversations and open networking. Thirty-five events and counting.
+Last Thursday of every month, 19:00, a different venue each month. Kickoff with collaborative challenges, then real conversations and open networking. Forty events and counting.
 
 ## 04 · Pitch · What we do · 2/4
 
@@ -167,7 +167,7 @@ The curious
 
 Not sure yet. Came anyway. Came back.
 
-185 members · 18 nationalities · newcomers and locals, building together
+180+ members · 15 nationalities · newcomers and locals, building together
 
 ## 09 · KPIs · In numbers
 
@@ -441,11 +441,11 @@ footer: Partners · Who you reach
 
 ### Your brand in the room where Cagliari’s ecosystem is being built.
 
-185
+180+
 
-Members, all of them opted in. Not a mailing list.
+Active members, all of them opted in. Not a mailing list.
 
-18
+15
 
 Nationalities. Half the room moved here on purpose.
 
@@ -453,7 +453,7 @@ Nationalities. Half the room moved here on purpose.
 
 Evenings a year your name is on the banner, the door and the website.
 
-19
+16+
 
 Venues so far. Every one a local business with their own reach.
 
