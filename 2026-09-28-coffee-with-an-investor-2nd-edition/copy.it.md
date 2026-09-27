@@ -287,7 +287,7 @@ A
 
 footer: La proposta
 
-03
+01
 
 **La proposta**
 
@@ -387,7 +387,7 @@ A tutti. Soprattutto a chi è venuto da solo a Cagliari.
 
 footer: Partner
 
-04
+02
 
 **Un’ultima cosa**
 
@@ -481,7 +481,7 @@ Sedi finora. Ognuna è un’attività locale con la propria rete di contatti.
 
 ### Costruiamolo insieme.
 
-Prossimo incontro: giovedì 24 settembre — l’ultimo giovedì del mese, come sempre. Venite a dare un’occhiata.
+Prossimo incontro: giovedì 29 ottobre, ore 19:00 — l’ultimo giovedì del mese, come sempre. Location da definire.
 
 **emcagliari.com**
 

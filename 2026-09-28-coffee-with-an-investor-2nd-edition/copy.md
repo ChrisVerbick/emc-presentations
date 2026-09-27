@@ -287,7 +287,7 @@ A
 
 footer: The proposal
 
-03
+01
 
 **The proposal**
 
@@ -387,7 +387,7 @@ Everyone. Especially the ones who came alone to Cagliari.
 
 footer: Partners
 
-04
+02
 
 **One more thing**
 
@@ -481,7 +481,7 @@ Venues so far. Every one a local business with their own reach.
 
 ### Let’s build it together.
 
-Next gathering: Thursday 24 September — last Thursday of the month, as always. Come and see it.
+Next gathering: Thursday 29 October, 19:00 — last Thursday of the month, as always. Location to be announced.
 
 **emcagliari.com**
 
