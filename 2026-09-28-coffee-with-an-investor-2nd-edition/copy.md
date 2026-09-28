@@ -23,9 +23,11 @@ footer: Who we are
 
 **Who we are**
 
-### Entrepreneurs Meet is where good ideas and good people find each other.
+### Entrepreneurs Meet started with one question: why are so many people here building alone?
 
-Over 3 years, we have been building a not-for-profit community of entrepreneurs in Cagliari, run by its members. It started with one question: why are so many people here building alone?
+2+
+
+Years, since October 2023.
 
 180+
 
@@ -37,11 +39,11 @@ Nationalities.
 
 40+
 
-Events, across 16+ venues in Cagliari.
+Events, across 16+ venues.
 
 50+
 
-Guest entrepreneurs who have told their story.
+Guest entrepreneurs.
 
 Volunteer-led · Sector-agnostic · No fixed address
 

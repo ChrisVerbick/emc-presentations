@@ -23,9 +23,11 @@ footer: Chi siamo
 
 **Chi siamo**
 
-### Entrepreneurs Meet è il luogo in cui le buone idee e le persone di valore si incontrano.
+### Entrepreneurs Meet è nato da una domanda: perché qui così tante persone costruiscono da sole?
 
-Da oltre 3 anni stiamo costruendo a Cagliari una comunità senza scopo di lucro di imprenditori, gestita dai suoi membri. Tutto è partito da una domanda: perché qui così tante persone lavorano da sole?
+2+
+
+Anni, da ottobre 2023.
 
 180+
 
@@ -37,11 +39,11 @@ Nazionalità.
 
 40+
 
-Eventi, in più di 16 location a Cagliari.
+Eventi, in più di 16 location.
 
 50+
 
-Imprenditori ospiti che hanno raccontato la loro storia.
+Imprenditori ospiti.
 
 Gestito da volontari · Senza limiti di settore · Senza sede fissa
 
