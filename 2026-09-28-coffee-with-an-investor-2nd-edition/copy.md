@@ -27,7 +27,7 @@ footer: Who we are
 
 2+
 
-Years, since October 2023.
+Years. Since November 2023 Da novembre 2023
 
 180+
 
@@ -189,7 +189,7 @@ Companies supported through our events.
 
 40+
 
-Events so far, since October 2023.
+Events so far, since November 2023.
 
 50+
 

@@ -27,7 +27,7 @@ footer: Chi siamo
 
 2+
 
-Anni, da ottobre 2023.
+Anni. Since November 2023 Da novembre 2023
 
 180+
 
@@ -189,7 +189,7 @@ Aziende sostenute attraverso i nostri eventi.
 
 40+
 
-Eventi fatti finora, da ottobre 2023.
+Eventi fatti finora, da novembre 2023.
 
 50+
 
