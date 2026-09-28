@@ -25,11 +25,11 @@ footer: Who we are
 
 ### Entrepreneurs Meet started with one question: why are so many people here building alone?
 
-2+
+2+ years 2+ anni
 
-Years. Since November 2023 Da novembre 2023
+Since November 2023.
 
-180+
+200+
 
 Active members.
 
@@ -169,7 +169,7 @@ The curious
 
 Not sure yet. Came anyway. Came back.
 
-180+ members · 15 nationalities · newcomers and locals, building together
+200+ members · 15 nationalities · newcomers and locals, building together
 
 ## 09 · KPIs · 4 in 10 women
 
@@ -227,7 +227,7 @@ footer: Our community in numbers
 
 ### About 1 in 3 people at an EMC evening is there for the first time.
 
-It barely moves: 30% in 2025, 29% in 2026 so far. Themed talks, workshops and the New Year kickoff bring in the most newcomers.
+30% in 2025, 29% in 2026 so far. Themed talks, workshops and the New Year kickoff bring in the most newcomers.
 
 30%
 
@@ -435,7 +435,7 @@ footer: Partners · Who you reach
 
 ### Your brand in the room where Cagliari’s ecosystem is being built.
 
-180+
+200+
 
 Active members, all of them opted in. Not a mailing list.
 
