@@ -3,6 +3,7 @@
 
 # Raw material presenters send over — kept beside the deck while it's built.
 */sources/
+*/resources/
 
 # Snapshots of a deck directory. The directory is the artefact.
 *.zip
