@@ -136,6 +136,10 @@ body { font-family:'Alcyone', Inter, system-ui, sans-serif; -webkit-font-smoothi
 
 /* Typography helpers */
 .eyebrow { font-size:var(--fs-overline); letter-spacing:2px; text-transform:uppercase; font-weight:700; color:var(--eyebrow); }
+/* A highlighted eyebrow is a label, not a phrase in a sentence: the <mark> fill would hug
+   13px caps too tightly, so it becomes a padded block. Vertical padding on an inline
+   box doesn't move the line, so the surrounding layout is unchanged. */
+.eyebrow mark { background-size:100% 100%; background-position:0 0; padding:.5em .75em .45em; }
 .slide:not(.is-page) .eyebrow { color:var(--eyebrow-dark); }
 .rule { display:inline-block; width:var(--rule-w); height:2px; background:currentColor; }
 h1,h2,h3 { margin:0; font-weight:700; letter-spacing:-0.02em; }
