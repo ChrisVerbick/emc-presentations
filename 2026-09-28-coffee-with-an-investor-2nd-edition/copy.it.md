@@ -25,11 +25,11 @@ footer: Chi siamo
 
 ### Entrepreneurs Meet è nato da una domanda: perché qui così tante persone costruiscono da sole?
 
-2+
+2+ years 2+ anni
 
-Anni. Since November 2023 Da novembre 2023
+Da novembre 2023.
 
-180+
+200+
 
 Membri attivi.
 
@@ -169,7 +169,7 @@ I curiosi
 
 Non ne sono ancora sicuri. Sono venuti lo stesso. Sono tornati.
 
-180+ membri · 15 nazionalità · nuovi arrivati e gente del posto, che costruiscono insieme
+200+ membri · 15 nazionalità · nuovi arrivati e gente del posto, che costruiscono insieme
 
 ## 09 · KPI · 4 su 10 donne
 
@@ -227,7 +227,7 @@ footer: La community in numeri
 
 ### Circa 1 persona su 3 a una serata EMC è alla sua prima volta.
 
-È un dato stabile: 30% nel 2025, 29% finora nel 2026. Talk tematici, workshop e il kickoff di inizio anno portano il maggior numero di nuovi arrivati.
+30% nel 2025, 29% finora nel 2026. Talk tematici, workshop e il kickoff di inizio anno portano il maggior numero di nuovi arrivati.
 
 30%
 
@@ -435,7 +435,7 @@ footer: Partner · A chi ti rivolgi
 
 ### Il tuo marchio nella sala in cui si sta costruendo l’ecosistema di Cagliari.
 
-180+
+200+
 
 Membri attivi, tutti iscritti volontariamente. Non è una mailing list.
 
