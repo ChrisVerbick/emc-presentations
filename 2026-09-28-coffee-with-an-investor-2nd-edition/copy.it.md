@@ -171,31 +171,7 @@ Non ne sono ancora sicuri. Sono venuti lo stesso. Sono tornati.
 
 180+ membri · 15 nazionalità · nuovi arrivati e gente del posto, che costruiscono insieme
 
-## 09 · KPI · In numeri
-
-footer: La community in numeri
-
-**La community in numeri**
-
-### E abbiamo appena cominciato.
-
-180+
-
-Membri attivi.
-
-18+
-
-Aziende sostenute attraverso i nostri eventi.
-
-40+
-
-Eventi fatti finora, da novembre 2023.
-
-50+
-
-Imprenditori ospiti.
-
-## 10 · KPI · 4 su 10 donne
+## 09 · KPI · 4 su 10 donne
 
 footer: La community in numeri
 
@@ -203,7 +179,7 @@ footer: La community in numeri
 
 dei nostri membri sono donne.
 
-## 11 · KPI · Nazionalità
+## 10 · KPI · Nazionalità
 
 footer: La community in numeri
 
@@ -243,7 +219,7 @@ Canadese
 
 Spagnola
 
-## 12 · KPI · Nuovi arrivati
+## 11 · KPI · Nuovi arrivati
 
 footer: La community in numeri
 
@@ -269,13 +245,13 @@ Biglietti.
 
 Eventi nello storico dei biglietti, luglio 2024 – agosto 2026.
 
-## 13 · Grazie · Q&A
+## 12 · Grazie · Q&A
 
 ### Grazie.
 
 Ora è il momento dell’evento principale. Iniziamo il Q&A.
 
-## 14 · Appendice
+## 13 · Appendice
 
 footer: Appendice
 
@@ -285,7 +261,7 @@ A
 
 ### Appendice.
 
-## 15 · Quattro modi per entrare
+## 14 · Quattro modi per entrare
 
 footer: La proposta
 
@@ -295,7 +271,7 @@ footer: La proposta
 
 ### Quattro sessioni che potremmo organizzare a Innovate Her.
 
-## 16 · Sessione A
+## 15 · Sessione A
 
 footer: Sessione A di quattro
 
@@ -317,7 +293,7 @@ A chi è rivolto
 
 Chiunque sia agli inizi del proprio percorso e desideri la conferma che qui sia possibile farlo.
 
-## 17 · Sessione B
+## 16 · Sessione B
 
 footer: Sessione B di quattro
 
@@ -341,7 +317,7 @@ Operatori e parti interessate che hanno a cuore una causa o una missione.
 
 Problema/argomento da definire insieme al team di Innovate Her.
 
-## 18 · Sessione C
+## 17 · Sessione C
 
 footer: Sessione C di quattro
 
@@ -363,7 +339,7 @@ A chi è rivolto
 
 A tutti. Soprattutto a chi è venuto da solo.
 
-## 19 · Sessione D
+## 18 · Sessione D
 
 footer: Sessione D di quattro
 
@@ -385,7 +361,7 @@ A chi è rivolto
 
 A tutti. Soprattutto a chi è venuto da solo a Cagliari.
 
-## 20 · Partner
+## 19 · Partner
 
 footer: Partner
 
@@ -397,7 +373,7 @@ footer: Partner
 
 Non per realizzare un margine di profitto, ma per contribuire a costruire e far crescere una comunità.
 
-## 21 · Il budget
+## 20 · Il budget
 
 footer: Partner · Il budget
 
@@ -427,7 +403,7 @@ L’intero anno
 
 40% · i due eventi principali
 
-## 22 · L’impegno
+## 21 · L’impegno
 
 footer: Partner · Il budget
 
@@ -451,7 +427,7 @@ L’intero anno
 
 40% · i due eventi principali
 
-## 23 · Chi raggiungi
+## 22 · Chi raggiungi
 
 footer: Partner · A chi ti rivolgi
 
@@ -479,7 +455,7 @@ Sedi finora. Ognuna è un’attività locale con la propria rete di contatti.
 - Partnership con la comunità Co-creazione di programmi, vantaggi e iniziative per i soci.
 - Collaborazione istituzionale Aiutaci ad attirare sull’isola talenti e capitali che condividono i nostri valori.
 
-## 24 · Chiusura
+## 23 · Chiusura
 
 ### Costruiamolo insieme.
 

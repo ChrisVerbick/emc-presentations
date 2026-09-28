@@ -171,31 +171,7 @@ Not sure yet. Came anyway. Came back.
 
 180+ members · 15 nationalities · newcomers and locals, building together
 
-## 09 · KPIs · In numbers
-
-footer: Our community in numbers
-
-**Our community in numbers**
-
-### And we’ve only just started.
-
-180+
-
-Active members.
-
-18+
-
-Companies supported through our events.
-
-40+
-
-Events so far, since November 2023.
-
-50+
-
-Guest entrepreneurs.
-
-## 10 · KPIs · 4 in 10 women
+## 09 · KPIs · 4 in 10 women
 
 footer: Our community in numbers
 
@@ -203,7 +179,7 @@ footer: Our community in numbers
 
 of our members are women.
 
-## 11 · KPIs · Nationalities
+## 10 · KPIs · Nationalities
 
 footer: Our community in numbers
 
@@ -243,7 +219,7 @@ Canadian
 
 Spanish
 
-## 12 · KPIs · First-timers
+## 11 · KPIs · First-timers
 
 footer: Our community in numbers
 
@@ -269,13 +245,13 @@ Tickets.
 
 Events in the ticket history, July 2024 – August 2026.
 
-## 13 · Thank you · Q&A
+## 12 · Thank you · Q&A
 
 ### Thank you.
 
 Now it’s time for the main event. Let’s begin the Q&A.
 
-## 14 · Appendix
+## 13 · Appendix
 
 footer: Appendix
 
@@ -285,7 +261,7 @@ A
 
 ### Appendix.
 
-## 15 · Four ways in
+## 14 · Four ways in
 
 footer: The proposal
 
@@ -295,7 +271,7 @@ footer: The proposal
 
 ### Four sessions we could run at Innovate Her.
 
-## 16 · Session A
+## 15 · Session A
 
 footer: Session A of four
 
@@ -317,7 +293,7 @@ Who it’s for
 
 Anyone early on the road, wanting proof it can be done here.
 
-## 17 · Session B
+## 16 · Session B
 
 footer: Session B of four
 
@@ -341,7 +317,7 @@ Operators and stakeholders that care about a cause or a mission.
 
 Problem / topic to be decided with the Innovate Her team.
 
-## 18 · Session C
+## 17 · Session C
 
 footer: Session C of four
 
@@ -363,7 +339,7 @@ Who it’s for
 
 Everyone. Especially the ones who came alone.
 
-## 19 · Session D
+## 18 · Session D
 
 footer: Session D of four
 
@@ -385,7 +361,7 @@ Who it’s for
 
 Everyone. Especially the ones who came alone to Cagliari.
 
-## 20 · Partners
+## 19 · Partners
 
 footer: Partners
 
@@ -397,7 +373,7 @@ footer: Partners
 
 Not to make a margin. To help build and scale a community.
 
-## 21 · The budget
+## 20 · The budget
 
 footer: Partners · The budget
 
@@ -427,7 +403,7 @@ The whole year
 
 40% · the two headline events
 
-## 22 · The commitment
+## 21 · The commitment
 
 footer: Partners · The budget
 
@@ -451,7 +427,7 @@ The whole year
 
 40% · the two headline events
 
-## 23 · Who you reach
+## 22 · Who you reach
 
 footer: Partners · Who you reach
 
@@ -479,7 +455,7 @@ Venues so far. Every one a local business with their own reach.
 - Community partnership Co-create programmes, perks and programming for members.
 - Institutional collaboration Help us attract values-driven talent and capital to the island.
 
-## 24 · Closing
+## 23 · Closing
 
 ### Let’s build it together.
 
